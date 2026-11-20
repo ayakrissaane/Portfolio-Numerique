@@ -1,150 +1,128 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python | My Portfolio</title>
+    <title>Python | Portfolio Aya</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="../index.html" class="logo">My Portfolio ♡</a>
-            <a href="../index.html" class="nav-link">Home</a>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="nav-links">
+            <a href="../index.html">Accueil</a>
+            <a href="../index.html#modules">Modules</a>
+            <a href="../index.html#projets">Projets</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
+<main>
 
-        <section class="hero">
-            <div class="hero-content">
-                <span class="hero-label">DEVELOPMENT</span>
-                <h1>Python Programming</h1>
-                <p>
-                    Exploring programming concepts and
-                    discovering the Python language.
-                </p>
-            </div>
-        </section>
+<section class="page-hero">
+    <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Python</div>
+        <span class="eyebrow">Développement</span>
+        <h1>Programmation en Python</h1>
+        <p>Découvrir les premières notions de Python à travers des exemples simples.</p>
+    </div>
+</section>
 
-        <section class="section">
-            <h2>Introduction to Python</h2>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>01. Présentation</h2>
+        </div>
+        <div class="soft-panel">
+            <p>Python est un langage de programmation reconnu pour sa syntaxe lisible. Il peut être utilisé dans le développement, l’automatisation, l’analyse de données et l’intelligence artificielle.</p>
+        </div>
+    </div>
+</section>
 
-            <div class="about-card">
-                <p>
-                    Python is a high-level programming language
-                    known for its readable syntax and wide range
-                    of applications, including web development,
-                    automation, data analysis and Artificial Intelligence.
-                </p>
-            </div>
-        </section>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>02. Premières notions</h2>
+        </div>
+        <div class="grid">
+            <article class="card">
+                <h3>Variables</h3>
+                <p>Créer des variables pour conserver des valeurs.</p>
+            </article>
+            <article class="card">
+                <h3>Conditions</h3>
+                <p>Utiliser if et else pour contrôler le programme.</p>
+            </article>
+            <article class="card">
+                <h3>Boucles</h3>
+                <p>Répéter des instructions avec for et while.</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-        <section class="section">
-            <h2>Basic Concepts</h2>
-
-            <div class="modules-grid">
-
-                <article class="module-card pink">
-                    <span class="card-icon">📦</span>
-                    <h3>Variables</h3>
-                    <p>
-                        Storing information using names
-                        and different data types.
-                    </p>
-                </article>
-
-                <article class="module-card blue">
-                    <span class="card-icon">🔀</span>
-                    <h3>Conditions</h3>
-                    <p>
-                        Using if, elif and else to make decisions.
-                    </p>
-                </article>
-
-                <article class="module-card mint">
-                    <span class="card-icon">🔁</span>
-                    <h3>Loops</h3>
-                    <p>
-                        Repeating instructions using for and while.
-                    </p>
-                </article>
-
-                <article class="module-card pink">
-                    <span class="card-icon">📚</span>
-                    <h3>Lists</h3>
-                    <p>
-                        Storing and processing multiple elements
-                        in a single collection.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Practical Example</h2>
-
-            <div class="about-card">
-                <h3>Calculating the Average</h3>
-
-                <p>
-                    This example calculates the average
-                    of three numbers.
-                </p>
-
-                <pre><code>note1 = 14
-note2 = 16
-note3 = 12
-
-moyenne = (note1 + note2 + note3) / 3
-
-print("Average:", moyenne)</code></pre>
-
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>What I Learned</h2>
-
-            <div class="about-card">
-                <p>
-                    This section presents the Python concepts
-                    I discover and the programming exercises
-                    I complete during my learning journey.
-                    I aim to improve my understanding of programming
-                    logic and problem solving.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>My Practical Work</h2>
-
-            <div class="about-card">
-                <p>
-                    Selected Python exercises and personal
-                    projects will be added here as I complete them.
-                </p>
-            </div>
-        </section>
-
-        <div class="section">
-            <a href="../index.html" class="module-link">
-                ← Back to Home
-            </a>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>03. Exemple : calculer une moyenne</h2>
         </div>
 
-    </main>
+        <pre class="code-sample">note1 = float(input("Première note : "))
+note2 = float(input("Deuxième note : "))
 
-    <footer class="footer">
-        <p>Made with care ♡ | My Digital Portfolio</p>
-    </footer>
+moyenne = (note1 + note2) / 2
 
+print("Moyenne :", moyenne)</pre>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>04. Pratique personnelle</h2>
+        </div>
+        <div class="note">
+            Compléter cette rubrique avec les exercices Python réalisés,
+            les difficultés rencontrées et ce que j’ai appris.
+            Ne présenter comme acquis que ce que je peux expliquer.
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>05. Transparence de l’IA</h2>
+        </div>
+        <div class="soft-panel">
+            <p><strong>Outil :</strong> ChatGPT comme aide à la compréhension.</p>
+            <p><strong>Rôle :</strong> expliquer la syntaxe et proposer des exemples de pratique.</p>
+            <p><strong>Ma contribution :</strong> modifier et exécuter les exemples, puis expliquer leur fonctionnement.</p>
+            <p><strong>Vérification :</strong> tester le code dans un environnement Python.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© <span data-year>2026</span> Aya Krissaane</span>
+        <span>Portfolio Numérique ♡</span>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
 </body>
 </html>
 
