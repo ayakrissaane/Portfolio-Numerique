@@ -1,31 +1,44 @@
-# Portfolio Numérique
+
+# Portfolio Numérique — Aya Krissaane
+
+Portfolio académique réalisé dans le cadre de ma formation en Technologies de l’Informatique à l’ISET Nabeul.
 
 ## Présentation
 
-Bonjour ! Je suis étudiante en première année de Technologie de l'Informatique à l'ISET Nabeul.
+Ce site présente mon parcours universitaire, mes compétences, mes apprentissages, mes travaux pratiques et mes projets.
 
-Ce portfolio numérique présente mes apprentissages, mes projets et mes réalisations tout au long de l'année universitaire.
+## Technologies utilisées
 
-## Objectif du projet
+- HTML5 : structure des pages.
+- CSS3 : mise en page et design responsive.
+- JavaScript : interactions et menu mobile.
+- GitHub : gestion du code.
+- GitHub Pages : hébergement du site.
 
-L'objectif de ce projet est de mettre en pratique les compétences acquises dans les différents modules, de développer mes compétences numériques et de présenter mes réalisations dans un site web.
+## Structure du projet
 
-## Modules
+- `index.html` : page d’accueil.
+- `css/style.css` : feuille de style commune.
+- `js/script.js` : interactions JavaScript.
+- `digital-skills/` : cybersécurité, prompt engineering et création de contenu.
+- `developpement/` : langage C, algorithmique et Python.
+- `systemes/` : systèmes d’exploitation, architecture et électronique.
+- `projects/` : projets personnels.
 
-- Digital Skills
-- Développement
-- Systèmes d'exploitation et fondements
-- Développement Web côté client
+## IA responsable
 
-## Outils utilisés
+L’intelligence artificielle est utilisée comme outil d’assistance à l’apprentissage et au développement.
 
-- HTML
-- CSS
-- JavaScript
-- GitHub
-- GitHub Pages
-- Outils d'intelligence artificielle
+Les contenus et les codes doivent être compris, vérifiés et adaptés avant leur publication.
 
----
+Aucune donnée personnelle sensible, aucun mot de passe et aucune clé API ne doivent être publiés.
 
-Portfolio réalisé dans le cadre de ma première année à l'ISET Nabeul.
+## Publication
+
+Le site est hébergé avec GitHub Pages.
+
+## Auteur
+
+Aya Krissaane  
+Étudiante en Technologies de l’Informatique  
+ISET Nabeul — 2026–2027
