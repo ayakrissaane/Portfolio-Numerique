@@ -1,182 +1,139 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Architecture | My Portfolio</title>
+    <title>Architecture & électronique | Portfolio Aya</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
 
-    <header class="header">
-        <nav class="navbar">
-            <a href="../index.html" class="logo">My Portfolio ♡</a>
-            <a href="../index.html" class="nav-link">Home</a>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="nav-links">
+            <a href="../index.html">Accueil</a>
+            <a href="../index.html#modules">Modules</a>
+            <a href="../index.html#projets">Projets</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
+<main>
 
-        <section class="hero">
-            <div class="hero-content">
-                <span class="hero-label">SYSTEMS & COMPUTER ARCHITECTURE</span>
-                <h1>Computer Architecture & Electronics</h1>
-                <p>
-                    Discovering the internal components of computers
-                    and understanding the basics of digital electronics.
-                </p>
-            </div>
-        </section>
+<section class="page-hero">
+    <div class="container">
+        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Architecture</div>
+        <span class="eyebrow">Systèmes & Architecture</span>
+        <h1>Architecture des ordinateurs & électronique</h1>
+        <p>Présenter les composants fondamentaux d’un ordinateur et quelques notions de logique numérique.</p>
+    </div>
+</section>
 
-        <section class="section">
-            <h2>What is Computer Architecture?</h2>
-
-            <div class="about-card">
-                <p>
-                    Computer Architecture describes the organization
-                    and operation of a computer system.
-                    It explains how hardware components work together
-                    to process, store and transfer information.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Main Computer Components</h2>
-
-            <div class="modules-grid">
-
-                <article class="module-card pink">
-                    <span class="card-icon">🧠</span>
-                    <h3>CPU</h3>
-                    <p>
-                        The Central Processing Unit executes
-                        instructions and processes data.
-                    </p>
-                </article>
-
-                <article class="module-card blue">
-                    <span class="card-icon">💾</span>
-                    <h3>RAM</h3>
-                    <p>
-                        Random Access Memory temporarily stores
-                        data used by running programs.
-                    </p>
-                </article>
-
-                <article class="module-card mint">
-                    <span class="card-icon">📀</span>
-                    <h3>ROM</h3>
-                    <p>
-                        Read-Only Memory stores information
-                        that is generally retained without power.
-                    </p>
-                </article>
-
-                <article class="module-card pink">
-                    <span class="card-icon">⌨️</span>
-                    <h3>Input Devices</h3>
-                    <p>
-                        Devices such as keyboards and mice
-                        allow users to enter data.
-                    </p>
-                </article>
-
-                <article class="module-card blue">
-                    <span class="card-icon">🖥️</span>
-                    <h3>Output Devices</h3>
-                    <p>
-                        Devices such as monitors and printers
-                        present processed information.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Digital Electronics</h2>
-
-            <div class="about-card">
-                <p>
-                    Digital Electronics is based on binary values:
-                    0 and 1. Digital circuits use logical operations
-                    to process information.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Logic Gates</h2>
-
-            <div class="modules-grid">
-
-                <article class="module-card pink">
-                    <span class="card-icon">AND</span>
-                    <h3>AND Gate</h3>
-                    <p>
-                        The output is 1 only when all inputs are 1.
-                    </p>
-                </article>
-
-                <article class="module-card blue">
-                    <span class="card-icon">OR</span>
-                    <h3>OR Gate</h3>
-                    <p>
-                        The output is 1 when at least one input is 1.
-                    </p>
-                </article>
-
-                <article class="module-card mint">
-                    <span class="card-icon">NOT</span>
-                    <h3>NOT Gate</h3>
-                    <p>
-                        The output is the opposite of the input.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>What I Learned</h2>
-
-            <div class="about-card">
-                <p>
-                    I am learning how computer components work together,
-                    how information is represented in binary form,
-                    and how logic gates are used in digital circuits.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>My Practical Work</h2>
-
-            <div class="about-card">
-                <p>
-                    This section will contain exercises,
-                    logic tables and practical work completed
-                    during my computer architecture and electronics lessons.
-                </p>
-            </div>
-        </section>
-
-        <div class="section">
-            <a href="../index.html" class="module-link">
-                ← Back to Home
-            </a>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>01. Architecture générale</h2>
         </div>
+        <div class="soft-panel">
+            <p>Un ordinateur traite des données grâce à plusieurs composants qui communiquent entre eux. Le processeur exécute les instructions, la mémoire conserve les données et les périphériques permettent les entrées et les sorties.</p>
+        </div>
+    </div>
+</section>
 
-    </main>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>02. Composants principaux</h2>
+        </div>
+        <div class="grid">
+            <article class="card">
+                <h3>CPU</h3>
+                <p>Exécute les instructions et coordonne les opérations.</p>
+            </article>
+            <article class="card">
+                <h3>RAM</h3>
+                <p>Mémoire temporaire utilisée pendant l’exécution.</p>
+            </article>
+            <article class="card">
+                <h3>ROM</h3>
+                <p>Mémoire non volatile contenant des informations permanentes ou un micrologiciel.</p>
+            </article>
+        </div>
+    </div>
+</section>
 
-    <footer class="footer">
-        <p>Made with care ♡ | My Digital Portfolio</p>
-    </footer>
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>03. Logique numérique</h2>
+        </div>
+        <div class="grid">
+            <article class="card">
+                <h3>ET (AND)</h3>
+                <p>La sortie vaut 1 uniquement si toutes les entrées valent 1.</p>
+                <span class="tag">0 ET 0 = 0</span>
+                <span class="tag">1 ET 1 = 1</span>
+            </article>
+            <article class="card">
+                <h3>OU (OR)</h3>
+                <p>La sortie vaut 1 si au moins une entrée vaut 1.</p>
+                <span class="tag">0 OU 0 = 0</span>
+                <span class="tag">1 OU 0 = 1</span>
+            </article>
+            <article class="card">
+                <h3>NON (NOT)</h3>
+                <p>Inverse l’état logique de l’entrée.</p>
+                <span class="tag">NON 0 = 1</span>
+                <span class="tag">NON 1 = 0</span>
+            </article>
+        </div>
+    </div>
+</section>
 
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>04. Travaux et révisions</h2>
+        </div>
+        <div class="note">
+            Ajouter les schémas, tables de vérité et exercices étudiés en cours,
+            en indiquant les hypothèses et les résultats vérifiés.
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <h2>05. Transparence de l’IA</h2>
+        </div>
+        <div class="soft-panel">
+            <p><strong>Outil :</strong> ChatGPT comme assistant pédagogique.</p>
+            <p><strong>Rôle :</strong> aider à reformuler les définitions et organiser les fiches.</p>
+            <p><strong>Ma contribution :</strong> compléter les schémas et résoudre les exercices.</p>
+            <p><strong>Vérification :</strong> comparer avec le cours et contrôler les tables de vérité.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <span>© <span data-year>2026</span> Aya Krissaane</span>
+        <span>Portfolio Numérique ♡</span>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
 </body>
 </html>
-
