@@ -112,4 +112,43 @@ nav a:hover {
 
     margin-top: 10px;
 }
+/* =========================
+   5. About Section
+========================= */
+
+.about-section {
+    padding: 50px 30px;
+}
+
+.about-card {
+    background-color: #FFFFFF;
+    max-width: 850px;
+
+    margin: auto;
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 25px rgba(98, 87, 127, 0.08);
+
+    text-align: center;
+}
+
+.section-label {
+    color: #D98EAF;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.about-card h2 {
+    color: #62577F;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    color: #76668F;
+    font-size: 16px;
+    line-height: 1.8;
+}
 
