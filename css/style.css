@@ -12,24 +12,42 @@ body {
 }
 
 /* =========================
-   2. Header & Navigation
+   4. Navigation Bar
 ========================= */
 
 header {
     background-color: #FFFFFF;
-    padding: 20px 50px;
+    padding: 18px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 3px 15px rgba(98, 87, 127, 0.08);
 }
 
 header h2 {
     color: #8A78A8;
+    font-size: 24px;
+    margin: 0;
 }
 
+nav {
+    display: flex;
+    gap: 25px;
+}
 
 nav a {
     text-decoration: none;
     color: #76668F;
-    margin-right: 20px;
+    font-size: 15px;
+    transition: 0.3s;
 }
+
+nav a:hover {
+    color: #E69ABD;
+}
+
 
 /* =========================
    3. Hero Section
