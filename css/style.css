@@ -757,3 +757,37 @@ button:focus-visible {
 .module-link:hover {
     color: #D98EAF;
 }
+
+/* Projects Section */
+
+.project-card {
+    background: #fffafd;
+    border: 1px solid #f0e3ed;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(120, 90, 120, 0.10);
+}
+
+.project-card h3 {
+    color: #806080;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.project-card .module-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
