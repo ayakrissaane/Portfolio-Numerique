@@ -10,3 +10,22 @@ body {
     background-color: #F8F4FF;
     color: #62577F;
 }
+
+/* =========================
+   2. Header & Navigation
+========================= */
+
+header {
+    background-color: #FFFFFF;
+    padding: 20px 50px;
+}
+
+header h2 {
+    color: #8A78A8;
+}
+
+nav a {
+    text-decoration: none;
+    color: #76668F;
+    margin-right: 20px;
+}
