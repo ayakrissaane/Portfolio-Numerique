@@ -151,4 +151,74 @@ nav a:hover {
     font-size: 16px;
     line-height: 1.8;
 }
+/* =========================
+   6. Modules Section
+========================= */
+
+.modules-section {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.modules-section h2 {
+    color: #62577F;
+    font-size: 32px;
+}
+
+.modules-intro {
+    color: #887B9D;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.modules-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.module-card {
+    padding: 30px;
+    border-radius: 22px;
+    text-align: left;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card h3 {
+    color: #62577F;
+    font-size: 21px;
+}
+
+.module-card p {
+    color: #76668F;
+    line-height: 1.7;
+}
+
+.module-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(98, 87, 127, 0.12);
+}
+
+/* Pastel Colors */
+
+.pink {
+    background-color: #F8DDEB;
+}
+
+.lavender {
+    background-color: #E8E3FF;
+}
+
+.blue {
+    background-color: #E4E9FF;
+}
+
+.mint {
+    background-color: #DDEFEA;
+}
+
 
