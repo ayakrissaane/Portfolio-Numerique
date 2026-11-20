@@ -1,42 +1,46 @@
 
-// ===============================
-// Mobile Navigation
-// ===============================
+document.addEventListener("DOMContentLoaded", function () {
 
-const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.getElementById("navbar");
+    // Menu mobile
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", function () {
+    if (toggle && nav) {
 
-    navbar.classList.toggle("active");
+        toggle.addEventListener("click", function () {
 
-    const isOpen = navbar.classList.contains("active");
+            const isOpen = nav.classList.toggle("open");
 
-    menuToggle.setAttribute("aria-expanded", isOpen);
+            toggle.setAttribute("aria-expanded", String(isOpen));
 
-});
+            toggle.textContent = isOpen ? "✕" : "☰";
 
+        });
 
-// Close menu after clicking a link
+        // Fermer le menu après le clic sur un lien
+        nav.querySelectorAll("a").forEach(function (link) {
 
-const navLinks = document.querySelectorAll(".navbar a");
+            link.addEventListener("click", function () {
 
-navLinks.forEach(function (link) {
+                nav.classList.remove("open");
 
-    link.addEventListener("click", function () {
+                toggle.setAttribute("aria-expanded", "false");
 
-        navbar.classList.remove("active");
+                toggle.textContent = "☰";
 
-        menuToggle.setAttribute("aria-expanded", "false");
+            });
+
+        });
+
+    }
+
+    // Année automatique dans le footer
+    document.querySelectorAll("[data-year]").forEach(function (element) {
+
+        element.textContent = new Date().getFullYear();
 
     });
 
 });
 
-
-// Automatic current year
-
-const yearElement = document.getElementById("year");
-
-yearElement.textContent = new Date().getFullYear();
 
