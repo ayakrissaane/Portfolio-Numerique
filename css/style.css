@@ -745,3 +745,15 @@ button:focus-visible {
     outline: 3px solid #C78EAE;
     outline-offset: 4px;
 }
+.module-link {
+    display: inline-block;
+    margin-top: 14px;
+    color: var(--purple);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.module-link:hover {
+    color: #D98EAF;
+}
