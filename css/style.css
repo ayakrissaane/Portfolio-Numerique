@@ -24,8 +24,74 @@ header h2 {
     color: #8A78A8;
 }
 
+
 nav a {
     text-decoration: none;
     color: #76668F;
     margin-right: 20px;
 }
+
+/* =========================
+   3. Hero Section
+========================= */
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #F8DDEB,
+        #E8E3FF,
+        #FFF5E8
+    );
+
+    padding: 80px 40px;
+    margin: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #8A78A8;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #62577F;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #E69ABD;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: #8874A6;
+}
+
+.hero-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #76668F;
+    margin: 25px 0;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #EBAAC9;
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+    border-radius: 30px;
+
+    margin-top: 10px;
+}
+
