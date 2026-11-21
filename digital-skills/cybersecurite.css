@@ -765,3 +765,483 @@
         display: none;
     }
 }
+
+/* ==========================================
+   BEYOND THE CODE
+   CYBERSECURITY — PREMIUM DESIGN UPDATE
+========================================== */
+
+/* 1. THREAT CARDS */
+
+.cyber-threat-grid {
+    gap: 25px;
+}
+
+.cyber-threat-grid .cyber-card,
+.cyber-threat-grid .threat-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #fffdfb, #fff7f4);
+    border: 1px solid #efdfda;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 5px 18px rgba(100, 65, 65, 0.035);
+    transition: transform .35s ease,
+                box-shadow .35s ease,
+                border-color .35s ease;
+}
+
+.cyber-threat-grid .cyber-card::before,
+.cyber-threat-grid .threat-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #d99aaa, #e9c7b5);
+    opacity: .85;
+}
+
+.cyber-threat-grid .cyber-card:hover,
+.cyber-threat-grid .threat-card:hover {
+    transform: translateY(-7px);
+    border-color: #dfb9b6;
+    box-shadow: 0 16px 35px rgba(113, 75, 75, .10);
+}
+
+.cyber-icon {
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7e8e5;
+    border-radius: 17px;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.threat-card h3,
+.cyber-card h3 {
+    color: #65434b;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.threat-card p,
+.cyber-card p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #81716e;
+}
+
+
+/* 2. EVERYDAY RISKS */
+
+.cyber-risk-panel {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(130deg, #f7e9e4, #f3e7e4 55%, #f4ebe2);
+    border: 1px solid #ead9d2;
+    border-radius: 26px;
+    padding: 38px;
+}
+
+.cyber-risk-panel h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 29px;
+    color: #65434b;
+}
+
+.risk-list li {
+    padding: 17px 0;
+    border-bottom-color: rgba(143, 104, 99, .17);
+}
+
+.risk-list b {
+    color: #77505a;
+    font-size: 15px;
+}
+
+.risk-list span {
+    color: #81716e;
+    line-height: 1.8;
+}
+
+
+/* 3. SAFETY TIPS */
+
+.cyber-tips-grid {
+    gap: 24px;
+}
+
+.tip-card {
+    overflow: hidden;
+    background: #fffdfb;
+    border: 1px solid #eee1dc;
+    border-radius: 23px;
+    padding: 30px;
+    box-shadow: 0 5px 18px rgba(100, 65, 65, .035);
+}
+
+.tip-card:hover {
+    border-color: #dfc0bb;
+}
+
+.tip-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 43px;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 30px;
+    background: #f6e7e5;
+    color: #a56e78;
+    letter-spacing: 1px;
+}
+
+.tip-card h3 {
+    color: #65434b;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.tip-card p {
+    line-height: 1.9;
+    color: #81716e;
+}
+
+
+/* 4. ADDITIONAL TIPS */
+
+.cyber-extra-grid {
+    gap: 20px;
+}
+
+.extra-card {
+    padding: 23px;
+    border: 1px solid #eee1dc;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #fffdfb, #fbf4f0);
+    transition: transform .3s ease,
+                box-shadow .3s ease;
+}
+
+.extra-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(100, 65, 65, .07);
+}
+
+.extra-card .cyber-icon {
+    margin-bottom: 0;
+}
+
+
+/* 5. STOP THINK CHECK POSTER */
+
+.cyber-poster {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #f8e9e4, #f3e5df);
+    border: 1px solid #e8d4cd;
+    border-radius: 30px;
+    box-shadow: 0 12px 35px rgba(100, 65, 65, .07);
+}
+
+.cyber-poster h2 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: -.5px;
+}
+
+.poster-checks div {
+    border: 1px solid rgba(220, 197, 187, .55);
+    box-shadow: 0 3px 10px rgba(100, 65, 65, .035);
+    transition: transform .25s ease;
+}
+
+.poster-checks div:hover {
+    transform: translateX(4px);
+}
+
+
+/* 6. SELF-ASSESSMENT */
+
+.cyber-assessment {
+    gap: 24px;
+}
+
+.assessment-items,
+.assessment-result {
+    border: 1px solid #eee1dc;
+    border-radius: 24px;
+    background: #fffdfb;
+    box-shadow: 0 6px 20px rgba(100, 65, 65, .04);
+}
+
+.assessment-items h3,
+.assessment-result h3 {
+    color: #65434b;
+    font-family: 'Playfair Display', serif;
+}
+
+.assessment-items label {
+    transition: background .2s ease;
+    border-radius: 10px;
+    padding: 14px 10px;
+}
+
+.assessment-items label:hover {
+    background: #fcf5f2;
+}
+
+.safety-check {
+    accent-color: #b98283;
+    cursor: pointer;
+}
+
+.result-score {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    color: #b98283;
+}
+
+
+/* 7. QUIZ DESIGN */
+
+.quiz-box {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #fffdfb, #fff9f6);
+    border: 1px solid #ecded8;
+    border-radius: 28px;
+    padding: 38px;
+    box-shadow: 0 12px 35px rgba(100, 65, 65, .065);
+}
+
+.quiz-progress {
+    height: 8px;
+    background: #f1e5df;
+    border-radius: 20px;
+}
+
+#quiz-progress-fill {
+    background: linear-gradient(90deg, #d99aaa, #b98283);
+    border-radius: 20px;
+}
+
+.quiz-meta {
+    color: #a4777d;
+    font-weight: 600;
+}
+
+#quiz-question {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #65434b;
+    margin-bottom: 28px;
+}
+
+.quiz-options {
+    gap: 14px;
+}
+
+.quiz-option {
+    position: relative;
+    padding: 18px 20px;
+    border-radius: 15px;
+    background: #fffaf7;
+    border: 1px solid #eddfd9;
+    color: #705b56;
+    line-height: 1.7;
+    transition: all .25s ease;
+}
+
+.quiz-option:hover:not(:disabled) {
+    background: #f9ece8;
+    border-color: #d7a9a8;
+    transform: translateX(3px);
+}
+
+.quiz-option.selected {
+    background: #f7e8e6;
+    border: 1px solid #bd898d;
+    color: #68434b;
+    box-shadow: 0 3px 12px rgba(185, 130, 131, .10);
+}
+
+.quiz-option.correct {
+    background: #edf5eb;
+    border-color: #a5c39e;
+    color: #496e4b;
+}
+
+.quiz-option.incorrect {
+    background: #faecea;
+    border-color: #d9a09b;
+    color: #985c58;
+}
+
+.quiz-feedback {
+    padding: 13px 16px;
+    border-radius: 13px;
+    background: #f8f0ec;
+    color: #765e59;
+    line-height: 1.8;
+}
+
+.quiz-actions {
+    margin-top: 18px;
+}
+
+.cyber-button {
+    background: linear-gradient(135deg, #c98c91, #ad737b);
+    padding: 14px 27px;
+    box-shadow: 0 5px 14px rgba(173, 115, 123, .18);
+}
+
+.cyber-button:hover:not(:disabled) {
+    background: linear-gradient(135deg, #b87983, #98636e);
+    box-shadow: 0 8px 18px rgba(173, 115, 123, .22);
+}
+
+
+/* 8. AI TRANSPARENCY */
+
+.ai-card {
+    padding: 30px;
+    background: linear-gradient(135deg, #fbf3ef, #f7eae6);
+    border: 1px solid #ebd9d2;
+    border-left: 4px solid #bd9290;
+    border-radius: 5px 22px 22px 5px;
+    box-shadow: 0 6px 20px rgba(100, 65, 65, .04);
+}
+
+.ai-card p {
+    color: #796864;
+    line-height: 1.9;
+}
+
+.ai-card strong {
+    color: #79515a;
+}
+
+.ai-reminder {
+    border: 1px solid #eadbd4;
+    background: rgba(255, 255, 255, .65);
+    line-height: 1.8;
+}
+
+
+/* 9. SOURCES */
+
+.sources-list a {
+    background: #fffdfb;
+    border: 1px solid #eee1dc;
+    border-radius: 17px;
+    padding: 22px 25px;
+    transition: all .25s ease;
+}
+
+.sources-list a:hover {
+    background: #fcf3ef;
+    border-color: #d9b7b1;
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(100, 65, 65, .05);
+}
+
+.sources-list a span {
+    color: #76505a;
+    font-size: 15px;
+}
+
+.sources-list a small {
+    color: #8a7974;
+    font-size: 13px;
+}
+
+
+/* 10. ACCESSIBILITY AND FOCUS */
+
+.cyber-button:focus-visible,
+.quiz-option:focus-visible,
+.sources-list a:focus-visible,
+.assessment-items input:focus-visible {
+    outline: 3px solid #c98c91;
+    outline-offset: 4px;
+}
+
+
+/* 11. RESPONSIVE IMPROVEMENTS */
+
+@media (max-width: 900px) {
+
+    .cyber-threat-grid,
+    .cyber-tips-grid {
+        gap: 18px;
+    }
+
+    .cyber-risk-panel {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cyber-threat-grid,
+    .cyber-tips-grid,
+    .cyber-extra-grid {
+        gap: 16px;
+    }
+
+    .cyber-threat-grid .cyber-card,
+    .cyber-threat-grid .threat-card,
+    .tip-card {
+        padding: 23px;
+        border-radius: 19px;
+    }
+
+    .cyber-risk-panel {
+        padding: 23px;
+        border-radius: 20px;
+    }
+
+    .quiz-box {
+        padding: 23px 18px;
+        border-radius: 21px;
+    }
+
+    #quiz-question {
+        font-size: 21px;
+    }
+
+    .quiz-option {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .cyber-poster {
+        border-radius: 21px;
+    }
+
+    .ai-card {
+        padding: 23px;
+    }
+}
+
+
+/* 12. REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .cyber-threat-grid *,
+    .cyber-tips-grid *,
+    .cyber-extra-grid *,
+    .quiz-option,
+    .sources-list a {
+        transition: none !important;
+        transform: none !important;
+    }
+}
