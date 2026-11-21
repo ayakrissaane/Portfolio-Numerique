@@ -1,21 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt Engineering | Portfolio Aya</title>
+    <meta name="description" content="Apprendre à concevoir, améliorer et évaluer des prompts efficaces avec l'intelligence artificielle.">
+    <title>Prompt Engineering | Beyond the Code</title>
+
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="cybersecurite.css">
+    <link rel="stylesheet" href="prompt-engineering.css">
 </head>
+
 <body>
 
 <header class="site-header">
     <div class="nav-wrap">
-        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
+        <a class="brand" href="../index.html">
+            Beyond the Code<span class="brand-flower"> ♡</span>
+        </a>
+
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-        <nav class="nav-links">
+
+        <nav class="nav-links" aria-label="Navigation principale">
             <a href="../index.html">Accueil</a>
-            <a href="../index.html#modules">Modules</a>
+            <a class="active" href="../index.html#modules">Digital Skills</a>
             <a href="../index.html#projets">Projets</a>
         </nav>
     </div>
@@ -23,107 +31,838 @@
 
 <main>
 
-<section class="page-hero">
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Prompt Engineering</div>
-        <span class="eyebrow">Digital Skills</span>
-        <h1>Prompt Engineering</h1>
-        <p>Apprendre à formuler des demandes précises et à évaluer les réponses des outils d’intelligence artificielle.</p>
-    </div>
-</section>
+    <!-- HERO -->
+    <section class="cyber-hero prompt-hero">
+        <div class="container cyber-hero-inner">
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>01. Qu’est-ce qu’un prompt ?</h2>
-        </div>
-        <div class="soft-panel">
-            <p>Un prompt est une instruction ou une question donnée à un outil d’intelligence artificielle. Un prompt clair précise le contexte, l’objectif, les contraintes et le format attendu.</p>
-        </div>
-    </div>
-</section>
+            <div class="cyber-hero-copy">
+                <span class="cyber-kicker">DIGITAL SKILLS · CHAPITRE 02</span>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>02. Structure d’un bon prompt</h2>
+                <h1>Prompt Engineering<span>♡</span></h1>
+
+                <p class="cyber-script">Think better. Prompt smarter.</p>
+
+                <p>
+                    L'intelligence artificielle peut devenir un véritable outil
+                    d'apprentissage et de création. Mais pour obtenir des réponses
+                    pertinentes, il faut savoir lui donner des instructions claires,
+                    précises et bien structurées.
+                </p>
+
+                <a class="cyber-button" href="#fondamentaux">
+                    Explorer les fondamentaux <span aria-hidden="true">↓</span>
+                </a>
+            </div>
+
+            <div class="cyber-hero-art prompt-hero-art">
+                <img
+                    src="../images/prompt-engineering-hero.png"
+                    alt="Illustration d'une étudiante utilisant l'intelligence artificielle pour organiser ses idées"
+                    class="cyber-hero-image"
+                >
+                <span class="prompt-floating prompt-float-one">✦</span>
+                <span class="prompt-floating prompt-float-two">♡</span>
+                <span class="prompt-art-caption">Ideas become possibilities.</span>
+            </div>
+
         </div>
-        <div class="grid">
-            <article class="card">
-                <h3>Contexte</h3>
-                <p>Présenter la situation et les informations utiles.</p>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="section cyber-section" id="introduction">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">01 · Introduction</span>
+                <h2>Qu'est-ce que le Prompt Engineering ?</h2>
+                <p>
+                    Le Prompt Engineering est une méthode qui consiste à concevoir
+                    et à améliorer les instructions données à une intelligence
+                    artificielle afin d'obtenir des réponses plus utiles et adaptées
+                    à un objectif précis.
+                </p>
+            </div>
+
+            <div class="prompt-intro-grid">
+
+                <article class="cyber-card prompt-intro-card">
+                    <span class="cyber-icon">💬</span>
+                    <h3>Prompt</h3>
+                    <p>
+                        Une instruction ou une question envoyée à un outil d'IA
+                        pour lui demander d'effectuer une tâche.
+                    </p>
+                </article>
+
+                <article class="cyber-card prompt-intro-card">
+                    <span class="cyber-icon">🧠</span>
+                    <h3>Prompt Engineering</h3>
+                    <p>
+                        L'art de structurer, préciser et améliorer ses instructions
+                        pour guider l'IA vers un résultat pertinent.
+                    </p>
+                </article>
+
+                <article class="cyber-card prompt-intro-card">
+                    <span class="cyber-icon">🎯</span>
+                    <h3>Objectif</h3>
+                    <p>
+                        Obtenir une réponse claire, compréhensible, organisée
+                        et adaptée à ses besoins.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="prompt-highlight">
+                <span>✧</span>
+                <p>
+                    Un bon résultat commence souvent par une bonne instruction.
+                    Plus le besoin est clair, plus l'IA peut répondre de manière adaptée.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- STRUCTURE -->
+    <section class="section section-tint cyber-section" id="fondamentaux">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">02 · Construire un prompt</span>
+                <h2>Les éléments d'un bon prompt</h2>
+                <p>
+                    Un prompt efficace peut être organisé en plusieurs éléments.
+                    Ils permettent de donner à l'IA les informations nécessaires
+                    pour comprendre la demande.
+                </p>
+            </div>
+
+            <div class="prompt-structure-grid">
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">01</span>
+                    <div class="cyber-icon">🎭</div>
+                    <h3>Rôle</h3>
+                    <p>
+                        Indiquer à l'IA le rôle ou le point de vue qu'elle doit adopter.
+                    </p>
+                    <div class="prompt-example">
+                        « Agis comme un professeur d'informatique. »
+                    </div>
+                </article>
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">02</span>
+                    <div class="cyber-icon">📚</div>
+                    <h3>Contexte</h3>
+                    <p>
+                        Présenter la situation et les informations utiles à la demande.
+                    </p>
+                    <div class="prompt-example">
+                        « Je suis débutante en langage C. »
+                    </div>
+                </article>
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">03</span>
+                    <div class="cyber-icon">🎯</div>
+                    <h3>Tâche</h3>
+                    <p>
+                        Décrire précisément ce que l'IA doit réaliser.
+                    </p>
+                    <div class="prompt-example">
+                        « Explique-moi cette boucle for. »
+                    </div>
+                </article>
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">04</span>
+                    <div class="cyber-icon">📝</div>
+                    <h3>Format</h3>
+                    <p>
+                        Préciser la forme souhaitée pour la réponse.
+                    </p>
+                    <div class="prompt-example">
+                        « Présente la réponse sous forme d'étapes. »
+                    </div>
+                </article>
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">05</span>
+                    <div class="cyber-icon">⚙️</div>
+                    <h3>Contraintes</h3>
+                    <p>
+                        Définir les limites, le niveau et les éléments à éviter.
+                    </p>
+                    <div class="prompt-example">
+                        « Utilise un vocabulaire simple et du code débutant. »
+                    </div>
+                </article>
+
+                <article class="tip-card prompt-element">
+                    <span class="tip-number">06</span>
+                    <div class="cyber-icon">💡</div>
+                    <h3>Exemples</h3>
+                    <p>
+                        Donner un exemple pour montrer le résultat attendu.
+                    </p>
+                    <div class="prompt-example">
+                        « Voici un exemple du format que je souhaite. »
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="prompt-formula">
+                <span class="risk-label">FORMULE À RETENIR</span>
+                <h3>Un prompt bien structuré</h3>
+                <p>
+                    Rôle + Contexte + Tâche + Format + Contraintes + Exemples
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TECHNIQUES -->
+    <section class="section cyber-section" id="techniques">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">03 · Améliorer ses instructions</span>
+                <h2>Techniques de Prompt Engineering</h2>
+                <p>
+                    Plusieurs techniques permettent d'améliorer progressivement
+                    la qualité des réponses obtenues.
+                </p>
+            </div>
+
+            <div class="cyber-threat-grid prompt-techniques-grid">
+
+                <article class="cyber-card">
+                    <div class="cyber-icon">🔍</div>
+                    <h3>Être précis</h3>
+                    <p>
+                        Éviter les demandes trop générales et préciser le résultat attendu.
+                    </p>
+                </article>
+
+                <article class="cyber-card">
+                    <div class="cyber-icon">🪜</div>
+                    <h3>Décomposer la tâche</h3>
+                    <p>
+                        Diviser une demande complexe en plusieurs petites étapes.
+                    </p>
+                </article>
+
+                <article class="cyber-card">
+                    <div class="cyber-icon">📌</div>
+                    <h3>Donner des exemples</h3>
+                    <p>
+                        Montrer à l'IA un exemple de réponse ou de format souhaité.
+                    </p>
+                </article>
+
+                <article class="cyber-card">
+                    <div class="cyber-icon">🔄</div>
+                    <h3>Améliorer progressivement</h3>
+                    <p>
+                        Ajuster le prompt selon les points manquants ou imprécis.
+                    </p>
+                </article>
+
+                <article class="cyber-card">
+                    <div class="cyber-icon">✅</div>
+                    <h3>Vérifier la réponse</h3>
+                    <p>
+                        Demander des explications, contrôler les informations et
+                        consulter des sources fiables.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="cyber-risk-panel prompt-method-panel">
+                <div>
+                    <span class="risk-label">MÉTHODE CONSEILLÉE</span>
+                    <h3>La qualité vient aussi de l'itération.</h3>
+                </div>
+
+                <ul class="risk-list">
+                    <li>
+                        <b>1. Formuler</b>
+                        <span>Écrire une première demande claire.</span>
+                    </li>
+                    <li>
+                        <b>2. Observer</b>
+                        <span>Examiner la réponse et repérer ses limites.</span>
+                    </li>
+                    <li>
+                        <b>3. Préciser</b>
+                        <span>Ajouter le contexte et les contraintes manquantes.</span>
+                    </li>
+                    <li>
+                        <b>4. Vérifier</b>
+                        <span>Contrôler le résultat avant de l'utiliser.</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CAS PRATIQUES -->
+    <section class="section section-tint cyber-section" id="cas-pratiques">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">04 · Mise en pratique</span>
+                <h2>Trois cas pratiques</h2>
+                <p>
+                    Voici trois situations inspirées des besoins d'une étudiante
+                    en informatique. Chaque exemple compare une instruction
+                    générale à une instruction plus précise.
+                </p>
+            </div>
+
+
+            <!-- CAS 1 -->
+            <article class="prompt-case">
+
+                <div class="prompt-case-heading">
+                    <span class="prompt-case-number">CASE STUDY 01</span>
+                    <h3>Comprendre un exercice d'algorithmique</h3>
+                    <p>Objectif : apprendre à raisonner avant de rédiger la solution.</p>
+                </div>
+
+                <div class="prompt-comparison">
+
+                    <div class="prompt-version prompt-weak">
+                        <span class="prompt-label">PROMPT INITIAL · FAIBLE</span>
+                        <p>
+                            « Fais cet exercice d'algorithmique. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Limite possible</b>
+                            <span>
+                                La demande ne précise ni le niveau, ni la méthode,
+                                ni le type d'explication attendu.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="prompt-version prompt-strong">
+                        <span class="prompt-label">PROMPT AMÉLIORÉ</span>
+                        <p>
+                            « Agis comme un enseignant d'algorithmique.
+                            Je suis débutante et j'ai des difficultés à appliquer
+                            les notions. Aide-moi à comprendre cet exercice
+                            étape par étape. Commence par identifier les données,
+                            les résultats attendus et les traitements nécessaires.
+                            Ne donne pas directement la solution complète :
+                            pose-moi une petite question à chaque étape et attends
+                            ma réponse avant de continuer. Utilise un pseudocode
+                            simple et explique chaque instruction. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Résultat attendu</b>
+                            <span>
+                                Une démarche progressive qui aide à comprendre
+                                le raisonnement et à participer à la résolution.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="prompt-analysis">
+                    <b>Analyse</b>
+                    <p>
+                        Le prompt amélioré précise le niveau de l'étudiante,
+                        le rôle de l'IA et la méthode pédagogique souhaitée.
+                        Il encourage l'apprentissage au lieu de demander
+                        uniquement une réponse finale.
+                    </p>
+                </div>
+
             </article>
-            <article class="card">
-                <h3>Objectif</h3>
-                <p>Expliquer exactement ce que l’on souhaite obtenir.</p>
+
+
+            <!-- CAS 2 -->
+            <article class="prompt-case">
+
+                <div class="prompt-case-heading">
+                    <span class="prompt-case-number">CASE STUDY 02</span>
+                    <h3>Corriger et comprendre un programme en langage C</h3>
+                    <p>Objectif : identifier une erreur et comprendre sa correction.</p>
+                </div>
+
+                <div class="prompt-comparison">
+
+                    <div class="prompt-version prompt-weak">
+                        <span class="prompt-label">PROMPT INITIAL · FAIBLE</span>
+                        <p>
+                            « Corrige mon code C. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Limite possible</b>
+                            <span>
+                                L'IA peut proposer un programme différent sans
+                                expliquer précisément l'erreur initiale.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="prompt-version prompt-strong">
+                        <span class="prompt-label">PROMPT AMÉLIORÉ</span>
+                        <p>
+                            « Agis comme un enseignant de programmation en C.
+                            Je suis débutante. Analyse le code que je vais te fournir.
+                            Identifie d'abord les erreurs et explique pourquoi
+                            elles sont incorrectes. Ensuite, propose une correction
+                            simple en conservant autant que possible ma structure
+                            et mon style de programmation. N'utilise pas de notions
+                            avancées. Termine par un petit exemple d'exécution
+                            pour vérifier le fonctionnement du programme. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Résultat attendu</b>
+                            <span>
+                                Une correction compréhensible, accompagnée
+                                d'explications et d'un exemple de vérification.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="prompt-analysis">
+                    <b>Analyse</b>
+                    <p>
+                        Le prompt amélioré demande une explication avant la correction,
+                        tient compte du niveau débutant et limite les changements
+                        inutiles dans le code.
+                    </p>
+                </div>
+
             </article>
-            <article class="card">
-                <h3>Format</h3>
-                <p>Indiquer la forme souhaitée : tableau, étapes, résumé ou exemple.</p>
+
+
+            <!-- CAS 3 -->
+            <article class="prompt-case">
+
+                <div class="prompt-case-heading">
+                    <span class="prompt-case-number">CASE STUDY 03</span>
+                    <h3>Créer une fiche de révision à partir d'un cours</h3>
+                    <p>Objectif : transformer un cours dense en support de révision organisé.</p>
+                </div>
+
+                <div class="prompt-comparison">
+
+                    <div class="prompt-version prompt-weak">
+                        <span class="prompt-label">PROMPT INITIAL · FAIBLE</span>
+                        <p>
+                            « Résume ce cours. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Limite possible</b>
+                            <span>
+                                Le résumé peut être trop court, oublier des notions
+                                importantes ou ne pas être adapté à la révision.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="prompt-version prompt-strong">
+                        <span class="prompt-label">PROMPT AMÉLIORÉ</span>
+                        <p>
+                            « Agis comme un enseignant qui prépare une fiche de
+                            révision pour un examen universitaire. À partir du cours
+                            fourni, crée une fiche structurée en français simple.
+                            Conserve toutes les définitions, notions importantes,
+                            étapes et exemples nécessaires. Organise le contenu
+                            avec des titres, des listes et des tableaux lorsque
+                            cela est utile. N'ajoute pas d'informations absentes
+                            du cours sans les signaler. Termine par cinq questions
+                            de révision avec leurs réponses. »
+                        </p>
+                        <div class="prompt-result">
+                            <b>Résultat attendu</b>
+                            <span>
+                                Une fiche organisée qui facilite la mémorisation
+                                et permet de vérifier sa compréhension.
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="prompt-analysis">
+                    <b>Analyse</b>
+                    <p>
+                        Le prompt amélioré précise le public, la langue, la structure,
+                        les éléments à conserver et les limites à respecter.
+                        Il réduit le risque de perdre des informations essentielles.
+                    </p>
+                </div>
+
             </article>
-        </div>
-    </div>
-</section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>03. Exemple de prompt</h2>
-        </div>
-        <pre class="code-sample">Explique la boucle FOR en langage C à un débutant.
+            <p class="prompt-disclaimer">
+                Note méthodologique : les résultats présentés dans ces cas pratiques
+                sont des résultats attendus et des exemples illustratifs.
+                Ils ne constituent pas des captures de réponses réellement testées.
+                Les essais avec les outils d'IA pourront être ajoutés après vérification.
+            </p>
 
-Utilise des mots simples, un exemple court,
-puis propose un exercice sans donner immédiatement la solution.</pre>
-    </div>
-</section>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>04. Vérifier les réponses</h2>
-        </div>
-        <div class="soft-panel">
-            <ul class="list-clean">
-                <li>Vérifier les faits et les exemples.</li>
-                <li>Tester le code avant de l’utiliser.</li>
-                <li>Repérer les informations inventées ou imprécises.</li>
-                <li>Ne pas transmettre de données privées.</li>
-                <li>Garder une trace des prompts importants utilisés dans le projet.</li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>05. Transparence de l’IA</h2>
-        </div>
-        <div class="soft-panel">
-            <p><strong>Outil :</strong> ChatGPT, pour expliquer les principes et améliorer la formulation.</p>
-            <p><strong>Rôle :</strong> proposer des exemples et aider à structurer la fiche.</p>
-            <p><strong>Ma contribution :</strong> choisir les objectifs, tester les prompts et vérifier les réponses.</p>
-            <p><strong>Vérification :</strong> comparer les résultats avec le cours et des sources fiables.</p>
-        </div>
-    </div>
-</section>
+    <!-- COMPARAISON DES OUTILS -->
+    <section class="section cyber-section" id="outils">
+        <div class="container">
 
-<section class="section">
-    <div class="container">
-        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
-    </div>
-</section>
+            <div class="section-heading">
+                <span class="eyebrow">05 · Découvrir les outils</span>
+                <h2>Comparaison de quelques outils d'IA</h2>
+                <p>
+                    Plusieurs outils peuvent aider à apprendre, rédiger, analyser
+                    ou rechercher des informations. Le choix dépend de la tâche
+                    et du résultat recherché.
+                </p>
+            </div>
+
+            <div class="prompt-tools-grid">
+
+                <article class="cyber-card prompt-tool-card">
+                    <div class="tool-symbol">✧</div>
+                    <h3>ChatGPT</h3>
+                    <p>
+                        Assistant conversationnel polyvalent pour expliquer des notions,
+                        travailler sur des idées, rédiger et aider à programmer.
+                    </p>
+                    <span class="tool-use">Usage possible : apprentissage et assistance.</span>
+                    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">
+                        Visiter le site ↗
+                    </a>
+                </article>
+
+                <article class="cyber-card prompt-tool-card">
+                    <div class="tool-symbol">✳</div>
+                    <h3>Claude</h3>
+                    <p>
+                        Assistant conversationnel utile pour analyser des textes,
+                        organiser des idées et travailler sur des documents.
+                    </p>
+                    <span class="tool-use">Usage possible : analyse et rédaction.</span>
+                    <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">
+                        Visiter le site ↗
+                    </a>
+                </article>
+
+                <article class="cyber-card prompt-tool-card">
+                    <div class="tool-symbol">𝕏</div>
+                    <h3>Grok</h3>
+                    <p>
+                        Assistant d'IA associé à l'écosystème X, pouvant être utilisé
+                        pour poser des questions et explorer des sujets.
+                    </p>
+                    <span class="tool-use">Usage possible : exploration et questions.</span>
+                    <a href="https://grok.com/" target="_blank" rel="noopener noreferrer">
+                        Visiter le site ↗
+                    </a>
+                </article>
+
+                <article class="cyber-card prompt-tool-card">
+                    <div class="tool-symbol">⌕</div>
+                    <h3>Perplexity</h3>
+                    <p>
+                        Outil de recherche assistée par IA qui présente des réponses
+                        accompagnées de références à consulter.
+                    </p>
+                    <span class="tool-use">Usage possible : recherche documentaire.</span>
+                    <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer">
+                        Visiter le site ↗
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="prompt-highlight">
+                <span>♡</span>
+                <p>
+                    Aucun outil n'est automatiquement le meilleur pour toutes les tâches.
+                    Il est important de comparer les réponses, de vérifier les sources
+                    et de choisir l'outil adapté à son besoin.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- BIBLIOTHEQUE -->
+    <section class="section section-tint cyber-section" id="bibliotheque">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">06 · À réutiliser</span>
+                <h2>Ma bibliothèque de prompts</h2>
+                <p>
+                    Cinq modèles de prompts réutilisables pour accompagner
+                    les activités d'apprentissage et de création.
+                    Cliquez sur « Copier » pour récupérer un modèle.
+                </p>
+            </div>
+
+            <div class="prompt-library">
+
+                <article class="prompt-library-card">
+                    <div class="library-card-top">
+                        <span class="library-category">APPRENTISSAGE</span>
+                        <button class="copy-prompt" type="button" data-copy="prompt-1">Copier</button>
+                    </div>
+                    <h3>Comprendre une notion</h3>
+                    <p class="library-prompt" id="prompt-1">
+                        Agis comme un enseignant. Explique-moi [notion] avec des mots
+                        simples, étape par étape. Donne une définition, un exemple
+                        concret et un petit exercice pour vérifier ma compréhension.
+                        Attends ma réponse avant de donner la correction.
+                    </p>
+                </article>
+
+                <article class="prompt-library-card">
+                    <div class="library-card-top">
+                        <span class="library-category">PROGRAMMATION</span>
+                        <button class="copy-prompt" type="button" data-copy="prompt-2">Copier</button>
+                    </div>
+                    <h3>Comprendre une erreur de code</h3>
+                    <p class="library-prompt" id="prompt-2">
+                        Analyse ce code en [langage]. Identifie les erreurs,
+                        explique leur cause et propose une correction simple
+                        adaptée à mon niveau. Conserve ma structure autant que possible
+                        et montre un exemple d'exécution.
+                    </p>
+                </article>
+
+                <article class="prompt-library-card">
+                    <div class="library-card-top">
+                        <span class="library-category">RÉVISION</span>
+                        <button class="copy-prompt" type="button" data-copy="prompt-3">Copier</button>
+                    </div>
+                    <h3>Préparer une fiche de révision</h3>
+                    <p class="library-prompt" id="prompt-3">
+                        Transforme ce cours en fiche de révision structurée.
+                        Conserve les définitions et les informations essentielles.
+                        Utilise des titres, des listes et des exemples.
+                        Termine par cinq questions avec leurs réponses.
+                    </p>
+                </article>
+
+                <article class="prompt-library-card">
+                    <div class="library-card-top">
+                        <span class="library-category">ORGANISATION</span>
+                        <button class="copy-prompt" type="button" data-copy="prompt-4">Copier</button>
+                    </div>
+                    <h3>Organiser un planning</h3>
+                    <p class="library-prompt" id="prompt-4">
+                        Aide-moi à organiser un planning réaliste pour [objectif].
+                        Voici mes disponibilités : [disponibilités].
+                        Tiens compte de mes priorités, de mon énergie et des pauses.
+                        Présente le planning dans un tableau clair.
+                    </p>
+                </article>
+
+                <article class="prompt-library-card">
+                    <div class="library-card-top">
+                        <span class="library-category">CRÉATIVITÉ</span>
+                        <button class="copy-prompt" type="button" data-copy="prompt-5">Copier</button>
+                    </div>
+                    <h3>Développer une idée de projet</h3>
+                    <p class="library-prompt" id="prompt-5">
+                        Agis comme un conseiller en projets numériques.
+                        Aide-moi à développer cette idée : [idée].
+                        Propose plusieurs pistes, leurs avantages et leurs limites,
+                        puis aide-moi à choisir une solution réaliste.
+                    </p>
+                </article>
+
+            </div>
+
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+
+        </div>
+    </section>
+
+
+    <!-- QUIZ -->
+    <section class="section cyber-section" id="quiz">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">07 · Tester ses connaissances</span>
+                <h2>Mini-quiz Prompt Engineering</h2>
+                <p>
+                    Vérifiez votre compréhension avec ces quatre questions.
+                </p>
+            </div>
+
+            <div class="quiz-box" id="prompt-quiz">
+
+                <div class="quiz-progress">
+                    <span id="prompt-progress-fill"></span>
+                </div>
+
+                <div class="quiz-meta">
+                    <span>QUESTION <b id="prompt-question-number">1</b> / 4</span>
+                    <span id="prompt-score-label">Score : 0</span>
+                </div>
+
+                <h3 id="prompt-question">Chargement de la question…</h3>
+
+                <div class="quiz-options" id="prompt-options"></div>
+
+                <p class="quiz-feedback" id="prompt-feedback" aria-live="polite"></p>
+
+                <div class="quiz-actions">
+                    <button class="cyber-button" id="prompt-next" type="button" disabled>
+                        Valider ma réponse
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TRANSPARENCE IA -->
+    <section class="section section-tint cyber-section" id="transparence-ia">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">08 · Démarche responsable</span>
+                <h2>Transparence de l'intelligence artificielle</h2>
+                <p>
+                    L'utilisation de l'IA doit rester transparente, réfléchie
+                    et accompagnée d'une vérification personnelle.
+                </p>
+            </div>
+
+            <div class="cyber-card ai-card">
+
+                <p>
+                    <strong>Outil utilisé :</strong>
+                    ChatGPT pour l'assistance à la structuration et à la rédaction
+                    de cette page.
+                </p>
+
+                <p>
+                    <strong>Rôle de l'IA :</strong>
+                    proposer des explications, organiser les notions,
+                    suggérer des exemples de prompts et aider à structurer
+                    les activités pédagogiques.
+                </p>
+
+                <p>
+                    <strong>Ma contribution :</strong>
+                    choisir les thèmes liés à mes besoins d'apprentissage,
+                    examiner les propositions, adapter les exemples,
+                    comprendre les notions et intégrer le contenu dans mon portfolio.
+                </p>
+
+                <p>
+                    <strong>Vérification :</strong>
+                    les exemples sont pédagogiques. Les informations et les réponses
+                    des outils doivent être vérifiées avant toute utilisation.
+                </p>
+
+                <p>
+                    <strong>Limites :</strong>
+                    une réponse générée peut contenir des erreurs, des informations
+                    incomplètes ou des références incorrectes.
+                </p>
+
+                <p class="ai-reminder">
+                    L'IA est un outil d'accompagnement : elle ne remplace ni
+                    la réflexion personnelle, ni la vérification, ni l'apprentissage.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SOURCES -->
+    <section class="section cyber-section" id="sources">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">09 · Pour aller plus loin</span>
+                <h2>Sources et références</h2>
+                <p>
+                    Quelques ressources utiles pour approfondir le sujet
+                    et apprendre à utiliser les outils d'IA de manière responsable.
+                </p>
+            </div>
+
+            <div class="sources-list">
+
+                <a href="https://platform.openai.com/docs/guides/prompt-engineering"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>OpenAI – Prompt Engineering</span>
+                    <small>Guide pour structurer et améliorer les instructions.</small>
+                    ↗
+                </a>
+
+                <a href="https://docs.anthropic.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>Anthropic – Documentation</span>
+                    <small>Documentation et ressources sur l'utilisation des modèles Claude.</small>
+                    ↗
+                </a>
+
+                <a href="https://www.perplexity.ai/"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>Perplexity AI</span>
+                    <small>Outil de recherche assistée par intelligence artificielle.</small>
+                    ↗
+                </a>
+
+                <a href="https://www.unesco.org/en/artificial-intelligence"
+                   target="_blank" rel="noopener noreferrer">
+                    <span>UNESCO – Artificial Intelligence</span>
+                    <small>Ressources sur une utilisation responsable de l'intelligence artificielle.</small>
+                    ↗
+                </a>
+
+            </div>
+
+            <a class="back-link" href="../index.html">← Retour à l’accueil</a>
+
+        </div>
+    </section>
 
 </main>
+
 
 <footer class="site-footer">
     <div class="container footer-inner">
         <span>© <span data-year>2026</span> Aya Krissaane</span>
-        <span>Portfolio Numérique ♡</span>
+        <span>Beyond the Code · Think Better. Prompt Smarter. ♡</span>
     </div>
 </footer>
 
 <script src="../js/script.js"></script>
+<script src="prompt-engineering.js"></script>
+
 </body>
 </html>
 
