@@ -1,131 +1,194 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersécurité | Portfolio Aya</title>
+    <meta name="description" content="Découvrir les principales cybermenaces et apprendre les bons réflexes pour protéger sa vie numérique.">
+    <title>Cybersécurité | Beyond the Code</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="cybersecurite.css">
 </head>
 <body>
-
 <header class="site-header">
     <div class="nav-wrap">
-        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
+        <a class="brand" href="../index.html">Beyond the Code<span class="brand-flower"> ♡</span></a>
         <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Navigation principale">
             <a href="../index.html">Accueil</a>
-            <a href="../index.html#modules">Modules</a>
+            <a class="active" href="../index.html#modules">Digital Skills</a>
             <a href="../index.html#projets">Projets</a>
         </nav>
     </div>
 </header>
 
 <main>
+    <section class="cyber-hero">
+        <div class="container cyber-hero-inner">
+            <div class="cyber-hero-copy">
+                <span class="cyber-kicker">DIGITAL SKILLS · CHAPITRE 01</span>
+                <h1>Cybersécurité<span>♡</span></h1>
+                <p class="cyber-script">Protégez votre vie numérique !</p>
+                <p>Internet nous simplifie la vie, mais certains comportements peuvent exposer nos appareils et nos données. Apprendre à reconnaître les risques est le premier pas pour mieux se protéger.</p>
+                <a class="cyber-button" href="#bons-reflexes">Découvrir les bons réflexes <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="cyber-hero-art" aria-label="Illustration d’une étudiante qui apprend la cybersécurité">
+                <img src="../images/cybersecurite-hero.png" alt="Illustration pastel d’une étudiante devant son ordinateur avec un symbole de bouclier numérique et un chat" class="cyber-hero-image">
+                <div class="art-orbit orbit-one">✦</div>
+                <div class="art-shield">♡<span>✓</span></div>
+                <div class="art-laptop">⌨</div>
+                <div class="art-flower">✿</div>
+                <div class="art-caption">Think safe. Surf better.</div>
+            </div>
+        </div>
+    </section>
 
-<section class="page-hero">
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Cybersécurité</div>
-        <span class="eyebrow">Digital Skills</span>
-        <h1>Cybersécurité</h1>
-        <p>Comprendre les principes essentiels pour protéger les systèmes, les données et les utilisateurs.</p>
-    </div>
-</section>
+    <section class="section cyber-section" id="menaces">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">01 · Comprendre</span>
+                <h2>Les menaces à connaître</h2>
+                <p>Un logiciel malveillant est un programme conçu pour perturber un appareil, espionner son utilisateur ou accéder à ses informations sans autorisation.</p>
+            </div>
+            <div class="cyber-threat-grid">
+                <article class="cyber-card threat-card"><div class="cyber-icon">🦠</div><h3>Virus</h3><p>Un programme qui s'attache à un fichier ou à un logiciel. Il peut se propager lorsque ce fichier est exécuté et endommager ou modifier des données.</p></article>
+                <article class="cyber-card threat-card"><div class="cyber-icon">🪱</div><h3>Ver informatique</h3><p>Un logiciel malveillant qui se copie et se propage automatiquement d'un appareil à un autre, notamment à travers un réseau.</p></article>
+                <article class="cyber-card threat-card"><div class="cyber-icon">🎭</div><h3>Cheval de Troie</h3><p>Un programme qui se présente comme légitime ou utile, mais qui cache une action malveillante une fois installé.</p></article>
+                <article class="cyber-card threat-card"><div class="cyber-icon">🔒</div><h3>Rançongiciel</h3><p>Un logiciel qui bloque l'accès à des fichiers ou les chiffre, puis réclame une rançon pour tenter de les rendre accessibles.</p></article>
+                <article class="cyber-card threat-card"><div class="cyber-icon">👁️</div><h3>Logiciel espion</h3><p>Un programme qui collecte secrètement des informations sur l'activité d'une personne ou de son appareil.</p></article>
+            </div>
+            <div class="cyber-risk-panel">
+                <div><span class="risk-label">RISQUES DU QUOTIDIEN</span><h3>Les pièges ne sont pas toujours visibles.</h3></div>
+                <ul class="risk-list">
+                    <li><b>Hameçonnage (phishing)</b><span>Un faux message ou site cherche à vous faire révéler des informations.</span></li>
+                    <li><b>Arnaques en ligne</b><span>Une offre ou un paiement trompeur vise à vous faire perdre de l'argent.</span></li>
+                    <li><b>Vol de comptes</b><span>Une personne non autorisée prend le contrôle d'un compte.</span></li>
+                    <li><b>Fuite de données</b><span>Des informations privées sont exposées ou diffusées sans autorisation.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>01. Introduction</h2>
+    <section class="section section-tint cyber-section" id="bons-reflexes">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">02 · Prévenir</span>
+                <h2>5 conseils essentiels</h2>
+                <p>De petites habitudes peuvent réduire les risques. Voici les réflexes à adopter au quotidien.</p>
+            </div>
+            <div class="cyber-tips-grid">
+                <article class="tip-card"><span class="tip-number">01</span><div class="cyber-icon">🔐</div><h3>Mots de passe robustes</h3><p>Choisissez un mot de passe long et unique pour chaque compte. Un gestionnaire peut vous aider à les conserver.</p></article>
+                <article class="tip-card"><span class="tip-number">02</span><div class="cyber-icon">✉️</div><h3>Attention aux liens</h3><p>Vérifiez l'adresse de l'expéditeur, le lien et les pièces jointes avant de cliquer ou de répondre.</p></article>
+                <article class="tip-card"><span class="tip-number">03</span><div class="cyber-icon">📱</div><h3>Double authentification</h3><p>Activez l'authentification à deux facteurs pour ajouter une vérification à la connexion.</p></article>
+                <article class="tip-card"><span class="tip-number">04</span><div class="cyber-icon">🔄</div><h3>Mises à jour</h3><p>Installez les mises à jour du système et des applications depuis les sources officielles.</p></article>
+                <article class="tip-card"><span class="tip-number">05</span><div class="cyber-icon">☁️</div><h3>Sauvegardes</h3><p>Gardez des copies régulières de vos fichiers importants sur un support ou un espace sécurisé.</p></article>
+            </div>
+            <div class="cyber-extra-grid">
+                <div class="cyber-card extra-card"><span class="cyber-icon">🛡️</span><div><h3>Protégez vos appareils</h3><p>Utilisez une protection de sécurité adaptée, verrouillez vos appareils et téléchargez les applications depuis des sources officielles.</p></div></div>
+                <div class="cyber-card extra-card"><span class="cyber-icon">📶</span><div><h3>Prudence sur le Wi-Fi public</h3><p>Évitez les opérations sensibles sur un réseau public non fiable. Vérifiez le nom du réseau et privilégiez une connexion sécurisée.</p></div></div>
+            </div>
         </div>
-        <div class="soft-panel">
-            <p>La cybersécurité regroupe les méthodes et les bonnes pratiques qui permettent de protéger les appareils, les réseaux et les informations contre les accès non autorisés, les attaques et les pertes de données.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>02. Notions essentielles</h2>
+    <section class="section cyber-section">
+        <div class="container">
+            <div class="cyber-poster">
+                <div class="poster-top"><span>MY DIGITAL SAFETY NOTE</span><span>♡</span></div>
+                <h2>STOP <i>·</i> THINK <i>·</i> CHECK</h2>
+                <p class="poster-subtitle">Avant de cliquer, prenez quelques secondes pour vérifier.</p>
+                <div class="poster-checks">
+                    <div><span>✓</span> La source est-elle fiable ?</div>
+                    <div><span>✓</span> L'adresse du site est-elle correcte ?</div>
+                    <div><span>✓</span> Le message me demande-t-il des informations sensibles ?</div>
+                </div>
+                <p class="poster-footer">Un doute ? Ne cliquez pas. Vérifiez par un autre moyen.</p>
+                <button class="cyber-button print-button" type="button" onclick="window.print()">Imprimer cette fiche</button>
+            </div>
         </div>
-        <div class="grid">
-            <article class="card">
-                <div class="card-icon">🔐</div>
-                <h3>Confidentialité</h3>
-                <p>Limiter l’accès aux informations aux personnes autorisées.</p>
-            </article>
-            <article class="card">
-                <div class="card-icon">🧩</div>
-                <h3>Intégrité</h3>
-                <p>Préserver l’exactitude et la cohérence des données.</p>
-            </article>
-            <article class="card">
-                <div class="card-icon">🌐</div>
-                <h3>Disponibilité</h3>
-                <p>Garder les services et les informations accessibles lorsque nécessaire.</p>
-            </article>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>03. Bonnes pratiques</h2>
+    <section class="section section-tint cyber-section" id="auto-evaluation">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">03 · Faire le point</span>
+                <h2>Suis-je bien protégé(e) ?</h2>
+                <p>Cochez les habitudes que vous avez déjà adoptées. Votre résultat vous aidera à identifier les points à améliorer.</p>
+            </div>
+            <div class="cyber-assessment">
+                <div class="assessment-items">
+                    <label><input type="checkbox" class="safety-check"> J'utilise des mots de passe différents pour mes comptes importants.</label>
+                    <label><input type="checkbox" class="safety-check"> J'ai activé la double authentification lorsque c'est possible.</label>
+                    <label><input type="checkbox" class="safety-check"> Je vérifie les liens et les expéditeurs avant de cliquer.</label>
+                    <label><input type="checkbox" class="safety-check"> Mon système et mes applications sont à jour.</label>
+                    <label><input type="checkbox" class="safety-check"> Je sauvegarde mes fichiers importants.</label>
+                    <label><input type="checkbox" class="safety-check"> Je limite les informations personnelles que je partage.</label>
+                </div>
+                <div class="assessment-result">
+                    <div class="result-score"><span id="check-score">0</span><small>/ 6</small></div>
+                    <p id="check-message" aria-live="polite">Cochez les habitudes déjà adoptées pour obtenir votre bilan.</p>
+                    <button class="cyber-button" id="reset-checklist" type="button">Réinitialiser</button>
+                </div>
+            </div>
         </div>
-        <div class="soft-panel">
-            <ul class="list-clean">
-                <li>Utiliser des mots de passe longs et uniques.</li>
-                <li>Activer l’authentification à deux facteurs.</li>
-                <li>Mettre à jour les systèmes et les applications.</li>
-                <li>Vérifier l’expéditeur et le lien avant d’ouvrir un message suspect.</li>
-                <li>Effectuer des sauvegardes régulières.</li>
-                <li>Ne jamais partager de mots de passe ou de clés API.</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>04. Mes travaux pratiques</h2>
+    <section class="section cyber-section" id="quiz">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">04 · Tester ses connaissances</span>
+                <h2>Mini-quiz cybersécurité</h2>
+                <p>Répondez aux 5 questions. Une explication accompagne chaque correction.</p>
+            </div>
+            <div class="quiz-box" id="cyber-quiz">
+                <div class="quiz-progress"><span id="quiz-progress-fill"></span></div>
+                <div class="quiz-meta"><span>QUESTION <b id="question-number">1</b> / 5</span><span id="quiz-score-label">Score : 0</span></div>
+                <h3 id="quiz-question">Chargement de la question…</h3>
+                <div class="quiz-options" id="quiz-options"></div>
+                <p class="quiz-feedback" id="quiz-feedback" aria-live="polite"></p>
+                <div class="quiz-actions"><button class="cyber-button" id="quiz-next" type="button" disabled>Valider ma réponse</button></div>
+            </div>
         </div>
-        <div class="note">
-            Ajouter ici mes exercices, captures d’écran non sensibles et comptes rendus réalisés pendant le cours.
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>05. Transparence de l’IA</h2>
+    <section class="section section-tint cyber-section" id="transparence-ia">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">05 · Démarche responsable</span>
+                <h2>Transparence de l'intelligence artificielle</h2>
+            </div>
+            <div class="cyber-card ai-card">
+                <p><strong>Outil utilisé :</strong> ChatGPT.</p>
+                <p><strong>Rôle de l'IA :</strong> aider à organiser les notions, proposer une première formulation pédagogique et assister la création du quiz et de la checklist.</p>
+                <p><strong>Ma contribution :</strong> choisir les sujets, relire et comprendre les explications, vérifier les informations avec les sources indiquées, puis adapter et intégrer le contenu dans mon portfolio.</p>
+                <p><strong>Vérification :</strong> les informations doivent être comparées aux ressources officielles citées ci-dessous et aux supports du cours avant la remise finale.</p>
+                <p class="ai-reminder">Les réponses de l'IA ne remplacent pas la vérification personnelle ni les consignes de l'enseignant.</p>
+            </div>
         </div>
-        <div class="soft-panel">
-            <p><strong>Outil :</strong> ChatGPT, comme assistant d’explication et de structuration.</p>
-            <p><strong>Rôle :</strong> clarifier certaines notions et proposer une organisation du contenu.</p>
-            <p><strong>Ma contribution :</strong> relire, comprendre, corriger et compléter cette page avec les apprentissages et exercices réellement réalisés.</p>
-            <p><strong>Vérification :</strong> confronter les informations aux supports du cours et à des références fiables avant publication.</p>
+    </section>
+
+    <section class="section cyber-section" id="sources">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">06 · Pour aller plus loin</span>
+                <h2>Sources et références</h2>
+                <p>Ressources institutionnelles consultées pour préparer cette page.</p>
+            </div>
+            <div class="sources-list">
+                <a href="https://www.cybermalveillance.gouv.fr/" target="_blank" rel="noopener noreferrer"><span>Cybermalveillance.gouv.fr</span><small>Conseils pratiques pour reconnaître les menaces et se protéger.</small>↗</a>
+                <a href="https://www.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer"><span>ANSSI – Agence nationale de la sécurité des systèmes d'information</span><small>Ressources et recommandations institutionnelles en cybersécurité.</small>↗</a>
+                <a href="https://www.cybermalveillance.gouv.fr/tous-nos-contenus/bonnes-pratiques/mots-de-passe" target="_blank" rel="noopener noreferrer"><span>Les mots de passe – Cybermalveillance.gouv.fr</span><small>Bonnes pratiques pour créer et gérer des mots de passe.</small>↗</a>
+            </div>
+            <a class="back-link" href="../index.html">← Retour à l’accueil</a>
         </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
-    </div>
-</section>
-
+    </section>
 </main>
 
 <footer class="site-footer">
     <div class="container footer-inner">
         <span>© <span data-year>2026</span> Aya Krissaane</span>
-        <span>Portfolio Numérique ♡</span>
+        <span>Beyond the Code · Think Safe. Surf Better. ♡</span>
     </div>
 </footer>
-
 <script src="../js/script.js"></script>
+<script src="cybersecurite.js"></script>
 </body>
 </html>
