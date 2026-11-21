@@ -102,7 +102,7 @@ button { font: inherit; }
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url('../images/sakura-hero.png');
+    background-image: url('images/sakura-hero.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
