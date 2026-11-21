@@ -138,50 +138,241 @@ h3 {
     font-weight: 700;
 }
 
-/* HERO */
+
+/* HERO — BEYOND THE CODE */
 
 .hero {
-    padding: 82px 0 72px;
+    position: relative;
+    overflow: hidden;
+    padding: 75px 0 85px;
+
     background:
-        radial-gradient(circle at 12% 20%, #f4e4ee 0, transparent 32%),
-        radial-gradient(circle at 90% 15%, #e9e4f7 0, transparent 30%),
-        linear-gradient(135deg, #fcf8fc, #f7f5fb);
+        radial-gradient(
+            circle at 12% 15%,
+            rgba(245, 213, 201, 0.65),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 88% 20%,
+            rgba(226, 218, 203, 0.55),
+            transparent 32%
+        ),
+        linear-gradient(
+            125deg,
+            #fcf7f0,
+            #f7e9e2 55%,
+            #f2eee5
+        );
 }
 
 .hero-inner {
     max-width: var(--max-width);
     width: calc(100% - 40px);
     margin: auto;
+
     display: grid;
-    grid-template-columns: 1.4fr 0.8fr;
-    gap: 38px;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 55px;
     align-items: center;
 }
 
+.hero-copy {
+    position: relative;
+    z-index: 2;
+}
+
 .hero h1 {
-    font-size: clamp(2.7rem, 6vw, 4.8rem);
-    margin: 18px 0;
-    color: #493d50;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.2rem, 6vw, 5.4rem);
+    line-height: 1.05;
+    margin: 25px 0 15px;
+    color: #55464a;
 }
 
-.hero p {
-    max-width: 650px;
-    color: var(--muted);
-    font-size: 1.08rem;
+.hero h1 span {
+    display: block;
+    color: #ae7d82;
+    font-style: italic;
 }
 
-.hero-art {
-    min-height: 250px;
-    border-radius: 38px;
-    background: linear-gradient(145deg, #ead9e8, #e5e2f2 55%, #e2eee5);
-    display: grid;
-    place-items: center;
-    box-shadow: var(--shadow);
+.hero-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.55rem;
+    margin: 20px 0 3px;
+    color: #665052;
 }
 
-.art-symbol {
-    font-size: 5rem;
-    color: white;
+.hero-role {
+    color: #a07879;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.hero-description {
+    max-width: 520px;
+    color: #786b67;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin: 20px 0;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hero-note {
+    display: block;
+    margin-top: 25px;
+    color: #a18b80;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* ARTISTIC SCENE */
+
+.hero-visual {
+    min-height: 440px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 48% 48% 28px 28px;
+
+    background:
+        radial-gradient(
+            circle at 50% 22%,
+            #ffe6bd 0 9%,
+            transparent 10%
+        ),
+        linear-gradient(
+            180deg,
+            #e9bda9,
+            #f2d5bd 48%,
+            #dce3d0 100%
+        );
+
+    box-shadow: 0 20px 55px rgba(115, 82, 73, 0.13);
+}
+
+.hero-sun {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255, 239, 207, 0.55);
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(3px);
+}
+
+.hero-yuki-frame {
+    position: absolute;
+    z-index: 2;
+    width: 65%;
+    height: 72%;
+    left: 17.5%;
+    bottom: 0;
+
+    border-radius: 48% 48% 0 0;
+    background:
+        linear-gradient(
+            160deg,
+            rgba(255,255,255,0.22),
+            rgba(255,255,255,0.04)
+        );
+
+    border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* Decorative details */
+
+.hero-lantern {
+    position: absolute;
+    z-index: 3;
+    color: #fff0c9;
+    text-shadow: 0 0 20px #fff0c9;
+    font-size: 2.2rem;
+}
+
+.lantern-one {
+    top: 75px;
+    right: 17%;
+}
+
+.lantern-two {
+    top: 170px;
+    left: 12%;
+    font-size: 1.5rem;
+}
+
+.hero-petal {
+    position: absolute;
+    color: rgba(255, 245, 235, 0.9);
+    font-size: 1.5rem;
+}
+
+.petal-one {
+    top: 28%;
+    left: 22%;
+}
+
+.petal-two {
+    top: 54%;
+    right: 14%;
+}
+
+.petal-three {
+    top: 72%;
+    left: 12%;
+}
+
+.hero-art-caption {
+    position: absolute;
+    z-index: 4;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fffaf0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hero-visual {
+        min-height: 350px;
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.3rem;
+    }
+
+    .hero-visual {
+        min-height: 310px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* BUTTONS */
