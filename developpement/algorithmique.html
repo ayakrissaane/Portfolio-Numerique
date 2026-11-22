@@ -1,143 +1,1079 @@
-
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algorithmique | Portfolio Aya</title>
+    <meta name="description" content="My algorithmic learning journey: pseudocode, step-by-step examples and C implementations.">
+    <meta name="theme-color" content="#f8e6e8">
+
+    <title>Algorithmique | Beyond the Code</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        :root {
+            --alg-ink: #342c3d;
+            --alg-muted: #756b7d;
+            --alg-pink: #d98fa9;
+            --alg-pink-dark: #b96e8d;
+            --alg-lilac: #a99acb;
+            --alg-cream: #fffaf8;
+            --alg-line: rgba(107, 84, 112, .13);
+            --alg-code: #292638;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            margin: 0;
+            overflow-x: hidden;
+            color: var(--alg-ink);
+            background: var(--alg-cream);
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .alg-container {
+            width: min(1120px, calc(100% - 48px));
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+
+        .site-header {
+            position: absolute;
+            top: 22px;
+            left: 0;
+            right: 0;
+            z-index: 20;
+            padding: 0 4.5%;
+        }
+
+        .nav-wrap {
+            max-width: 1450px;
+            min-height: 66px;
+            margin: auto;
+            padding: 10px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            border: 1px solid rgba(255,255,255,.75);
+            border-radius: 22px;
+            background: rgba(255,245,241,.78);
+            backdrop-filter: blur(18px);
+            box-shadow: 0 8px 30px rgba(93,55,61,.08);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            white-space: nowrap;
+            color: #56343b;
+            font-family: 'Parisienne', cursive;
+            font-size: 1.8rem;
+        }
+
+        .brand span {
+            color: var(--alg-pink-dark);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: clamp(10px, 1.5vw, 24px);
+        }
+
+        .nav-links a {
+            color: #523b3d;
+            text-decoration: none;
+            font-size: .88rem;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--alg-pink-dark);
+        }
+
+        .alg-nav-chip {
+            padding: 10px 15px;
+            border-radius: 999px;
+            background: #f8e9ee;
+            color: #8d5874;
+            text-decoration: none;
+            font-size: .78rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        /* HERO */
+
+        .alg-hero {
+            min-height: 690px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            isolation: isolate;
+            background: linear-gradient(116deg, #fff8f6 0%, #f9edf2 49%, #eeeaf7 100%);
+        }
+
+        .alg-grid-bg {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: .22;
+            background-image:
+                linear-gradient(rgba(157,128,166,.12) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(157,128,166,.12) 1px, transparent 1px);
+            background-size: 42px 42px;
+        }
+
+        .alg-glow {
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(2px);
+        }
+
+        .alg-glow-one {
+            width: 390px;
+            height: 390px;
+            right: 5%;
+            top: 8%;
+            background: rgba(226,174,194,.25);
+        }
+
+        .alg-glow-two {
+            width: 300px;
+            height: 300px;
+            left: -100px;
+            bottom: -140px;
+            background: rgba(174,158,213,.23);
+        }
+
+        .alg-hero-inner {
+            width: min(1180px, calc(100% - 56px));
+            margin: auto;
+            padding: 120px 0 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .alg-eyebrow {
+            color: #9a6680;
+            font-size: .7rem;
+            letter-spacing: .17em;
+            font-weight: 700;
+        }
+
+        .alg-overline {
+            margin: 22px 0 5px;
+            color: #a17d91;
+            font: 1.5rem 'Parisienne', cursive;
+        }
+
+        .alg-hero h1 {
+            margin: 0;
+            color: var(--alg-ink);
+            font: 700 clamp(3.1rem, 5.5vw, 5.4rem)/1.05 'Playfair Display', serif;
+            letter-spacing: -.05em;
+        }
+
+        .alg-hero h1 em {
+            color: var(--alg-pink-dark);
+            font-weight: 500;
+        }
+
+        .alg-hero-text {
+            max-width: 490px;
+            margin: 25px 0;
+            color: var(--alg-muted);
+            line-height: 1.9;
+        }
+
+        .alg-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .alg-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            padding: 13px 19px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 700;
+            transition: .25s;
+        }
+
+        .alg-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .alg-button-primary {
+            color: white;
+            background: #b87996;
+            box-shadow: 0 10px 25px rgba(184,121,150,.22);
+        }
+
+        .alg-button-ghost {
+            color: #8b6480;
+            border: 1px solid rgba(184,121,150,.32);
+            background: rgba(255,255,255,.5);
+        }
+
+        .alg-hero-note {
+            margin-top: 27px;
+            color: #96889a;
+            font-size: .76rem;
+        }
+
+        .alg-hero-note span {
+            color: var(--alg-pink-dark);
+            margin-right: 7px;
+        }
+
+        /* DECORATIVE ALGORITHM WINDOW */
+
+        .alg-visual {
+            position: relative;
+            min-height: 390px;
+            display: grid;
+            place-items: center;
+        }
+
+        .alg-window {
+            width: min(100%, 490px);
+            overflow: hidden;
+            border-radius: 14px;
+            background: var(--alg-code);
+            box-shadow: 0 32px 75px rgba(61,48,75,.25);
+            transform: rotate(1deg);
+        }
+
+        .alg-window-top {
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            background: #353144;
+            color: #c9bfd2;
+            font: .7rem 'Fira Code', monospace;
+        }
+
+        .alg-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .alg-dots i {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #d58fa8;
+        }
+
+        .alg-dots i:nth-child(2) {
+            background: #e5c58c;
+        }
+
+        .alg-dots i:nth-child(3) {
+            background: #9bb99f;
+        }
+
+        .alg-code {
+            padding: 25px 23px 30px;
+            color: #e6dfeb;
+            font: .78rem/2.2 'Fira Code', monospace;
+            white-space: pre-wrap;
+        }
+
+        .alg-code .purple {
+            color: #c5a6e8;
+        }
+
+        .alg-code .yellow {
+            color: #e8d19c;
+        }
+
+        .alg-code .green {
+            color: #9dbd9f;
+        }
+
+        .alg-code .pink {
+            color: #e7a6bd;
+        }
+
+        .alg-window-bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 14px;
+            color: #f2e6f2;
+            background: #8d6889;
+            font: .6rem 'Fira Code', monospace;
+        }
+
+        .alg-float {
+            position: absolute;
+            z-index: 2;
+            padding: 12px 16px;
+            border: 1px solid rgba(255,255,255,.8);
+            border-radius: 11px;
+            background: rgba(255,255,255,.88);
+            box-shadow: 0 13px 35px rgba(91,71,104,.12);
+            backdrop-filter: blur(10px);
+            color: #76617e;
+            font-size: .72rem;
+            font-weight: 700;
+        }
+
+        .alg-float-one {
+            top: 8px;
+            right: 0;
+        }
+
+        .alg-float-two {
+            bottom: 8px;
+            left: -10px;
+        }
+
+        /* GENERAL SECTIONS */
+
+        .alg-section {
+            padding: 85px 0;
+        }
+
+        .alg-section-tint {
+            background: linear-gradient(135deg, #fff4f5, #f9f5fb);
+        }
+
+        .alg-heading {
+            max-width: 760px;
+            margin-bottom: 38px;
+        }
+
+        .alg-kicker {
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #b66d8b;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+        }
+
+        .alg-heading h2 {
+            margin: 0 0 12px;
+            color: var(--alg-ink);
+            font: 600 clamp(2rem, 4vw, 3rem)/1.2 'Playfair Display', serif;
+        }
+
+        .alg-heading h2 em {
+            color: var(--alg-pink-dark);
+        }
+
+        .alg-heading p {
+            margin: 0;
+            color: var(--alg-muted);
+            line-height: 1.9;
+        }
+
+        /* INTRO CARDS */
+
+        .alg-concepts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .alg-concept {
+            padding: 25px;
+            border: 1px solid var(--alg-line);
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 12px 35px rgba(80,60,90,.045);
+        }
+
+        .alg-concept-icon {
+            width: 43px;
+            height: 43px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 17px;
+            border-radius: 12px;
+            background: #f8e9ee;
+            color: #b96e8d;
+            font-size: 1.2rem;
+        }
+
+        .alg-concept h3 {
+            margin: 0 0 8px;
+            font: 600 1.2rem 'Playfair Display', serif;
+        }
+
+        .alg-concept p {
+            margin: 0;
+            color: var(--alg-muted);
+            font-size: .88rem;
+        }
+
+        /* ALGORITHM CARDS */
+
+        .alg-card {
+            margin-top: 32px;
+            padding: 32px;
+            border: 1px solid var(--alg-line);
+            border-radius: 18px;
+            background: white;
+            box-shadow: 0 15px 45px rgba(80,60,90,.055);
+        }
+
+        .alg-card-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 22px;
+        }
+
+        .alg-number {
+            color: #c1819d;
+            font: .72rem 'Fira Code', monospace;
+            letter-spacing: .12em;
+        }
+
+        .alg-card h3 {
+            margin: 5px 0 8px;
+            font: 600 1.7rem 'Playfair Display', serif;
+        }
+
+        .alg-card-description {
+            max-width: 700px;
+            margin: 0;
+            color: var(--alg-muted);
+            font-size: .91rem;
+        }
+
+        .alg-level {
+            flex-shrink: 0;
+            padding: 7px 12px;
+            border-radius: 30px;
+            color: #94617d;
+            background: #f8eaf0;
+            font-size: .68rem;
+            font-weight: 700;
+        }
+
+        .alg-subtitle {
+            margin: 28px 0 12px;
+            color: #79566f;
+            font-size: .9rem;
+            font-weight: 700;
+        }
+
+        .alg-idea {
+            padding: 17px 19px;
+            border-left: 3px solid var(--alg-pink);
+            border-radius: 0 10px 10px 0;
+            background: #fff6f7;
+            color: #655568;
+            font-size: .9rem;
+        }
+
+        .alg-idea strong {
+            color: #9d5d7c;
+        }
+
+        /* PSEUDOCODE */
+
+        .alg-pseudocode {
+            overflow-x: auto;
+            padding: 22px;
+            border-radius: 12px;
+            background: #302d3e;
+            color: #eee6f1;
+            font: .78rem/1.9 'Fira Code', monospace;
+            white-space: pre;
+        }
+
+        .alg-pseudocode .comment {
+            color: #9db99f;
+        }
+
+        .alg-pseudocode .keyword {
+            color: #c5a6e8;
+        }
+
+        .alg-pseudocode .value {
+            color: #e8c5a0;
+        }
+
+        /* STEP TABLE */
+
+        .alg-table-wrap {
+            overflow-x: auto;
+            border: 1px solid var(--alg-line);
+            border-radius: 12px;
+        }
+
+        .alg-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .85rem;
+        }
+
+        .alg-table th {
+            padding: 13px 15px;
+            color: #805a75;
+            background: #fbf0f4;
+            text-align: left;
+        }
+
+        .alg-table td {
+            padding: 12px 15px;
+            border-top: 1px solid #f1e8ef;
+            color: #625b69;
+        }
+
+        .alg-table tr:last-child td {
+            font-weight: 700;
+            color: #9d5d7c;
+            background: #fff9fb;
+        }
+
+        /* CODE BLOCKS */
+
+        .alg-code-box {
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--alg-code);
+        }
+
+        .alg-code-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 16px;
+            color: #d8d0dd;
+            background: #393548;
+            font: .68rem 'Fira Code', monospace;
+        }
+
+        .alg-code-box pre {
+            margin: 0;
+            padding: 21px;
+            overflow-x: auto;
+            color: #e8e1ec;
+            font: .76rem/1.9 'Fira Code', monospace;
+        }
+
+        .alg-code-box .comment {
+            color: #9db99f;
+        }
+
+        .alg-code-box .keyword {
+            color: #c5a6e8;
+        }
+
+        .alg-code-box .string {
+            color: #e7a6bd;
+        }
+
+        /* TWO COLUMNS */
+
+        .alg-two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .alg-panel {
+            min-width: 0;
+        }
+
+        /* FLOW */
+
+        .alg-flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 24px;
+            border: 1px solid var(--alg-line);
+            border-radius: 13px;
+            background: #fffafd;
+        }
+
+        .alg-flow-step {
+            min-width: 180px;
+            padding: 10px 17px;
+            border: 1px solid #e8c7d7;
+            border-radius: 9px;
+            background: white;
+            color: #76546d;
+            text-align: center;
+            font-size: .82rem;
+            font-weight: 600;
+        }
+
+        .alg-flow-step.start {
+            border-radius: 30px;
+            background: #f8e9ee;
+        }
+
+        .alg-flow-step.decision {
+            border-radius: 4px;
+            background: #f2eef9;
+            border-color: #d5c9e9;
+        }
+
+        .alg-flow-arrow {
+            color: #c1819d;
+            font-size: 1.2rem;
+        }
+
+        /* DETAILS */
+
+        .alg-details {
+            margin-top: 20px;
+            border: 1px solid var(--alg-line);
+            border-radius: 11px;
+            background: #fffafd;
+        }
+
+        .alg-details summary {
+            padding: 14px 17px;
+            color: #94617d;
+            cursor: pointer;
+            font-size: .84rem;
+            font-weight: 700;
+        }
+
+        .alg-details-content {
+            padding: 0 18px 17px;
+            color: var(--alg-muted);
+            font-size: .85rem;
+        }
+
+        .alg-details-content ul {
+            padding-left: 20px;
+        }
+
+        /* SUMMARY */
+
+        .alg-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 17px;
+        }
+
+        .alg-summary-item {
+            padding: 22px;
+            border: 1px solid var(--alg-line);
+            border-radius: 13px;
+            background: white;
+        }
+
+        .alg-summary-item span {
+            color: #bd7d9b;
+            font: .72rem 'Fira Code', monospace;
+        }
+
+        .alg-summary-item h3 {
+            margin: 8px 0;
+            font: 600 1.1rem 'Playfair Display', serif;
+        }
+
+        .alg-summary-item p {
+            margin: 0;
+            color: var(--alg-muted);
+            font-size: .83rem;
+        }
+
+        /* AI TRANSPARENCY */
+
+        .alg-ai-card {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 22px;
+            padding: 30px;
+            border: 1px solid var(--alg-line);
+            border-radius: 16px;
+            background: linear-gradient(135deg, #fff, #fff5f8);
+        }
+
+        .alg-ai-icon {
+            width: 52px;
+            height: 52px;
+            display: grid;
+            place-items: center;
+            border-radius: 15px;
+            background: #f5e5ef;
+            color: #b96e8d;
+            font-size: 1.4rem;
+        }
+
+        .alg-ai-card h3 {
+            margin: 0 0 12px;
+            font: 600 1.4rem 'Playfair Display', serif;
+        }
+
+        .alg-ai-card p {
+            margin: 8px 0;
+            color: var(--alg-muted);
+            font-size: .88rem;
+        }
+
+        .alg-sources {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .alg-sources a {
+            color: #a45f80;
+            font-size: .82rem;
+            font-weight: 700;
+        }
+
+        /* FOOTER */
+
+        .alg-footer {
+            padding: 35px 24px 20px;
+            background: #f6eaf0;
+        }
+
+        .alg-footer-inner {
+            width: min(1120px, 100%);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .alg-footer-brand {
+            color: #56343b;
+            font: 1.7rem 'Parisienne', cursive;
+            text-decoration: none;
+        }
+
+        .alg-footer-brand span {
+            color: #bd718b;
+        }
+
+        .alg-footer p {
+            color: #806d7b;
+            font-size: .82rem;
+        }
+
+        .alg-footer-symbol {
+            color: #bd718b;
+            font-size: 1.2rem;
+        }
+
+        .alg-footer-bottom {
+            width: min(1120px, 100%);
+            margin: 20px auto 0;
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid rgba(107,84,112,.13);
+            color: #927f8d;
+            font-size: .72rem;
+        }
+
+        .alg-footer-bottom a {
+            text-decoration: none;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 850px) {
+            .alg-hero-inner {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding-top: 130px;
+            }
+
+            .alg-visual {
+                min-height: 350px;
+            }
+
+            .alg-two-columns {
+                grid-template-columns: 1fr;
+            }
+
+            .alg-concepts,
+            .alg-summary {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .alg-nav-chip {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .site-header {
+                top: 10px;
+                padding: 0 12px;
+            }
+
+            .nav-wrap {
+                padding: 10px 14px;
+            }
+
+            .brand {
+                font-size: 1.45rem;
+            }
+
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: .73rem;
+            }
+
+            .alg-hero-inner {
+                width: calc(100% - 34px);
+                padding: 120px 0 65px;
+            }
+
+            .alg-hero h1 {
+                font-size: 3.2rem;
+            }
+
+            .alg-visual {
+                min-height: 300px;
+            }
+
+            .alg-code {
+                font-size: .65rem;
+                padding: 17px;
+            }
+
+            .alg-section {
+                padding: 60px 0;
+            }
+
+            .alg-container {
+                width: calc(100% - 30px);
+            }
+
+            .alg-card {
+                padding: 20px 15px;
+            }
+
+            .alg-card-header {
+                flex-direction: column;
+            }
+
+            .alg-concepts,
+            .alg-summary {
+                grid-template-columns: 1fr;
+            }
+
+            .alg-ai-card {
+                grid-template-columns: 1fr;
+                padding: 22px;
+            }
+
+            .alg-footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .alg-footer-bottom {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+<!-- NAVIGATION -->
 <header class="site-header">
-    <div class="nav-wrap">
-        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-        <nav class="nav-links">
-            <a href="../index.html">Accueil</a>
+    <nav class="nav-wrap">
+        <a href="../index.html" class="brand">
+            Beyond <span>the Code</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
             <a href="../index.html#modules">Modules</a>
-            <a href="../index.html#projets">Projets</a>
-        </nav>
-    </div>
+            <a href="#alg-top" class="active">Algorithmique</a>
+        </div>
+
+        <a href="#alg-projects" class="alg-nav-chip">
+            Explore algorithms ↘
+        </a>
+    </nav>
 </header>
 
-<main>
 
-<section class="page-hero">
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Algorithmique</div>
-        <span class="eyebrow">Développement</span>
-        <h1>Algorithmique</h1>
-        <p>Présenter la démarche de résolution d’un problème avant sa traduction en langage de programmation.</p>
-    </div>
-</section>
+<main id="alg-top">
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>01. Démarche algorithmique</h2>
+    <!-- HERO -->
+    <section class="alg-hero">
+
+        <div class="alg-grid-bg"></div>
+        <div class="alg-glow alg-glow-one"></div>
+        <div class="alg-glow alg-glow-two"></div>
+
+        <div class="alg-hero-inner">
+
+            <div class="alg-hero-content">
+
+                <span class="alg-eyebrow">
+                    DEVELOPMENT · LOGIC & PROBLEM SOLVING
+                </span>
+
+                <p class="alg-overline">
+                    Think logically, build confidently.
+                </p>
+
+                <h1>
+                    The art of<br>
+                    <em>Algorithms.</em>
+                </h1>
+
+                <p class="alg-hero-text">
+                    Every program begins with an idea.
+                    Discover how I break problems into simple steps,
+                    understand algorithms and transform logic into code.
+                </p>
+
+                <div class="alg-actions">
+                    <a href="#alg-projects" class="alg-button alg-button-primary">
+                        Discover the algorithms ↘
+                    </a>
+
+                    <a href="#my-approach" class="alg-button alg-button-ghost">
+                        My learning approach ♡
+                    </a>
+                </div>
+
+                <div class="alg-hero-note">
+                    <span>✦</span>
+                    Understanding first, coding next.
+                </div>
+
+            </div>
+
+
+            <!-- DECORATIVE CODE WINDOW -->
+            <div class="alg-visual">
+
+                <div class="alg-window">
+
+                    <div class="alg-window-top">
+                        <div class="alg-dots">
+                            <i></i><i></i><i></i>
+                        </div>
+                        <span>algorithm.py</span>
+                        <span>♡</span>
+                    </div>
+
+                    <div class="alg-code">
+<span class="green"># A problem-solving mindset</span>
+
+<span class="purple">def</span> <span class="yellow">solve_problem</span>(problem):
+
+    <span class="green"># Step 1: Understand</span>
+    analyse(problem)
+
+    <span class="green"># Step 2: Find a solution</span>
+    solution = think()
+
+    <span class="green"># Step 3: Test and improve</span>
+    <span class="purple">return</span> solution
+
+<span class="pink">print</span>("Keep learning ♡")
+                    </div>
+
+                    <div class="alg-window-bottom">
+                        <span>⌘ Python / C</span>
+                        <span>Logic · Steps · Results</span>
+                    </div>
+
+                </div>
+
+                <div class="alg-float alg-float-one">
+                    ✧ THINK BEFORE YOU CODE
+                </div>
+
+                <div class="alg-float alg-float-two">
+                    ♡ One step at a time
+                </div>
+
+            </div>
+
         </div>
-        <div class="soft-panel">
-            <p>Un algorithme est une suite finie et ordonnée d’instructions permettant de résoudre un problème. Il faut comprendre les données, déterminer les traitements puis préciser les résultats attendus.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>02. Notions étudiées</h2>
-        </div>
-        <div class="grid">
-            <article class="card">
-                <h3>Variables</h3>
-                <p>Nommer et stocker les données nécessaires.</p>
-            </article>
-            <article class="card">
-                <h3>Conditions</h3>
-                <p>Exprimer un choix selon une condition logique.</p>
-            </article>
-            <article class="card">
-                <h3>Tableaux</h3>
-                <p>Traiter plusieurs valeurs à l’aide d’indices.</p>
-            </article>
-        </div>
-    </div>
-</section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>03. Exemple : maximum de deux nombres</h2>
-        </div>
+    <!-- INTRODUCTION -->
+    <section class="alg-section" id="my-approach">
 
-        <pre class="code-sample">Algorithme Maximum
+        <div class="alg-container">
 
-Variables a, b, max : Réel
+            <div class="alg-heading">
+                <span class="alg-kicker">01 — THE FUNDAMENTALS</span>
+                <h2>What is <em>Algorithmique?</em></h2>
+                <p>
+                    Algorithmics is the process of designing a clear,
+                    logical sequence of instructions to solve a problem.
+                    Before writing code, we first understand the problem
+                    and organise the solution into steps.
+                </p>
+            </div>
 
-Début
+            <div class="alg-concepts">
 
-    Lire(a, b)
+                <article class="alg-concept">
+                    <div class="alg-concept-icon">⌕</div>
+                    <h3>Understand</h3>
+                    <p>
+                        Identify the problem, the input data
+                        and the expected result.
+                    </p>
+                </article>
 
-    Si a > b Alors
-        max ← a
-    Sinon
-        max ← b
-    FinSi
-
-    Écrire(max)
-
-Fin</pre>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>04. Méthode de résolution</h2>
-        </div>
-        <div class="soft-panel">
-            <ol class="list-clean">
-                <li>Lire l’énoncé et repérer les données.</li>
-                <li>Identifier le résultat demandé.</li>
-                <li>Écrire les étapes en pseudo-code.</li>
-                <li>Tester avec un exemple simple et un cas limite.</li>
-                <li>Traduire en langage C si demandé.</li>
-            </ol>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>05. Transparence de l’IA</h2>
-        </div>
-        <div class="soft-panel">
-            <p><strong>Outil :</strong> ChatGPT pour clarifier des notions et analyser des erreurs.</p>
-            <p><strong>Rôle :</strong> fournir des explications étape par étape.</p>
-            <p><strong>Ma contribution :</strong> construire le raisonnement, faire les exercices et vérifier les résultats.</p>
-            <p><strong>Vérification :</strong> effectuer une trace manuelle et tester les cas limites.</p>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
-    </div>
-</section>
-
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <span>© <span data-year>2026</span> Aya Krissaane</span>
-        <span>Portfolio Numérique ♡</span>
-    </div>
-</footer>
-
-<script src="../js/script.js"></script>
-</body>
-</html>
-
+                <article class="alg-concept">
+                    <div class="alg-concept-icon">↗</div>
+                    <h3>Design</h3>
