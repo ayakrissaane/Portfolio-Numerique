@@ -1,0 +1,444 @@
+
+/* ==========================================
+   CREATION DE CONTENU
+   Beyond the Code — Sakura Theme
+========================================== */
+
+
+/* HERO */
+
+.cc-hero {
+    background:
+        radial-gradient(circle at 82% 30%, #f5d9e5 0, transparent 32%),
+        linear-gradient(120deg, #fff1ed, #f9e6eb 58%, #f1eaf3);
+}
+
+.cc-hero-art {
+    position: relative;
+    overflow: hidden;
+}
+
+.cc-floating {
+    position: absolute;
+    z-index: 2;
+    color: #bd7893;
+    font-size: 2.5rem;
+    pointer-events: none;
+}
+
+.cc-float-one {
+    top: 12%;
+    left: 8%;
+}
+
+.cc-float-two {
+    top: 22%;
+    right: 7%;
+}
+
+.cc-art-caption {
+    position: absolute;
+    z-index: 2;
+    right: 7%;
+    bottom: 5%;
+    color: #9f647e;
+    font: 1.4rem 'Parisienne', cursive;
+}
+
+
+/* INTRODUCTION */
+
+.cc-intro-panel {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 28px;
+    border: 1px solid #efd8e0;
+    border-radius: 24px;
+    background: linear-gradient(120deg, #fffdfb, #fff4f5);
+    box-shadow: 0 10px 28px #7e4a5b0d;
+}
+
+.cc-intro-symbol {
+    flex: 0 0 65px;
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    background: #f7e6ec;
+    color: #b66c8b;
+    font-size: 2rem;
+}
+
+.cc-intro-panel h3 {
+    margin: 0 0 7px;
+    color: #68434e;
+    font: 600 1.35rem 'Playfair Display', serif;
+}
+
+.cc-intro-panel p {
+    margin: 0;
+    color: #806d72;
+    line-height: 1.85;
+}
+
+
+/* SIX PRODUCTIONS */
+
+.cc-productions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.cc-production-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 27px;
+    border: 1px solid #efdfda;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #fffdfb, #fff7f7);
+    box-shadow: 0 8px 25px rgba(100, 65, 65, .045);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.cc-production-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 32px rgba(113, 75, 75, .10);
+}
+
+.cc-number {
+    position: absolute;
+    top: 18px;
+    right: 19px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f6e7e5;
+    color: #a56e78;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.cc-card-icon {
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 17px;
+    border-radius: 18px;
+    background: #f7e8e9;
+    font-size: 1.8rem;
+}
+
+.cc-category {
+    display: block;
+    margin-bottom: 7px;
+    color: #ad7184;
+    font-size: .68rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.cc-production-card h3 {
+    margin: 5px 0 10px;
+    color: #65434b;
+    font: 600 1.25rem 'Playfair Display', serif;
+    line-height: 1.4;
+}
+
+.cc-production-card > p {
+    margin: 0 0 17px;
+    color: #81716e;
+    font-size: .9rem;
+    line-height: 1.85;
+}
+
+.cc-tool {
+    display: block;
+    margin-top: 15px;
+    color: #9c6b7c;
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+
+/* VIDEO AND AUDIO */
+
+.cc-production-card video {
+    display: block;
+    width: 100%;
+    max-height: 230px;
+    margin-top: 8px;
+    border-radius: 16px;
+    background: #2e2630;
+    object-fit: contain;
+}
+
+.cc-production-card audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.cc-audio-decoration {
+    display: grid;
+    place-items: center;
+    min-height: 75px;
+    margin-top: 8px;
+    border: 1px solid #efd8e0;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #f9e4e9, #f5edf4);
+    color: #b66c8b;
+    font-size: 1.7rem;
+    letter-spacing: .4rem;
+}
+
+
+/* DOCUMENT PREVIEW */
+
+.cc-document-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    min-height: 115px;
+    margin-top: 8px;
+    padding: 18px;
+    border: 1px solid #efd8e0;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #fff8f6, #f8edf1);
+}
+
+.cc-file-type {
+    display: inline-grid;
+    place-items: center;
+    min-width: 49px;
+    height: 30px;
+    padding: 0 9px;
+    border-radius: 8px;
+    background: #e9cbd5;
+    color: #815064;
+    font-size: .7rem;
+    font-weight: 800;
+}
+
+.cc-document-preview strong {
+    color: #68434e;
+    font-family: 'Playfair Display', serif;
+}
+
+.cc-document-preview small {
+    color: #907982;
+    font-size: .76rem;
+}
+
+.cc-ppt-preview {
+    background: linear-gradient(135deg, #f8e9ee, #f1eaf4);
+}
+
+
+/* MIND MAP */
+
+.cc-mindmap {
+    display: block;
+    overflow: hidden;
+    margin-top: 8px;
+    border: 1px solid #efd8e0;
+    border-radius: 16px;
+    background: #fff;
+    text-decoration: none;
+}
+
+.cc-mindmap img {
+    display: block;
+    width: 100%;
+    height: 175px;
+    object-fit: contain;
+    background: #fff;
+    transition: transform .3s ease;
+}
+
+.cc-mindmap:hover img {
+    transform: scale(1.025);
+}
+
+.cc-mindmap span {
+    display: block;
+    padding: 10px 13px;
+    color: #a65f7d;
+    font-size: .82rem;
+    font-weight: 700;
+}
+
+
+/* CARD LINKS */
+
+.cc-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: auto;
+    padding-top: 17px;
+    color: #a65f7d;
+    font-size: .88rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.cc-card-link:hover {
+    color: #78465e;
+    text-decoration: underline;
+}
+
+
+/* CREATION PROCESS */
+
+.cc-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.cc-process-card {
+    padding: 25px 22px;
+    border: 1px solid #efd8e0;
+    border-radius: 21px;
+    background: linear-gradient(145deg, #fff, #fff6f7);
+    box-shadow: 0 8px 24px #7e4a5b0b;
+}
+
+.cc-process-card > span {
+    display: inline-grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #f5e3e9;
+    color: #a7657e;
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.cc-process-card h3 {
+    margin: 15px 0 8px;
+    color: #68434e;
+    font: 600 1.15rem 'Playfair Display', serif;
+}
+
+.cc-process-card p {
+    margin: 0;
+    color: #806d72;
+    font-size: .88rem;
+    line-height: 1.8;
+}
+
+
+/* AI TRANSPARENCY */
+
+.cc-ai-card {
+    max-width: 900px;
+}
+
+.cc-ai-card p {
+    line-height: 1.9;
+}
+
+
+/* DARK MODE */
+
+body.dark .cc-intro-panel,
+body.dark .cc-production-card,
+body.dark .cc-process-card,
+body.dark .cc-document-preview {
+    background: #302a38;
+    border-color: #51404b;
+}
+
+body.dark .cc-intro-panel h3,
+body.dark .cc-production-card h3,
+body.dark .cc-process-card h3,
+body.dark .cc-document-preview strong {
+    color: #f2dadd;
+}
+
+body.dark .cc-intro-panel p,
+body.dark .cc-production-card > p,
+body.dark .cc-process-card p,
+body.dark .cc-document-preview small {
+    color: #d5c1c8;
+}
+
+body.dark .cc-audio-decoration {
+    background: #39313e;
+    border-color: #51404b;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .cc-productions-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cc-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .cc-productions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cc-process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cc-intro-panel {
+        align-items: flex-start;
+    }
+
+    .cc-hero-art {
+        min-height: 220px;
+    }
+
+    .cc-hero-art .cyber-hero-image {
+        height: auto;
+        max-height: 270px;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .cc-process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cc-intro-panel {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .cc-production-card {
+        padding: 22px;
+    }
+
+    .cc-art-caption {
+        font-size: 1.1rem;
+    }
+
+}
