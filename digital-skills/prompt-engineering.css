@@ -6,65 +6,70 @@
 
 /* HERO */
 .prompt-hero {
+    position: relative;
     background:
-        radial-gradient(circle at 82% 35%, #f5d9e5 0, transparent 32%),
-        linear-gradient(120deg, #fff1ed, #f9e6eb 58%, #f1eaf3);
+        linear-gradient(
+            90deg,
+            rgba(255, 244, 241, .96) 0%,
+            rgba(255, 240, 242, .88) 45%,
+            rgba(255, 240, 242, .35) 100%
+        ),
+        url("../images/prompt-engineering-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.prompt-hero-art {
-    position: relative;
+.prompt-hero .cyber-hero-inner {
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    min-height: 600px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.prompt-hero-art::before {
-    content: "";
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    background: #f5dce5;
-    opacity: .5;
-    z-index: 0;
-}
-
-.prompt-hero-art .cyber-hero-image {
+.prompt-hero .cyber-hero-copy {
     position: relative;
-    z-index: 1;
-    display: block;
+    z-index: 3;
     width: 100%;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
-    object-position: center;
+    max-width: 720px;
 }
 
-.prompt-floating {
-    position: absolute;
-    z-index: 2;
+/* Hero text */
+.prompt-hero .cyber-hero-copy h1 {
+    color: #68434e;
+}
+
+.prompt-hero .cyber-hero-copy h1 span {
     color: #bd7893;
-    font-size: 2.5rem;
 }
 
-.prompt-float-one {
-    top: 12%;
-    left: 8%;
+.prompt-hero .cyber-hero-copy .cyber-kicker {
+    color: #a66f85;
 }
 
-.prompt-float-two {
-    top: 22%;
-    right: 7%;
+.prompt-hero .cyber-hero-copy .cyber-script {
+    color: #bd7893;
 }
 
-.prompt-art-caption {
-    position: absolute;
-    z-index: 2;
-    right: 7%;
-    bottom: 5%;
-    color: #9f647e;
-    font: 1.4rem 'Parisienne', cursive;
+.prompt-hero .cyber-hero-copy p {
+    color: #765d66;
+}
+
+/* Hide the old side image */
+.prompt-hero-art {
+    display: none !important;
+}
+
+/* Decorative details */
+.prompt-hero .cyber-hero-copy::after {
+    content: "✧  ♡  ✧";
+    display: block;
+    margin-top: 25px;
+    color: #bd7893;
+    font-size: 1.5rem;
+    letter-spacing: 8px;
 }
 
 
@@ -463,22 +468,25 @@ body.dark .copy-prompt {
 }
 
 @media (max-width: 700px) {
+    .prompt-hero .cyber-hero-inner {
+        min-height: 520px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .prompt-hero .cyber-hero-copy {
+        max-width: 100%;
+    }
+
+    .prompt-hero {
+        background-position: center;
+    }
+
     .prompt-intro-grid,
     .prompt-structure-grid,
     .prompt-comparison,
     .prompt-library {
         grid-template-columns: 1fr;
-    }
-
-    .prompt-hero-art {
-        min-height: 240px;
-    }
-
-    .prompt-hero-art .cyber-hero-image {
-        width: 100%;
-        height: auto;
-        max-height: none;
-        object-fit: contain;
     }
 
     .prompt-highlight {
@@ -491,6 +499,12 @@ body.dark .copy-prompt {
 }
 
 @media (max-width: 520px) {
+    .prompt-hero .cyber-hero-inner {
+        min-height: 480px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
     .prompt-tools-grid,
     .prompt-techniques-grid {
         grid-template-columns: 1fr;
