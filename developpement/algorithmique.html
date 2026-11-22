@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,21 +11,20 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
         :root {
-            --alg-ink: #342c3d;
-            --alg-muted: #756b7d;
-            --alg-pink: #d98fa9;
-            --alg-pink-dark: #b96e8d;
-            --alg-lilac: #a99acb;
-            --alg-cream: #fffaf8;
-            --alg-line: rgba(107, 84, 112, .13);
-            --alg-code: #292638;
+            --ink: #342c3d;
+            --muted: #756b7d;
+            --pink: #d98fa9;
+            --pink-dark: #b96e8d;
+            --lilac: #a99acb;
+            --cream: #fffaf8;
+            --line: rgba(107,84,112,.13);
+            --code: #292638;
         }
 
         * {
@@ -40,8 +39,8 @@
         body {
             margin: 0;
             overflow-x: hidden;
-            color: var(--alg-ink);
-            background: var(--alg-cream);
+            color: var(--ink);
+            background: var(--cream);
             font-family: 'DM Sans', sans-serif;
             line-height: 1.7;
         }
@@ -94,7 +93,7 @@
         }
 
         .brand span {
-            color: var(--alg-pink-dark);
+            color: var(--pink-dark);
         }
 
         .nav-links {
@@ -112,7 +111,7 @@
 
         .nav-links a:hover,
         .nav-links a.active {
-            color: var(--alg-pink-dark);
+            color: var(--pink-dark);
         }
 
         .alg-nav-chip {
@@ -124,10 +123,6 @@
             font-size: .78rem;
             font-weight: 700;
             white-space: nowrap;
-        }
-
-        .menu-toggle {
-            display: none;
         }
 
         /* HERO */
@@ -201,20 +196,20 @@
 
         .alg-hero h1 {
             margin: 0;
-            color: var(--alg-ink);
+            color: var(--ink);
             font: 700 clamp(3.1rem, 5.5vw, 5.4rem)/1.05 'Playfair Display', serif;
             letter-spacing: -.05em;
         }
 
         .alg-hero h1 em {
-            color: var(--alg-pink-dark);
+            color: var(--pink-dark);
             font-weight: 500;
         }
 
         .alg-hero-text {
             max-width: 490px;
             margin: 25px 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             line-height: 1.9;
         }
 
@@ -259,11 +254,11 @@
         }
 
         .alg-hero-note span {
-            color: var(--alg-pink-dark);
+            color: var(--pink-dark);
             margin-right: 7px;
         }
 
-        /* DECORATIVE ALGORITHM WINDOW */
+        /* CODE WINDOW */
 
         .alg-visual {
             position: relative;
@@ -276,7 +271,7 @@
             width: min(100%, 490px);
             overflow: hidden;
             border-radius: 14px;
-            background: var(--alg-code);
+            background: var(--code);
             box-shadow: 0 32px 75px rgba(61,48,75,.25);
             transform: rotate(1deg);
         }
@@ -319,21 +314,10 @@
             white-space: pre-wrap;
         }
 
-        .alg-code .purple {
-            color: #c5a6e8;
-        }
-
-        .alg-code .yellow {
-            color: #e8d19c;
-        }
-
-        .alg-code .green {
-            color: #9dbd9f;
-        }
-
-        .alg-code .pink {
-            color: #e7a6bd;
-        }
+        .purple { color: #c5a6e8; }
+        .yellow { color: #e8d19c; }
+        .green { color: #9dbd9f; }
+        .pink { color: #e7a6bd; }
 
         .alg-window-bottom {
             display: flex;
@@ -394,21 +378,21 @@
 
         .alg-heading h2 {
             margin: 0 0 12px;
-            color: var(--alg-ink);
+            color: var(--ink);
             font: 600 clamp(2rem, 4vw, 3rem)/1.2 'Playfair Display', serif;
         }
 
         .alg-heading h2 em {
-            color: var(--alg-pink-dark);
+            color: var(--pink-dark);
         }
 
         .alg-heading p {
             margin: 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             line-height: 1.9;
         }
 
-        /* INTRO CARDS */
+        /* FUNDAMENTALS */
 
         .alg-concepts {
             display: grid;
@@ -418,7 +402,7 @@
 
         .alg-concept {
             padding: 25px;
-            border: 1px solid var(--alg-line);
+            border: 1px solid var(--line);
             border-radius: 15px;
             background: white;
             box-shadow: 0 12px 35px rgba(80,60,90,.045);
@@ -443,7 +427,7 @@
 
         .alg-concept p {
             margin: 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             font-size: .88rem;
         }
 
@@ -452,7 +436,7 @@
         .alg-card {
             margin-top: 32px;
             padding: 32px;
-            border: 1px solid var(--alg-line);
+            border: 1px solid var(--line);
             border-radius: 18px;
             background: white;
             box-shadow: 0 15px 45px rgba(80,60,90,.055);
@@ -480,7 +464,7 @@
         .alg-card-description {
             max-width: 700px;
             margin: 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             font-size: .91rem;
         }
 
@@ -503,7 +487,7 @@
 
         .alg-idea {
             padding: 17px 19px;
-            border-left: 3px solid var(--alg-pink);
+            border-left: 3px solid var(--pink);
             border-radius: 0 10px 10px 0;
             background: #fff6f7;
             color: #655568;
@@ -514,7 +498,7 @@
             color: #9d5d7c;
         }
 
-        /* PSEUDOCODE */
+        /* PSEUDOCODE AND C CODE */
 
         .alg-pseudocode {
             overflow-x: auto;
@@ -526,23 +510,34 @@
             white-space: pre;
         }
 
-        .alg-pseudocode .comment {
-            color: #9db99f;
+        .alg-code-box {
+            overflow: hidden;
+            border-radius: 12px;
+            background: var(--code);
         }
 
-        .alg-pseudocode .keyword {
-            color: #c5a6e8;
+        .alg-code-title {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 16px;
+            color: #d8d0dd;
+            background: #393548;
+            font: .68rem 'Fira Code', monospace;
         }
 
-        .alg-pseudocode .value {
-            color: #e8c5a0;
+        .alg-code-box pre {
+            margin: 0;
+            padding: 21px;
+            overflow-x: auto;
+            color: #e8e1ec;
+            font: .76rem/1.9 'Fira Code', monospace;
         }
 
-        /* STEP TABLE */
+        /* TABLES */
 
         .alg-table-wrap {
             overflow-x: auto;
-            border: 1px solid var(--alg-line);
+            border: 1px solid var(--line);
             border-radius: 12px;
         }
 
@@ -571,124 +566,6 @@
             background: #fff9fb;
         }
 
-        /* CODE BLOCKS */
-
-        .alg-code-box {
-            overflow: hidden;
-            border-radius: 12px;
-            background: var(--alg-code);
-        }
-
-        .alg-code-title {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 16px;
-            color: #d8d0dd;
-            background: #393548;
-            font: .68rem 'Fira Code', monospace;
-        }
-
-        .alg-code-box pre {
-            margin: 0;
-            padding: 21px;
-            overflow-x: auto;
-            color: #e8e1ec;
-            font: .76rem/1.9 'Fira Code', monospace;
-        }
-
-        .alg-code-box .comment {
-            color: #9db99f;
-        }
-
-        .alg-code-box .keyword {
-            color: #c5a6e8;
-        }
-
-        .alg-code-box .string {
-            color: #e7a6bd;
-        }
-
-        /* TWO COLUMNS */
-
-        .alg-two-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 22px;
-            align-items: start;
-        }
-
-        .alg-panel {
-            min-width: 0;
-        }
-
-        /* FLOW */
-
-        .alg-flow {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-            padding: 24px;
-            border: 1px solid var(--alg-line);
-            border-radius: 13px;
-            background: #fffafd;
-        }
-
-        .alg-flow-step {
-            min-width: 180px;
-            padding: 10px 17px;
-            border: 1px solid #e8c7d7;
-            border-radius: 9px;
-            background: white;
-            color: #76546d;
-            text-align: center;
-            font-size: .82rem;
-            font-weight: 600;
-        }
-
-        .alg-flow-step.start {
-            border-radius: 30px;
-            background: #f8e9ee;
-        }
-
-        .alg-flow-step.decision {
-            border-radius: 4px;
-            background: #f2eef9;
-            border-color: #d5c9e9;
-        }
-
-        .alg-flow-arrow {
-            color: #c1819d;
-            font-size: 1.2rem;
-        }
-
-        /* DETAILS */
-
-        .alg-details {
-            margin-top: 20px;
-            border: 1px solid var(--alg-line);
-            border-radius: 11px;
-            background: #fffafd;
-        }
-
-        .alg-details summary {
-            padding: 14px 17px;
-            color: #94617d;
-            cursor: pointer;
-            font-size: .84rem;
-            font-weight: 700;
-        }
-
-        .alg-details-content {
-            padding: 0 18px 17px;
-            color: var(--alg-muted);
-            font-size: .85rem;
-        }
-
-        .alg-details-content ul {
-            padding-left: 20px;
-        }
-
         /* SUMMARY */
 
         .alg-summary {
@@ -699,7 +576,7 @@
 
         .alg-summary-item {
             padding: 22px;
-            border: 1px solid var(--alg-line);
+            border: 1px solid var(--line);
             border-radius: 13px;
             background: white;
         }
@@ -716,7 +593,7 @@
 
         .alg-summary-item p {
             margin: 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             font-size: .83rem;
         }
 
@@ -727,7 +604,7 @@
             grid-template-columns: 60px 1fr;
             gap: 22px;
             padding: 30px;
-            border: 1px solid var(--alg-line);
+            border: 1px solid var(--line);
             border-radius: 16px;
             background: linear-gradient(135deg, #fff, #fff5f8);
         }
@@ -750,7 +627,7 @@
 
         .alg-ai-card p {
             margin: 8px 0;
-            color: var(--alg-muted);
+            color: var(--muted);
             font-size: .88rem;
         }
 
@@ -829,10 +706,6 @@
 
             .alg-visual {
                 min-height: 350px;
-            }
-
-            .alg-two-columns {
-                grid-template-columns: 1fr;
             }
 
             .alg-concepts,
@@ -927,8 +800,10 @@
 <body>
 
 <!-- NAVIGATION -->
+
 <header class="site-header">
     <nav class="nav-wrap">
+
         <a href="../index.html" class="brand">
             Beyond <span>the Code</span>
         </a>
@@ -942,6 +817,7 @@
         <a href="#alg-projects" class="alg-nav-chip">
             Explore algorithms ↘
         </a>
+
     </nav>
 </header>
 
@@ -949,6 +825,7 @@
 <main id="alg-top">
 
     <!-- HERO -->
+
     <section class="alg-hero">
 
         <div class="alg-grid-bg"></div>
@@ -996,7 +873,6 @@
             </div>
 
 
-            <!-- DECORATIVE CODE WINDOW -->
             <div class="alg-visual">
 
                 <div class="alg-window">
@@ -1005,29 +881,29 @@
                         <div class="alg-dots">
                             <i></i><i></i><i></i>
                         </div>
-                        <span>algorithm.py</span>
+                        <span>algorithm.c</span>
                         <span>♡</span>
                     </div>
 
                     <div class="alg-code">
-<span class="green"># A problem-solving mindset</span>
+<span class="green">// A problem-solving mindset</span>
 
-<span class="purple">def</span> <span class="yellow">solve_problem</span>(problem):
+<span class="purple">int</span> <span class="yellow">solve_problem</span>() {
+    <span class="green">// Step 1: Understand</span>
+    analyse_problem();
 
-    <span class="green"># Step 1: Understand</span>
-    analyse(problem)
+    <span class="green">// Step 2: Find a solution</span>
+    create_algorithm();
 
-    <span class="green"># Step 2: Find a solution</span>
-    solution = think()
+    <span class="green">// Step 3: Test and improve</span>
+    <span class="purple">return</span> solution;
+}
 
-    <span class="green"># Step 3: Test and improve</span>
-    <span class="purple">return</span> solution
-
-<span class="pink">print</span>("Keep learning ♡")
+<span class="pink">printf</span>("Keep learning ♡");
                     </div>
 
                     <div class="alg-window-bottom">
-                        <span>⌘ Python / C</span>
+                        <span>⌘ C LANGUAGE</span>
                         <span>Logic · Steps · Results</span>
                     </div>
 
@@ -1048,13 +924,16 @@
 
 
     <!-- INTRODUCTION -->
+
     <section class="alg-section" id="my-approach">
 
         <div class="alg-container">
 
             <div class="alg-heading">
                 <span class="alg-kicker">01 — THE FUNDAMENTALS</span>
+
                 <h2>What is <em>Algorithmique?</em></h2>
+
                 <p>
                     Algorithmics is the process of designing a clear,
                     logical sequence of instructions to solve a problem.
@@ -1077,3 +956,683 @@
                 <article class="alg-concept">
                     <div class="alg-concept-icon">↗</div>
                     <h3>Design</h3>
+                    <p>
+                        Organise the solution into simple,
+                        logical and ordered instructions.
+                    </p>
+                </article>
+
+                <article class="alg-concept">
+                    <div class="alg-concept-icon">♡</div>
+                    <h3>Implement</h3>
+                    <p>
+                        Translate the algorithm into a programming
+                        language and test the result.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ALGORITHMS -->
+
+    <section class="alg-section alg-section-tint" id="alg-projects">
+
+        <div class="alg-container">
+
+            <div class="alg-heading">
+                <span class="alg-kicker">02 — PRACTICE & APPLICATION</span>
+
+                <h2>From Logic to <em>Code.</em></h2>
+
+                <p>
+                    Three fundamental algorithms that demonstrate how
+                    a problem can be understood, organised into steps
+                    and translated into C.
+                </p>
+            </div>
+
+
+            <!-- ALGORITHM 1 -->
+
+            <article class="alg-card">
+
+                <div class="alg-card-header">
+
+                    <div>
+                        <span class="alg-number">ALGORITHM 01</span>
+
+                        <h3>Recherche du maximum</h3>
+
+                        <p class="alg-card-description">
+                            Finding the largest value in an array of integers.
+                        </p>
+                    </div>
+
+                    <span class="alg-level">
+                        Arrays · Loops · Conditions
+                    </span>
+
+                </div>
+
+                <div class="alg-idea">
+                    <strong>Idée générale :</strong>
+                    We suppose that the first element is the maximum.
+                    Then, we compare it with every other element.
+                    If we find a greater value, we update the maximum.
+                </div>
+
+                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+
+                <pre class="alg-pseudocode">Algorithme Recherche_Maximum
+Variables
+    T : tableau d'entiers
+    n, i, max : entier
+Début
+    Lire(n)
+
+    Pour i ← 0 à n-1 faire
+        Lire(T[i])
+    FinPour
+
+    max ← T[0]
+
+    Pour i ← 1 à n-1 faire
+        Si T[i] > max Alors
+            max ← T[i]
+        FinSi
+    FinPour
+
+    Écrire(max)
+Fin</pre>
+
+                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+
+                <p>
+                    Let's consider the array:
+                    <strong>[4, 9, 2, 7]</strong>
+                </p>
+
+                <div class="alg-table-wrap">
+                    <table class="alg-table">
+                        <thead>
+                            <tr>
+                                <th>Step</th>
+                                <th>Value</th>
+                                <th>Current maximum</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Initial</td>
+                                <td>4</td>
+                                <td>4</td>
+                                <td>Initialisation</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>9</td>
+                                <td>9</td>
+                                <td>9 &gt; 4, update</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>2</td>
+                                <td>9</td>
+                                <td>2 &lt; 9, no change</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>7</td>
+                                <td>9</td>
+                                <td>7 &lt; 9, no change</td>
+                            </tr>
+
+                            <tr>
+                                <td>Result</td>
+                                <td colspan="3">Maximum = 9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+
+                <div class="alg-code-box">
+
+                    <div class="alg-code-title">
+                        <span>maximum.c</span>
+                        <span>C LANGUAGE</span>
+                    </div>
+
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int T[100], n, i, max;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &amp;n);
+
+    while (n &lt; 1 || n &gt; 100)
+    {
+        printf("Enter a size between 1 and 100: ");
+        scanf("%d", &amp;n);
+    }
+
+    for (i = 0; i &lt; n; i++)
+    {
+        printf("T[%d] = ", i);
+        scanf("%d", &amp;T[i]);
+    }
+
+    max = T[0];
+
+    for (i = 1; i &lt; n; i++)
+    {
+        if (T[i] &gt; max)
+        {
+            max = T[i];
+        }
+    }
+
+    printf("Maximum = %d\n", max);
+
+    return 0;
+}</code></pre>
+
+                </div>
+
+            </article>
+
+
+            <!-- ALGORITHM 2 -->
+
+            <article class="alg-card">
+
+                <div class="alg-card-header">
+
+                    <div>
+                        <span class="alg-number">ALGORITHM 02</span>
+
+                        <h3>Tri par sélection</h3>
+
+                        <p class="alg-card-description">
+                            Sorting an array in ascending order using Selection Sort.
+                        </p>
+                    </div>
+
+                    <span class="alg-level">
+                        Arrays · Nested Loops · Swap
+                    </span>
+
+                </div>
+
+                <div class="alg-idea">
+                    <strong>Idée générale :</strong>
+                    At each pass, we search for the smallest element
+                    in the unsorted part of the array. We then exchange
+                    it with the first element of that part.
+                </div>
+
+                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+
+                <pre class="alg-pseudocode">Algorithme Tri_Selection
+Variables
+    T : tableau d'entiers
+    n, i, j, indiceMin, temp : entier
+Début
+    Pour i ← 0 à n-1 faire
+        indiceMin ← i
+
+        Pour j ← i+1 à n-1 faire
+            Si T[j] < T[indiceMin] Alors
+                indiceMin ← j
+            FinSi
+        FinPour
+
+        temp ← T[i]
+        T[i] ← T[indiceMin]
+        T[indiceMin] ← temp
+    FinPour
+
+    Écrire(T)
+Fin</pre>
+
+                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+
+                <p>
+                    Initial array: <strong>[7, 3, 5, 2]</strong>
+                </p>
+
+                <div class="alg-table-wrap">
+                    <table class="alg-table">
+                        <thead>
+                            <tr>
+                                <th>Pass</th>
+                                <th>Smallest value</th>
+                                <th>Exchange</th>
+                                <th>Array after pass</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Initial</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>[7, 3, 5, 2]</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>7 ↔ 2</td>
+                                <td>[2, 3, 5, 7]</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>No exchange</td>
+                                <td>[2, 3, 5, 7]</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>5</td>
+                                <td>No exchange</td>
+                                <td>[2, 3, 5, 7]</td>
+                            </tr>
+
+                            <tr>
+                                <td>Result</td>
+                                <td colspan="3">[2, 3, 5, 7]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+
+                <div class="alg-code-box">
+
+                    <div class="alg-code-title">
+                        <span>selection_sort.c</span>
+                        <span>C LANGUAGE</span>
+                    </div>
+
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int T[100], n, i, j;
+    int indiceMin, temp;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &amp;n);
+
+    while (n &lt; 1 || n &gt; 100)
+    {
+        printf("Enter a size between 1 and 100: ");
+        scanf("%d", &amp;n);
+    }
+
+    for (i = 0; i &lt; n; i++)
+    {
+        printf("T[%d] = ", i);
+        scanf("%d", &amp;T[i]);
+    }
+
+    for (i = 0; i &lt; n - 1; i++)
+    {
+        indiceMin = i;
+
+        for (j = i + 1; j &lt; n; j++)
+        {
+            if (T[j] &lt; T[indiceMin])
+            {
+                indiceMin = j;
+            }
+        }
+
+        temp = T[i];
+        T[i] = T[indiceMin];
+        T[indiceMin] = temp;
+    }
+
+    printf("Sorted array: ");
+
+    for (i = 0; i &lt; n; i++)
+    {
+        printf("%d ", T[i]);
+    }
+
+    return 0;
+}</code></pre>
+
+                </div>
+
+            </article>
+
+
+            <!-- ALGORITHM 3 -->
+
+            <article class="alg-card">
+
+                <div class="alg-card-header">
+
+                    <div>
+                        <span class="alg-number">ALGORITHM 03</span>
+
+                        <h3>Recherche séquentielle</h3>
+
+                        <p class="alg-card-description">
+                            Searching for a specific value inside an array.
+                        </p>
+                    </div>
+
+                    <span class="alg-level">
+                        Arrays · Loops · Conditions
+                    </span>
+
+                </div>
+
+                <div class="alg-idea">
+                    <strong>Idée générale :</strong>
+                    We examine the elements one by one, starting from
+                    the beginning of the array. If the searched value
+                    is found, we stop and display its position.
+                    Otherwise, we continue until the end of the array.
+                </div>
+
+                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+
+                <pre class="alg-pseudocode">Algorithme Recherche_Sequentielle
+Variables
+    T : tableau d'entiers
+    n, i, x, position : entier
+Début
+    Lire(n)
+
+    Pour i ← 0 à n-1 faire
+        Lire(T[i])
+    FinPour
+
+    Lire(x)
+    position ← -1
+    i ← 0
+
+    TantQue i < n ET position = -1 faire
+        Si T[i] = x Alors
+            position ← i
+        Sinon
+            i ← i + 1
+        FinSi
+    FinTantQue
+
+    Si position = -1 Alors
+        Écrire("Not found")
+    Sinon
+        Écrire(position)
+    FinSi
+Fin</pre>
+
+                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+
+                <p>
+                    Array: <strong>[8, 3, 6, 2, 9]</strong>
+                    — Value to search: <strong>6</strong>
+                </p>
+
+                <div class="alg-table-wrap">
+                    <table class="alg-table">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Value</th>
+                                <th>Comparison</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>0</td>
+                                <td>8</td>
+                                <td>8 ≠ 6</td>
+                                <td>Continue</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>3 ≠ 6</td>
+                                <td>Continue</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>6</td>
+                                <td>6 = 6</td>
+                                <td>Found!</td>
+                            </tr>
+
+                            <tr>
+                                <td>Result</td>
+                                <td colspan="3">
+                                    Element found at index 2 (position 3)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+
+                <div class="alg-code-box">
+
+                    <div class="alg-code-title">
+                        <span>linear_search.c</span>
+                        <span>C LANGUAGE</span>
+                    </div>
+
+                    <pre><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    int T[100], n, i, x;
+    int position = -1;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &amp;n);
+
+    while (n &lt; 1 || n &gt; 100)
+    {
+        printf("Enter a size between 1 and 100: ");
+        scanf("%d", &amp;n);
+    }
+
+    for (i = 0; i &lt; n; i++)
+    {
+        printf("T[%d] = ", i);
+        scanf("%d", &amp;T[i]);
+    }
+
+    printf("Enter the value to search: ");
+    scanf("%d", &amp;x);
+
+    for (i = 0; i &lt; n &amp;&amp; position == -1; i++)
+    {
+        if (T[i] == x)
+        {
+            position = i;
+        }
+    }
+
+    if (position == -1)
+    {
+        printf("Element not found.\n");
+    }
+    else
+    {
+        printf("Element found at position %d\n", position + 1);
+    }
+
+    return 0;
+}</code></pre>
+
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- LEARNING SUMMARY -->
+
+    <section class="alg-section" id="alg-summary">
+
+        <div class="alg-container">
+
+            <div class="alg-heading">
+                <span class="alg-kicker">03 — WHAT I LEARNED</span>
+
+                <h2>Connecting <em>the Concepts.</em></h2>
+
+                <p>
+                    These examples show how fundamental programming
+                    concepts work together to solve different problems.
+                </p>
+            </div>
+
+            <div class="alg-summary">
+
+                <article class="alg-summary-item">
+                    <span>01</span>
+                    <h3>Maximum</h3>
+                    <p>
+                        Comparing values and updating a variable
+                        using a loop.
+                    </p>
+                </article>
+
+                <article class="alg-summary-item">
+                    <span>02</span>
+                    <h3>Selection Sort</h3>
+                    <p>
+                        Using nested loops to find the smallest
+                        value and exchange elements.
+                    </p>
+                </article>
+
+                <article class="alg-summary-item">
+                    <span>03</span>
+                    <h3>Linear Search</h3>
+                    <p>
+                        Checking elements one by one until
+                        the target is found.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AI TRANSPARENCY -->
+
+    <section class="alg-section alg-section-tint" id="ai-transparency">
+
+        <div class="alg-container">
+
+            <div class="alg-heading">
+                <span class="alg-kicker">04 — RESPONSIBLE LEARNING</span>
+
+                <h2>Learning with <em>AI.</em></h2>
+
+                <p>
+                    Artificial intelligence can support learning,
+                    but understanding and personal work remain essential.
+                </p>
+            </div>
+
+            <div class="alg-ai-card">
+
+                <div class="alg-ai-icon">✧</div>
+
+                <div>
+                    <h3>AI Transparency</h3>
+
+                    <p>
+                        <strong>Tools used:</strong>
+                        ChatGPT.
+                    </p>
+
+                    <p>
+                        <strong>Role of AI:</strong>
+                        Helped explain algorithmic concepts, organise
+                        examples and clarify C code.
+                    </p>
+
+                    <p>
+                        <strong>My contribution:</strong>
+                        Studying the concepts, understanding the steps,
+                        reviewing the code and carrying out the tests.
+                    </p>
+
+                    <p>
+                        <strong>Sources:</strong>
+                        Course notes and learning materials used
+                        during the module.
+                    </p>
+
+                    <p>
+                        Execution screenshots and test results
+                        will be added after the programs are tested.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="alg-footer">
+
+    <div class="alg-footer-inner">
+
+        <a href="../index.html" class="alg-footer-brand">
+            Beyond <span>the Code</span>
+        </a>
+
+        <p>
+            A learning journey built step by step ♡
+        </p>
+
+        <span class="alg-footer-symbol">✧</span>
+
+    </div>
+
+    <div class="alg-footer-bottom">
+        <span>© 2026 — Digital Portfolio</span>
+        <a href="#alg-top">Back to top ↑</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
+
