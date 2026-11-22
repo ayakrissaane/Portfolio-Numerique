@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My algorithmic learning journey: pseudocode, step-by-step examples and C implementations.">
+    <meta name="description" content="My algorithmic learning journey: algorithms, pseudocode, examples and C programming.">
     <meta name="theme-color" content="#f8e6e8">
 
     <title>Algorithmique | Beyond the Code</title>
@@ -12,8 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/style.css">
 
     <style>
         :root {
@@ -49,7 +47,7 @@
             color: inherit;
         }
 
-        .alg-container {
+        .container {
             width: min(1120px, calc(100% - 48px));
             margin: auto;
         }
@@ -76,20 +74,17 @@
             gap: 18px;
             border: 1px solid rgba(255,255,255,.75);
             border-radius: 22px;
-            background: rgba(255,245,241,.78);
+            background: rgba(255,245,241,.82);
             backdrop-filter: blur(18px);
             box-shadow: 0 8px 30px rgba(93,55,61,.08);
         }
 
         .brand {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
             text-decoration: none;
-            white-space: nowrap;
             color: #56343b;
             font-family: 'Parisienne', cursive;
             font-size: 1.8rem;
+            white-space: nowrap;
         }
 
         .brand span {
@@ -114,7 +109,7 @@
             color: var(--pink-dark);
         }
 
-        .alg-nav-chip {
+        .nav-chip {
             padding: 10px 15px;
             border-radius: 999px;
             background: #f8e9ee;
@@ -127,7 +122,7 @@
 
         /* HERO */
 
-        .alg-hero {
+        .hero {
             min-height: 690px;
             position: relative;
             display: flex;
@@ -137,7 +132,7 @@
             background: linear-gradient(116deg, #fff8f6 0%, #f9edf2 49%, #eeeaf7 100%);
         }
 
-        .alg-grid-bg {
+        .grid-bg {
             position: absolute;
             inset: 0;
             z-index: -1;
@@ -148,14 +143,14 @@
             background-size: 42px 42px;
         }
 
-        .alg-glow {
+        .glow {
             position: absolute;
             z-index: -1;
             border-radius: 50%;
             filter: blur(2px);
         }
 
-        .alg-glow-one {
+        .glow-one {
             width: 390px;
             height: 390px;
             right: 5%;
@@ -163,7 +158,7 @@
             background: rgba(226,174,194,.25);
         }
 
-        .alg-glow-two {
+        .glow-two {
             width: 300px;
             height: 300px;
             left: -100px;
@@ -171,7 +166,7 @@
             background: rgba(174,158,213,.23);
         }
 
-        .alg-hero-inner {
+        .hero-inner {
             width: min(1180px, calc(100% - 56px));
             margin: auto;
             padding: 120px 0 100px;
@@ -181,45 +176,45 @@
             gap: 50px;
         }
 
-        .alg-eyebrow {
+        .eyebrow {
             color: #9a6680;
             font-size: .7rem;
             letter-spacing: .17em;
             font-weight: 700;
         }
 
-        .alg-overline {
+        .overline {
             margin: 22px 0 5px;
             color: #a17d91;
             font: 1.5rem 'Parisienne', cursive;
         }
 
-        .alg-hero h1 {
+        .hero h1 {
             margin: 0;
             color: var(--ink);
             font: 700 clamp(3.1rem, 5.5vw, 5.4rem)/1.05 'Playfair Display', serif;
             letter-spacing: -.05em;
         }
 
-        .alg-hero h1 em {
+        .hero h1 em {
             color: var(--pink-dark);
             font-weight: 500;
         }
 
-        .alg-hero-text {
+        .hero-text {
             max-width: 490px;
             margin: 25px 0;
             color: var(--muted);
             line-height: 1.9;
         }
 
-        .alg-actions {
+        .actions {
             display: flex;
             flex-wrap: wrap;
             gap: 12px;
         }
 
-        .alg-button {
+        .button {
             display: inline-flex;
             align-items: center;
             gap: 15px;
@@ -231,43 +226,43 @@
             transition: .25s;
         }
 
-        .alg-button:hover {
+        .button:hover {
             transform: translateY(-3px);
         }
 
-        .alg-button-primary {
+        .button-primary {
             color: white;
             background: #b87996;
             box-shadow: 0 10px 25px rgba(184,121,150,.22);
         }
 
-        .alg-button-ghost {
+        .button-ghost {
             color: #8b6480;
             border: 1px solid rgba(184,121,150,.32);
             background: rgba(255,255,255,.5);
         }
 
-        .alg-hero-note {
+        .hero-note {
             margin-top: 27px;
             color: #96889a;
             font-size: .76rem;
         }
 
-        .alg-hero-note span {
+        .hero-note span {
             color: var(--pink-dark);
             margin-right: 7px;
         }
 
         /* CODE WINDOW */
 
-        .alg-visual {
+        .hero-visual {
             position: relative;
             min-height: 390px;
             display: grid;
             place-items: center;
         }
 
-        .alg-window {
+        .window {
             width: min(100%, 490px);
             overflow: hidden;
             border-radius: 14px;
@@ -276,7 +271,7 @@
             transform: rotate(1deg);
         }
 
-        .alg-window-top {
+        .window-top {
             height: 45px;
             display: flex;
             align-items: center;
@@ -287,27 +282,27 @@
             font: .7rem 'Fira Code', monospace;
         }
 
-        .alg-dots {
+        .dots {
             display: flex;
             gap: 6px;
         }
 
-        .alg-dots i {
+        .dots i {
             width: 8px;
             height: 8px;
             border-radius: 50%;
             background: #d58fa8;
         }
 
-        .alg-dots i:nth-child(2) {
+        .dots i:nth-child(2) {
             background: #e5c58c;
         }
 
-        .alg-dots i:nth-child(3) {
+        .dots i:nth-child(3) {
             background: #9bb99f;
         }
 
-        .alg-code {
+        .window-code {
             padding: 25px 23px 30px;
             color: #e6dfeb;
             font: .78rem/2.2 'Fira Code', monospace;
@@ -319,7 +314,7 @@
         .green { color: #9dbd9f; }
         .pink { color: #e7a6bd; }
 
-        .alg-window-bottom {
+        .window-bottom {
             display: flex;
             justify-content: space-between;
             padding: 8px 14px;
@@ -328,7 +323,7 @@
             font: .6rem 'Fira Code', monospace;
         }
 
-        .alg-float {
+        .float {
             position: absolute;
             z-index: 2;
             padding: 12px 16px;
@@ -342,32 +337,32 @@
             font-weight: 700;
         }
 
-        .alg-float-one {
+        .float-one {
             top: 8px;
             right: 0;
         }
 
-        .alg-float-two {
+        .float-two {
             bottom: 8px;
             left: -10px;
         }
 
-        /* GENERAL SECTIONS */
+        /* SECTIONS */
 
-        .alg-section {
+        .section {
             padding: 85px 0;
         }
 
-        .alg-section-tint {
+        .section-tint {
             background: linear-gradient(135deg, #fff4f5, #f9f5fb);
         }
 
-        .alg-heading {
+        .section-heading {
             max-width: 760px;
             margin-bottom: 38px;
         }
 
-        .alg-kicker {
+        .kicker {
             display: inline-block;
             margin-bottom: 10px;
             color: #b66d8b;
@@ -376,31 +371,31 @@
             letter-spacing: .15em;
         }
 
-        .alg-heading h2 {
+        .section-heading h2 {
             margin: 0 0 12px;
             color: var(--ink);
             font: 600 clamp(2rem, 4vw, 3rem)/1.2 'Playfair Display', serif;
         }
 
-        .alg-heading h2 em {
+        .section-heading h2 em {
             color: var(--pink-dark);
         }
 
-        .alg-heading p {
+        .section-heading p {
             margin: 0;
             color: var(--muted);
             line-height: 1.9;
         }
 
-        /* FUNDAMENTALS */
+        /* CONCEPTS */
 
-        .alg-concepts {
+        .concepts {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 18px;
         }
 
-        .alg-concept {
+        .concept {
             padding: 25px;
             border: 1px solid var(--line);
             border-radius: 15px;
@@ -408,7 +403,7 @@
             box-shadow: 0 12px 35px rgba(80,60,90,.045);
         }
 
-        .alg-concept-icon {
+        .concept-icon {
             width: 43px;
             height: 43px;
             display: grid;
@@ -420,12 +415,12 @@
             font-size: 1.2rem;
         }
 
-        .alg-concept h3 {
+        .concept h3 {
             margin: 0 0 8px;
             font: 600 1.2rem 'Playfair Display', serif;
         }
 
-        .alg-concept p {
+        .concept p {
             margin: 0;
             color: var(--muted);
             font-size: .88rem;
@@ -433,7 +428,7 @@
 
         /* ALGORITHM CARDS */
 
-        .alg-card {
+        .algorithm-card {
             margin-top: 32px;
             padding: 32px;
             border: 1px solid var(--line);
@@ -442,7 +437,7 @@
             box-shadow: 0 15px 45px rgba(80,60,90,.055);
         }
 
-        .alg-card-header {
+        .card-header {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
@@ -450,25 +445,25 @@
             margin-bottom: 22px;
         }
 
-        .alg-number {
+        .number {
             color: #c1819d;
             font: .72rem 'Fira Code', monospace;
             letter-spacing: .12em;
         }
 
-        .alg-card h3 {
+        .algorithm-card h3 {
             margin: 5px 0 8px;
             font: 600 1.7rem 'Playfair Display', serif;
         }
 
-        .alg-card-description {
+        .card-description {
             max-width: 700px;
             margin: 0;
             color: var(--muted);
             font-size: .91rem;
         }
 
-        .alg-level {
+        .level {
             flex-shrink: 0;
             padding: 7px 12px;
             border-radius: 30px;
@@ -478,14 +473,14 @@
             font-weight: 700;
         }
 
-        .alg-subtitle {
+        .subtitle {
             margin: 28px 0 12px;
             color: #79566f;
             font-size: .9rem;
             font-weight: 700;
         }
 
-        .alg-idea {
+        .idea {
             padding: 17px 19px;
             border-left: 3px solid var(--pink);
             border-radius: 0 10px 10px 0;
@@ -494,13 +489,13 @@
             font-size: .9rem;
         }
 
-        .alg-idea strong {
+        .idea strong {
             color: #9d5d7c;
         }
 
-        /* PSEUDOCODE AND C CODE */
+        /* CODE */
 
-        .alg-pseudocode {
+        .pseudocode {
             overflow-x: auto;
             padding: 22px;
             border-radius: 12px;
@@ -510,13 +505,13 @@
             white-space: pre;
         }
 
-        .alg-code-box {
+        .code-box {
             overflow: hidden;
             border-radius: 12px;
             background: var(--code);
         }
 
-        .alg-code-title {
+        .code-title {
             display: flex;
             justify-content: space-between;
             padding: 12px 16px;
@@ -525,7 +520,7 @@
             font: .68rem 'Fira Code', monospace;
         }
 
-        .alg-code-box pre {
+        .code-box pre {
             margin: 0;
             padding: 21px;
             overflow-x: auto;
@@ -533,34 +528,34 @@
             font: .76rem/1.9 'Fira Code', monospace;
         }
 
-        /* TABLES */
+        /* EXAMPLE TABLES */
 
-        .alg-table-wrap {
+        .table-wrap {
             overflow-x: auto;
             border: 1px solid var(--line);
             border-radius: 12px;
         }
 
-        .alg-table {
+        .example-table {
             width: 100%;
             border-collapse: collapse;
             font-size: .85rem;
         }
 
-        .alg-table th {
+        .example-table th {
             padding: 13px 15px;
             color: #805a75;
             background: #fbf0f4;
             text-align: left;
         }
 
-        .alg-table td {
+        .example-table td {
             padding: 12px 15px;
             border-top: 1px solid #f1e8ef;
             color: #625b69;
         }
 
-        .alg-table tr:last-child td {
+        .example-table tr:last-child td {
             font-weight: 700;
             color: #9d5d7c;
             background: #fff9fb;
@@ -568,30 +563,30 @@
 
         /* SUMMARY */
 
-        .alg-summary {
+        .summary-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 17px;
         }
 
-        .alg-summary-item {
+        .summary-item {
             padding: 22px;
             border: 1px solid var(--line);
             border-radius: 13px;
             background: white;
         }
 
-        .alg-summary-item span {
+        .summary-item span {
             color: #bd7d9b;
             font: .72rem 'Fira Code', monospace;
         }
 
-        .alg-summary-item h3 {
+        .summary-item h3 {
             margin: 8px 0;
             font: 600 1.1rem 'Playfair Display', serif;
         }
 
-        .alg-summary-item p {
+        .summary-item p {
             margin: 0;
             color: var(--muted);
             font-size: .83rem;
@@ -599,7 +594,7 @@
 
         /* AI TRANSPARENCY */
 
-        .alg-ai-card {
+        .ai-card {
             display: grid;
             grid-template-columns: 60px 1fr;
             gap: 22px;
@@ -609,7 +604,7 @@
             background: linear-gradient(135deg, #fff, #fff5f8);
         }
 
-        .alg-ai-icon {
+        .ai-icon {
             width: 52px;
             height: 52px;
             display: grid;
@@ -620,38 +615,25 @@
             font-size: 1.4rem;
         }
 
-        .alg-ai-card h3 {
+        .ai-card h3 {
             margin: 0 0 12px;
             font: 600 1.4rem 'Playfair Display', serif;
         }
 
-        .alg-ai-card p {
+        .ai-card p {
             margin: 8px 0;
             color: var(--muted);
             font-size: .88rem;
         }
 
-        .alg-sources {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 16px;
-        }
-
-        .alg-sources a {
-            color: #a45f80;
-            font-size: .82rem;
-            font-weight: 700;
-        }
-
         /* FOOTER */
 
-        .alg-footer {
+        .footer {
             padding: 35px 24px 20px;
             background: #f6eaf0;
         }
 
-        .alg-footer-inner {
+        .footer-inner {
             width: min(1120px, 100%);
             margin: auto;
             display: flex;
@@ -660,27 +642,27 @@
             gap: 20px;
         }
 
-        .alg-footer-brand {
+        .footer-brand {
             color: #56343b;
             font: 1.7rem 'Parisienne', cursive;
             text-decoration: none;
         }
 
-        .alg-footer-brand span {
+        .footer-brand span {
             color: #bd718b;
         }
 
-        .alg-footer p {
+        .footer p {
             color: #806d7b;
             font-size: .82rem;
         }
 
-        .alg-footer-symbol {
+        .footer-symbol {
             color: #bd718b;
             font-size: 1.2rem;
         }
 
-        .alg-footer-bottom {
+        .footer-bottom {
             width: min(1120px, 100%);
             margin: 20px auto 0;
             padding-top: 15px;
@@ -691,29 +673,29 @@
             font-size: .72rem;
         }
 
-        .alg-footer-bottom a {
+        .footer-bottom a {
             text-decoration: none;
         }
 
         /* RESPONSIVE */
 
         @media (max-width: 850px) {
-            .alg-hero-inner {
+            .hero-inner {
                 grid-template-columns: 1fr;
                 gap: 20px;
                 padding-top: 130px;
             }
 
-            .alg-visual {
+            .hero-visual {
                 min-height: 350px;
             }
 
-            .alg-concepts,
-            .alg-summary {
+            .concepts,
+            .summary-grid {
                 grid-template-columns: 1fr 1fr;
             }
 
-            .alg-nav-chip {
+            .nav-chip {
                 display: none;
             }
         }
@@ -740,56 +722,56 @@
                 font-size: .73rem;
             }
 
-            .alg-hero-inner {
+            .hero-inner {
                 width: calc(100% - 34px);
                 padding: 120px 0 65px;
             }
 
-            .alg-hero h1 {
+            .hero h1 {
                 font-size: 3.2rem;
             }
 
-            .alg-visual {
+            .hero-visual {
                 min-height: 300px;
             }
 
-            .alg-code {
+            .window-code {
                 font-size: .65rem;
                 padding: 17px;
             }
 
-            .alg-section {
+            .section {
                 padding: 60px 0;
             }
 
-            .alg-container {
+            .container {
                 width: calc(100% - 30px);
             }
 
-            .alg-card {
+            .algorithm-card {
                 padding: 20px 15px;
             }
 
-            .alg-card-header {
+            .card-header {
                 flex-direction: column;
             }
 
-            .alg-concepts,
-            .alg-summary {
+            .concepts,
+            .summary-grid {
                 grid-template-columns: 1fr;
             }
 
-            .alg-ai-card {
+            .ai-card {
                 grid-template-columns: 1fr;
                 padding: 22px;
             }
 
-            .alg-footer-inner {
+            .footer-inner {
                 flex-direction: column;
                 text-align: center;
             }
 
-            .alg-footer-bottom {
+            .footer-bottom {
                 gap: 10px;
                 flex-wrap: wrap;
             }
@@ -798,8 +780,6 @@
 </head>
 
 <body>
-
-<!-- NAVIGATION -->
 
 <header class="site-header">
     <nav class="nav-wrap">
@@ -814,7 +794,7 @@
             <a href="#alg-top" class="active">Algorithmique</a>
         </div>
 
-        <a href="#alg-projects" class="alg-nav-chip">
+        <a href="#alg-projects" class="nav-chip">
             Explore algorithms ↘
         </a>
 
@@ -826,21 +806,21 @@
 
     <!-- HERO -->
 
-    <section class="alg-hero">
+    <section class="hero">
 
-        <div class="alg-grid-bg"></div>
-        <div class="alg-glow alg-glow-one"></div>
-        <div class="alg-glow alg-glow-two"></div>
+        <div class="grid-bg"></div>
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
 
-        <div class="alg-hero-inner">
+        <div class="hero-inner">
 
-            <div class="alg-hero-content">
+            <div>
 
-                <span class="alg-eyebrow">
+                <span class="eyebrow">
                     DEVELOPMENT · LOGIC & PROBLEM SOLVING
                 </span>
 
-                <p class="alg-overline">
+                <p class="overline">
                     Think logically, build confidently.
                 </p>
 
@@ -849,23 +829,23 @@
                     <em>Algorithms.</em>
                 </h1>
 
-                <p class="alg-hero-text">
+                <p class="hero-text">
                     Every program begins with an idea.
                     Discover how I break problems into simple steps,
                     understand algorithms and transform logic into code.
                 </p>
 
-                <div class="alg-actions">
-                    <a href="#alg-projects" class="alg-button alg-button-primary">
+                <div class="actions">
+                    <a href="#alg-projects" class="button button-primary">
                         Discover the algorithms ↘
                     </a>
 
-                    <a href="#my-approach" class="alg-button alg-button-ghost">
+                    <a href="#my-approach" class="button button-ghost">
                         My learning approach ♡
                     </a>
                 </div>
 
-                <div class="alg-hero-note">
+                <div class="hero-note">
                     <span>✦</span>
                     Understanding first, coding next.
                 </div>
@@ -873,19 +853,19 @@
             </div>
 
 
-            <div class="alg-visual">
+            <div class="hero-visual">
 
-                <div class="alg-window">
+                <div class="window">
 
-                    <div class="alg-window-top">
-                        <div class="alg-dots">
+                    <div class="window-top">
+                        <div class="dots">
                             <i></i><i></i><i></i>
                         </div>
                         <span>algorithm.c</span>
                         <span>♡</span>
                     </div>
 
-                    <div class="alg-code">
+                    <div class="window-code">
 <span class="green">// A problem-solving mindset</span>
 
 <span class="purple">int</span> <span class="yellow">solve_problem</span>() {
@@ -902,18 +882,18 @@
 <span class="pink">printf</span>("Keep learning ♡");
                     </div>
 
-                    <div class="alg-window-bottom">
+                    <div class="window-bottom">
                         <span>⌘ C LANGUAGE</span>
                         <span>Logic · Steps · Results</span>
                     </div>
 
                 </div>
 
-                <div class="alg-float alg-float-one">
+                <div class="float float-one">
                     ✧ THINK BEFORE YOU CODE
                 </div>
 
-                <div class="alg-float alg-float-two">
+                <div class="float float-two">
                     ♡ One step at a time
                 </div>
 
@@ -925,12 +905,12 @@
 
     <!-- INTRODUCTION -->
 
-    <section class="alg-section" id="my-approach">
+    <section class="section" id="my-approach">
 
-        <div class="alg-container">
+        <div class="container">
 
-            <div class="alg-heading">
-                <span class="alg-kicker">01 — THE FUNDAMENTALS</span>
+            <div class="section-heading">
+                <span class="kicker">01 — THE FUNDAMENTALS</span>
 
                 <h2>What is <em>Algorithmique?</em></h2>
 
@@ -942,10 +922,10 @@
                 </p>
             </div>
 
-            <div class="alg-concepts">
+            <div class="concepts">
 
-                <article class="alg-concept">
-                    <div class="alg-concept-icon">⌕</div>
+                <article class="concept">
+                    <div class="concept-icon">⌕</div>
                     <h3>Understand</h3>
                     <p>
                         Identify the problem, the input data
@@ -953,8 +933,8 @@
                     </p>
                 </article>
 
-                <article class="alg-concept">
-                    <div class="alg-concept-icon">↗</div>
+                <article class="concept">
+                    <div class="concept-icon">↗</div>
                     <h3>Design</h3>
                     <p>
                         Organise the solution into simple,
@@ -962,8 +942,8 @@
                     </p>
                 </article>
 
-                <article class="alg-concept">
-                    <div class="alg-concept-icon">♡</div>
+                <article class="concept">
+                    <div class="concept-icon">♡</div>
                     <h3>Implement</h3>
                     <p>
                         Translate the algorithm into a programming
@@ -978,12 +958,12 @@
 
     <!-- ALGORITHMS -->
 
-    <section class="alg-section alg-section-tint" id="alg-projects">
+    <section class="section section-tint" id="alg-projects">
 
-        <div class="alg-container">
+        <div class="container">
 
-            <div class="alg-heading">
-                <span class="alg-kicker">02 — PRACTICE & APPLICATION</span>
+            <div class="section-heading">
+                <span class="kicker">02 — PRACTICE & APPLICATION</span>
 
                 <h2>From Logic to <em>Code.</em></h2>
 
@@ -995,38 +975,38 @@
             </div>
 
 
-            <!-- ALGORITHM 1 -->
+            <!-- ALGORITHM 1: MAXIMUM -->
 
-            <article class="alg-card">
+            <article class="algorithm-card">
 
-                <div class="alg-card-header">
+                <div class="card-header">
 
                     <div>
-                        <span class="alg-number">ALGORITHM 01</span>
+                        <span class="number">ALGORITHM 01</span>
 
                         <h3>Recherche du maximum</h3>
 
-                        <p class="alg-card-description">
+                        <p class="card-description">
                             Finding the largest value in an array of integers.
                         </p>
                     </div>
 
-                    <span class="alg-level">
+                    <span class="level">
                         Arrays · Loops · Conditions
                     </span>
 
                 </div>
 
-                <div class="alg-idea">
+                <div class="idea">
                     <strong>Idée générale :</strong>
                     We suppose that the first element is the maximum.
                     Then, we compare it with every other element.
                     If we find a greater value, we update the maximum.
                 </div>
 
-                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+                <h4 class="subtitle">01. Pseudo-code</h4>
 
-                <pre class="alg-pseudocode">Algorithme Recherche_Maximum
+                <pre class="pseudocode">Algorithme Recherche_Maximum
 Variables
     T : tableau d'entiers
     n, i, max : entier
@@ -1048,15 +1028,15 @@ Début
     Écrire(max)
 Fin</pre>
 
-                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+                <h4 class="subtitle">02. Exemple pas à pas</h4>
 
                 <p>
                     Let's consider the array:
                     <strong>[4, 9, 2, 7]</strong>
                 </p>
 
-                <div class="alg-table-wrap">
-                    <table class="alg-table">
+                <div class="table-wrap">
+                    <table class="example-table">
                         <thead>
                             <tr>
                                 <th>Step</th>
@@ -1103,11 +1083,11 @@ Fin</pre>
                     </table>
                 </div>
 
-                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+                <h4 class="subtitle">03. Traduction en langage C</h4>
 
-                <div class="alg-code-box">
+                <div class="code-box">
 
-                    <div class="alg-code-title">
+                    <div class="code-title">
                         <span>maximum.c</span>
                         <span>C LANGUAGE</span>
                     </div>
@@ -1153,43 +1133,43 @@ int main()
             </article>
 
 
-            <!-- ALGORITHM 2 -->
+            <!-- ALGORITHM 2: SELECTION SORT -->
 
-            <article class="alg-card">
+            <article class="algorithm-card">
 
-                <div class="alg-card-header">
+                <div class="card-header">
 
                     <div>
-                        <span class="alg-number">ALGORITHM 02</span>
+                        <span class="number">ALGORITHM 02</span>
 
                         <h3>Tri par sélection</h3>
 
-                        <p class="alg-card-description">
+                        <p class="card-description">
                             Sorting an array in ascending order using Selection Sort.
                         </p>
                     </div>
 
-                    <span class="alg-level">
+                    <span class="level">
                         Arrays · Nested Loops · Swap
                     </span>
 
                 </div>
 
-                <div class="alg-idea">
+                <div class="idea">
                     <strong>Idée générale :</strong>
                     At each pass, we search for the smallest element
                     in the unsorted part of the array. We then exchange
                     it with the first element of that part.
                 </div>
 
-                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+                <h4 class="subtitle">01. Pseudo-code</h4>
 
-                <pre class="alg-pseudocode">Algorithme Tri_Selection
+                <pre class="pseudocode">Algorithme Tri_Selection
 Variables
     T : tableau d'entiers
     n, i, j, indiceMin, temp : entier
 Début
-    Pour i ← 0 à n-1 faire
+    Pour i ← 0 à n-2 faire
         indiceMin ← i
 
         Pour j ← i+1 à n-1 faire
@@ -1206,14 +1186,14 @@ Début
     Écrire(T)
 Fin</pre>
 
-                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+                <h4 class="subtitle">02. Exemple pas à pas</h4>
 
                 <p>
                     Initial array: <strong>[7, 3, 5, 2]</strong>
                 </p>
 
-                <div class="alg-table-wrap">
-                    <table class="alg-table">
+                <div class="table-wrap">
+                    <table class="example-table">
                         <thead>
                             <tr>
                                 <th>Pass</th>
@@ -1260,11 +1240,11 @@ Fin</pre>
                     </table>
                 </div>
 
-                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+                <h4 class="subtitle">03. Traduction en langage C</h4>
 
-                <div class="alg-code-box">
+                <div class="code-box">
 
-                    <div class="alg-code-title">
+                    <div class="code-title">
                         <span>selection_sort.c</span>
                         <span>C LANGUAGE</span>
                     </div>
@@ -1323,29 +1303,29 @@ int main()
             </article>
 
 
-            <!-- ALGORITHM 3 -->
+            <!-- ALGORITHM 3: LINEAR SEARCH -->
 
-            <article class="alg-card">
+            <article class="algorithm-card">
 
-                <div class="alg-card-header">
+                <div class="card-header">
 
                     <div>
-                        <span class="alg-number">ALGORITHM 03</span>
+                        <span class="number">ALGORITHM 03</span>
 
                         <h3>Recherche séquentielle</h3>
 
-                        <p class="alg-card-description">
+                        <p class="card-description">
                             Searching for a specific value inside an array.
                         </p>
                     </div>
 
-                    <span class="alg-level">
+                    <span class="level">
                         Arrays · Loops · Conditions
                     </span>
 
                 </div>
 
-                <div class="alg-idea">
+                <div class="idea">
                     <strong>Idée générale :</strong>
                     We examine the elements one by one, starting from
                     the beginning of the array. If the searched value
@@ -1353,9 +1333,9 @@ int main()
                     Otherwise, we continue until the end of the array.
                 </div>
 
-                <h4 class="alg-subtitle">01. Pseudo-code</h4>
+                <h4 class="subtitle">01. Pseudo-code</h4>
 
-                <pre class="alg-pseudocode">Algorithme Recherche_Sequentielle
+                <pre class="pseudocode">Algorithme Recherche_Sequentielle
 Variables
     T : tableau d'entiers
     n, i, x, position : entier
@@ -1385,15 +1365,15 @@ Début
     FinSi
 Fin</pre>
 
-                <h4 class="alg-subtitle">02. Exemple pas à pas</h4>
+                <h4 class="subtitle">02. Exemple pas à pas</h4>
 
                 <p>
                     Array: <strong>[8, 3, 6, 2, 9]</strong>
                     — Value to search: <strong>6</strong>
                 </p>
 
-                <div class="alg-table-wrap">
-                    <table class="alg-table">
+                <div class="table-wrap">
+                    <table class="example-table">
                         <thead>
                             <tr>
                                 <th>Index</th>
@@ -1435,11 +1415,11 @@ Fin</pre>
                     </table>
                 </div>
 
-                <h4 class="alg-subtitle">03. Traduction en langage C</h4>
+                <h4 class="subtitle">03. Traduction en langage C</h4>
 
-                <div class="alg-code-box">
+                <div class="code-box">
 
-                    <div class="alg-code-title">
+                    <div class="code-title">
                         <span>linear_search.c</span>
                         <span>C LANGUAGE</span>
                     </div>
@@ -1499,12 +1479,12 @@ int main()
 
     <!-- LEARNING SUMMARY -->
 
-    <section class="alg-section" id="alg-summary">
+    <section class="section" id="alg-summary">
 
-        <div class="alg-container">
+        <div class="container">
 
-            <div class="alg-heading">
-                <span class="alg-kicker">03 — WHAT I LEARNED</span>
+            <div class="section-heading">
+                <span class="kicker">03 — WHAT I LEARNED</span>
 
                 <h2>Connecting <em>the Concepts.</em></h2>
 
@@ -1514,9 +1494,9 @@ int main()
                 </p>
             </div>
 
-            <div class="alg-summary">
+            <div class="summary-grid">
 
-                <article class="alg-summary-item">
+                <article class="summary-item">
                     <span>01</span>
                     <h3>Maximum</h3>
                     <p>
@@ -1525,7 +1505,7 @@ int main()
                     </p>
                 </article>
 
-                <article class="alg-summary-item">
+                <article class="summary-item">
                     <span>02</span>
                     <h3>Selection Sort</h3>
                     <p>
@@ -1534,7 +1514,7 @@ int main()
                     </p>
                 </article>
 
-                <article class="alg-summary-item">
+                <article class="summary-item">
                     <span>03</span>
                     <h3>Linear Search</h3>
                     <p>
@@ -1550,12 +1530,12 @@ int main()
 
     <!-- AI TRANSPARENCY -->
 
-    <section class="alg-section alg-section-tint" id="ai-transparency">
+    <section class="section section-tint" id="ai-transparency">
 
-        <div class="alg-container">
+        <div class="container">
 
-            <div class="alg-heading">
-                <span class="alg-kicker">04 — RESPONSIBLE LEARNING</span>
+            <div class="section-heading">
+                <span class="kicker">04 — RESPONSIBLE LEARNING</span>
 
                 <h2>Learning with <em>AI.</em></h2>
 
@@ -1565,9 +1545,9 @@ int main()
                 </p>
             </div>
 
-            <div class="alg-ai-card">
+            <div class="ai-card">
 
-                <div class="alg-ai-icon">✧</div>
+                <div class="ai-icon">✧</div>
 
                 <div>
                     <h3>AI Transparency</h3>
@@ -1610,11 +1590,11 @@ int main()
 
 <!-- FOOTER -->
 
-<footer class="alg-footer">
+<footer class="footer">
 
-    <div class="alg-footer-inner">
+    <div class="footer-inner">
 
-        <a href="../index.html" class="alg-footer-brand">
+        <a href="../index.html" class="footer-brand">
             Beyond <span>the Code</span>
         </a>
 
@@ -1622,11 +1602,11 @@ int main()
             A learning journey built step by step ♡
         </p>
 
-        <span class="alg-footer-symbol">✧</span>
+        <span class="footer-symbol">✧</span>
 
     </div>
 
-    <div class="alg-footer-bottom">
+    <div class="footer-bottom">
         <span>© 2026 — Digital Portfolio</span>
         <a href="#alg-top">Back to top ↑</a>
     </div>
@@ -1635,4 +1615,3 @@ int main()
 
 </body>
 </html>
-
