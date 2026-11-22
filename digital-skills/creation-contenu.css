@@ -14,19 +14,24 @@
 
 .cc-hero-art {
     position: relative;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
 }
 
 .cc-hero-art .cyber-hero-image {
     display: block;
     width: 100% !important;
     height: auto !important;
+    min-height: 0 !important;
     max-height: none !important;
     object-fit: contain !important;
-    object-position: center;
+    object-position: center !important;
 }
 
 .cc-floating {
