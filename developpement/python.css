@@ -271,3 +271,33 @@ body { overflow-x: hidden; }
     .py-sources { align-items: flex-start; flex-direction: column; gap: 7px; }
     .py-footer .py-container { flex-direction: column; text-align: center; }
 }
+
+/* Completed project links */
+.py-project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 18px;
+}
+
+.py-project-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 12px;
+    border: 1px solid #eadce8;
+    border-radius: 6px;
+    color: #986681;
+    background: #fff8fb;
+    font-size: .68rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.py-project-links a:hover {
+    color: white;
+    background: #b87996;
+    border-color: #b87996;
+    transform: translateY(-2px);
+}
+
