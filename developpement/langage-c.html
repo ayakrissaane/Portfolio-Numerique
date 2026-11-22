@@ -1,5 +1,195 @@
-Pointeurs
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="My journey with C programming, learning and building small projects.">
+    <meta name="theme-color" content="#f8e6e8">
 
-Structures (struct
+    <title>C Studio | Beyond the Code</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fira+Code:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+    <!-- Main website style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Python page style reused as a starting point -->
+    <link rel="stylesheet" href="python.css">
+
+    <!-- Custom C page style -->
+    <link rel="stylesheet" href="langage-c.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="nav-wrap">
+
+        <a class="brand" href="../index.html">
+            <span class="brand-flower">✿</span>
+            <span>Beyond the Code</span>
+            <span class="brand-sparkle">✧</span>
+        </a>
+
+        <button class="menu-toggle" type="button"
+            aria-label="Ouvrir le menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a href="../index.html">⌂ <span>Accueil</span></a>
+            <a href="../index.html#modules">▤ <span>Modules</span></a>
+            <a class="active" href="#c-top">⌘ <span>Langage C</span></a>
+            <a href="../index.html#projets">▧ <span>Projets</span></a>
+        </nav>
+
+        <a class="python-nav-chip" href="#c-projects">
+            Explore the studio <span>↘</span>
+        </a>
+
+    </div>
+</header>
+
+<main id="c-top">
+
+    <!-- HERO SECTION -->
+    <section class="py-hero c-hero">
+
+        <div class="py-hero-glow py-glow-one"></div>
+        <div class="py-hero-glow py-glow-two"></div>
+        <div class="py-hero-grid"></div>
+
+        <div class="py-hero-inner">
+
+            <div class="py-hero-copy">
+
+                <span class="py-eyebrow">
+                    <span class="py-eyebrow-dot"></span>
+                    DEVELOPMENT · C PROGRAMMING JOURNEY
+                </span>
+
+                <p class="py-overline">
+                    From logic to code, one step at a time.
+                </p>
+
+                <h1>
+                    Welcome to my<br>
+                    <em>C Studio.</em>
+                    <span class="py-title-flower">✿</span>
+                </h1>
+
+                <p class="py-hero-text">
+                    Un espace pour découvrir la programmation en C,
+                    comprendre la logique des programmes et transformer
+                    les connaissances acquises en petits projets pratiques.
+                </p>
+
+                <div class="py-hero-actions">
+                    <a class="py-button py-button-primary"
+                       href="#c-projects">
+                        Découvrir les projets <span>↘</span>
+                    </a>
+
+                    <a class="py-button py-button-ghost"
+                       href="#c-journey">
+                        Mon parcours <span>♡</span>
+                    </a>
+                </div>
+
+                <div class="py-hero-note">
+                    <span>✦</span>
+                    Learning C, building confidence.
+                </div>
+
+            </div>
+
+            <!-- CODE BLOCKS INSPIRED EDITOR -->
+            <div class="py-editor-scene c-editor-scene">
+
+                <div class="py-editor-window c-editor-window">
+
+                    <div class="py-editor-topbar">
+                        <div class="py-window-dots">
+                            <i></i><i></i><i></i>
+                        </div>
+
+                        <span class="py-editor-title">
+                            main.c — Code::Blocks
+                        </span>
+
+                        <span class="py-editor-heart">♡</span>
+                    </div>
+
+                    <div class="py-editor-body">
+
+                        <div class="py-editor-sidebar">
+                            <span class="py-side-icon active">▣</span>
+                            <span class="py-side-icon">⌕</span>
+                            <span class="py-side-icon">⑂</span>
+                            <span class="py-side-icon">▧</span>
+                        </div>
+
+                        <div class="py-code-area">
+
+                            <div class="py-file-tab">
+                                <span>Ⓒ</span> main.c <b>×</b>
+                            </div>
+
+                            <div class="py-code-lines" aria-hidden="true">
+                                <div><small>01</small><span class="py-purple">#include</span> <span class="py-pink">&lt;stdio.h&gt;</span></div>
+                                <div><small>02</small></div>
+                                <div><small>03</small><span class="py-purple">int</span> <span class="py-yellow">main</span>() {</div>
+                                <div><small>04</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-purple">int</span> curiosity = <span class="py-blue">1</span>;</div>
+                                <div><small>05</small></div>
+                                <div><small>06</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-blue">printf</span>(<span class="py-pink">"Hello, C! ♡"</span>);</div>
+                                <div><small>07</small></div>
+                                <div><small>08</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-purple">return</span> <span class="py-blue">0</span>;</div>
+                                <div><small>09</small>}</div>
+                            </div>
+
+                            <div class="py-editor-status">
+                                <span>Ⓒ C Language</span>
+                                <span>Ln 9, Col 1 · UTF-8</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-float-card py-float-top">
+                    <span>✿</span>
+                    <b>LEARN</b>
+                    <small>with curiosity</small>
+                </div>
+
+                <div class="py-float-card py-float-bottom">
+                    <span>⌁</span>
+                    <b>COMPILE</b>
+                    <small>step by step</small>
+                </div>
+
+                <div class="py-orbit py-orbit-one">{"}"}</div>
+                <div class="py-orbit py-orbit-two">&lt;/&gt;</div>
+
+            </div>
+
+        </div>
+
+        <div class="py-hero-bottom">
+            <span>SCROLL TO EXPLORE</span>
+            <i></i>
+            <span>01 / 03</span>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
