@@ -233,11 +233,11 @@
 
         <div class="c-project-grid">
 
-            <!-- PROJECT 1 -->
+            <!-- PROJECT 1: STUDENT GRADE MANAGER -->
             <article class="c-project-card">
                 <div class="c-project-top">
                     <span class="c-project-label">PROJECT 01</span>
-                    <span class="c-project-status">À réaliser</span>
+                    <span class="c-project-status">Source code added</span>
                 </div>
 
                 <div class="c-project-icon">▤</div>
@@ -246,36 +246,41 @@
 
                 <p class="c-project-description">
                     A simple application to enter student grades,
-                    calculate the average and determine the final result.
+                    calculate the average and determine whether
+                    the final result is a pass or a fail.
                 </p>
 
                 <div class="c-project-tags">
                     <span>Variables</span>
                     <span>Conditions</span>
                     <span>Loops</span>
-                    <span>Arrays</span>
+                    <span>Input / Output</span>
                 </div>
 
                 <div class="c-project-preview">
                     <div class="c-preview-heading">
-                        <span>●</span> Preview — main.c
+                        <span>●</span> Example output — main.c
                     </div>
-                    <pre>Student Grade Manager
 
-Enter the number of grades:
-> ...
+                    <pre>STUDENT GRADE MANAGER
 
-Average: ...
-Result: ...</pre>
+Enter number of grades: 3
+Enter grade: 12
+Enter grade: 14
+Enter grade: 16
+
+Average = 14.00
+Result: Passed</pre>
+
                     <span class="c-preview-placeholder">
-                        Preview only — execution screenshot pending
+                        Illustrative output — not a real execution screenshot
                     </span>
                 </div>
 
                 <div class="c-project-details">
                     <p>
                         <span>01</span>
-                        <a href="projets-c/Student-Grade-Manager/main.c"
+                        <a href="student_grade_manager.c"
                            target="_blank" rel="noopener noreferrer">
                             View C source code ↗
                         </a>
@@ -283,30 +288,27 @@ Result: ...</pre>
 
                     <p>
                         <span>02</span>
-                        Execution screenshot — to add
+                        Problem: Calculate the average of several grades.
                     </p>
 
                     <p>
                         <span>03</span>
-                        Explanation and testing
+                        Explanation: A loop reads the grades and calculates their sum. A condition determines the final result.
                     </p>
 
                     <p>
                         <span>04</span>
-                        <a href="projets-c/Student-Grade-Manager/README.md"
-                           target="_blank" rel="noopener noreferrer">
-                            Project documentation ↗
-                        </a>
+                        Difficulty: Repeating the input operation and calculating the average.
                     </p>
                 </div>
             </article>
 
 
-            <!-- PROJECT 2 -->
+            <!-- PROJECT 2: SMART BUDGET CALCULATOR -->
             <article class="c-project-card">
                 <div class="c-project-top">
                     <span class="c-project-label">PROJECT 02</span>
-                    <span class="c-project-status">Completed</span>
+                    <span class="c-project-status">Source code added</span>
                 </div>
 
                 <div class="c-project-icon">♡</div>
@@ -316,37 +318,40 @@ Result: ...</pre>
                 <p class="c-project-description">
                     A mini budget application that calculates total
                     expenses and displays the remaining budget.
+                    It also detects when expenses exceed the budget.
                 </p>
 
                 <div class="c-project-tags">
                     <span>Variables</span>
                     <span>Conditions</span>
                     <span>Loops</span>
-                    <span>Functions</span>
-                    <span>Arrays</span>
+                    <span>Calculations</span>
                 </div>
 
                 <div class="c-project-preview">
                     <div class="c-preview-heading">
-                        <span>●</span> Preview — main.c
+                        <span>●</span> Example output — main.c
                     </div>
-                    <pre>Smart Budget Calculator
 
-Enter your budget:
-> ...
+                    <pre>SMART BUDGET CALCULATOR
 
-Total expenses: ...
-Remaining budget: ...
-Status: ...</pre>
+Enter your budget: 200
+How many expenses? 2
+Enter expense: 80
+Enter expense: 70
+
+Total expenses = 150.00
+Remaining budget = 50.00</pre>
+
                     <span class="c-preview-placeholder">
-                        Source code available — execution screenshot pending
+                        Illustrative output — not a real execution screenshot
                     </span>
                 </div>
 
                 <div class="c-project-details">
                     <p>
                         <span>01</span>
-                        <a href="projets-c/Smart-Budget-Calculator/main.c"
+                        <a href="smart_budget.c"
                            target="_blank" rel="noopener noreferrer">
                             View C source code ↗
                         </a>
@@ -354,27 +359,27 @@ Status: ...</pre>
 
                     <p>
                         <span>02</span>
-                        Execution screenshot — to add
+                        Problem: Calculate expenses and check the available budget.
                     </p>
 
                     <p>
                         <span>03</span>
-                        Explanation and testing
+                        Explanation: A loop reads each expense and adds it to the total. A condition checks the remaining budget.
                     </p>
 
                     <p>
                         <span>04</span>
-                        Project documentation — to add
+                        Difficulty: Checking whether the total expenses exceed the budget.
                     </p>
                 </div>
             </article>
 
 
-            <!-- PROJECT 3 -->
+            <!-- PROJECT 3: TEXT TOOLKIT -->
             <article class="c-project-card">
                 <div class="c-project-top">
                     <span class="c-project-label">PROJECT 03</span>
-                    <span class="c-project-status">À réaliser</span>
+                    <span class="c-project-status">Source code added</span>
                 </div>
 
                 <div class="c-project-icon">Aa</div>
@@ -383,36 +388,59 @@ Status: ...</pre>
 
                 <p class="c-project-description">
                     A small text analysis tool that counts characters,
-                    identifies spaces and searches for a character.
+                    identifies spaces and searches for a specific
+                    character in a text.
                 </p>
 
                 <div class="c-project-tags">
                     <span>Strings</span>
                     <span>Loops</span>
                     <span>Conditions</span>
-                    <span>Functions</span>
+                    <span>Character arrays</span>
                 </div>
 
                 <div class="c-project-preview">
                     <div class="c-preview-heading">
-                        <span>●</span> Preview — main.c
+                        <span>●</span> Example output — main.c
                     </div>
-                    <pre>Text Toolkit
 
-Enter a text:
-> ...
+                    <pre>TEXT TOOLKIT
 
-Number of characters: ...
-Spaces: ...</pre>
-                    <span class="c-preview-placeholder">
-                        Preview only — execution not yet completed
+Enter a text: Hello World
+Enter a letter to search: W
+
+Characters = 11
+Spaces = 1
+Letter found!</pre>
+
+                    <span class="c-project-placeholder">
+                        Illustrative output — not a real execution screenshot
                     </span>
                 </div>
 
                 <div class="c-project-details">
-                    <p><span>01</span> Code source à ajouter</p>
-                    <p><span>02</span> Capture d'exécution à ajouter</p>
-                    <p><span>03</span> Explication personnelle à compléter</p>
+                    <p>
+                        <span>01</span>
+                        <a href="text_toolkit.c"
+                           target="_blank" rel="noopener noreferrer">
+                            View C source code ↗
+                        </a>
+                    </p>
+
+                    <p>
+                        <span>02</span>
+                        Problem: Analyse a text and search for a character.
+                    </p>
+
+                    <p>
+                        <span>03</span>
+                        Explanation: A character array stores the text. A loop counts characters and spaces and searches for the requested letter.
+                    </p>
+
+                    <p>
+                        <span>04</span>
+                        Difficulty: Reading and examining each character until the end of the text.
+                    </p>
                 </div>
             </article>
 
@@ -558,8 +586,8 @@ Spaces: ...</pre>
                 <p><span class="terminal-pink">04.</span> Understand and correct errors</p>
                 <p class="terminal-cursor">_</p>
                 <small>
-                    Workflow illustration — project execution evidence
-                    will be added with the projects.
+                    Workflow illustration — the programs are provided
+                    as source files in this portfolio.
                 </small>
             </div>
         </div>
@@ -605,9 +633,10 @@ Spaces: ...</pre>
                 <div class="c-ai-row">
                     <h4>My own contribution</h4>
                     <p>
-                        I study the concepts, write and test my programs,
-                        check the results, correct errors and prepare
-                        explanations that I can understand and present.
+                        I study the concepts, review the source code,
+                        run the programs, check the results, correct errors
+                        and prepare explanations that I can understand
+                        and present.
                     </p>
                 </div>
 
@@ -662,4 +691,4 @@ Spaces: ...</pre>
 
 </body>
 </html>
-```
+
