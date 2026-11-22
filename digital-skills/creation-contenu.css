@@ -1,65 +1,83 @@
+
 /* ==========================================
    CREATION DE CONTENU
    Beyond the Code — Sakura Theme
 ========================================== */
 
 
-/* HERO */
+/* HERO — FULL BACKGROUND */
 
 .cc-hero {
+    position: relative;
     background:
-        radial-gradient(circle at 82% 30%, #f5d9e5 0, transparent 32%),
-        linear-gradient(120deg, #fff1ed, #f9e6eb 58%, #f1eaf3);
+        linear-gradient(
+            90deg,
+            rgba(255, 244, 241, .96) 0%,
+            rgba(255, 240, 242, .88) 45%,
+            rgba(255, 240, 242, .35) 100%
+        ),
+        url("../images/creation-contenu-hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.cc-hero-art {
-    position: relative;
+/* Hero layout */
+.cc-hero .cyber-hero-inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    min-height: 600px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Text content */
+.cc-hero .cyber-hero-copy {
+    position: relative;
+    z-index: 3;
     width: 100%;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    overflow: visible !important;
+    max-width: 720px;
 }
 
-.cc-hero-art .cyber-hero-image {
-    display: block;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    object-fit: contain !important;
-    object-position: center !important;
+/* Hide the old side image */
+.cc-hero-art {
+    display: none !important;
 }
 
-.cc-floating {
-    position: absolute;
-    z-index: 2;
+/* Hero text colors */
+.cc-hero .cyber-hero-copy h1 {
+    color: #68434e;
+}
+
+.cc-hero .cyber-hero-copy h1 span {
     color: #bd7893;
-    font-size: 2.5rem;
-    pointer-events: none;
 }
 
-.cc-float-one {
-    top: 12%;
-    left: 8%;
+.cc-hero .cyber-kicker {
+    color: #a66f85;
 }
 
-.cc-float-two {
-    top: 22%;
-    right: 7%;
+.cc-hero .cyber-script {
+    color: #bd7893;
 }
 
-.cc-art-caption {
-    position: absolute;
-    z-index: 2;
-    right: 7%;
-    bottom: 5%;
-    color: #9f647e;
-    font: 1.4rem 'Parisienne', cursive;
+.cc-hero .cyber-description {
+    color: #765d66;
 }
+
+/* Hero decorations */
+.cc-hero .cyber-hero-copy::after {
+    content: "✧  ♡  ✧";
+    display: block;
+    margin-top: 25px;
+    color: #bd7893;
+    font-size: 1.2rem;
+    letter-spacing: .4rem;
+    opacity: .8;
+}
+
+
 /* INTRODUCTION */
 
 .cc-intro-panel {
@@ -425,15 +443,23 @@ body.dark .cc-audio-decoration {
         align-items: flex-start;
     }
 
-    .cc-hero-art {
-        min-height: 220px;
+    /* Mobile Hero */
+    .cc-hero {
+        background-position: center;
     }
 
-    .cc-hero-art .cyber-hero-image {
-        width: 100%;
-        height: auto;
-        max-height: none;
-        object-fit: contain;
+    .cc-hero .cyber-hero-inner {
+        min-height: 520px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .cc-hero .cyber-hero-copy {
+        max-width: 100%;
+    }
+
+    .cc-hero .cyber-hero-copy::after {
+        margin-top: 18px;
     }
 
 }
@@ -453,8 +479,8 @@ body.dark .cc-audio-decoration {
         padding: 22px;
     }
 
-    .cc-art-caption {
-        font-size: 1.1rem;
+    .cc-hero .cyber-hero-inner {
+        min-height: 480px;
     }
 
 }
