@@ -1,3 +1,4 @@
+
 /* =========================================
    PROMPT ENGINEERING
    Beyond the Code
@@ -12,6 +13,10 @@
 
 .prompt-hero-art {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .prompt-hero-art::before {
@@ -28,6 +33,12 @@
 .prompt-hero-art .cyber-hero-image {
     position: relative;
     z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
 }
 
 .prompt-floating {
@@ -461,6 +472,13 @@ body.dark .copy-prompt {
 
     .prompt-hero-art {
         min-height: 240px;
+    }
+
+    .prompt-hero-art .cyber-hero-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
     }
 
     .prompt-highlight {
