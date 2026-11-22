@@ -203,16 +203,18 @@
 
 /* VIDEO AND AUDIO */
 
+/* CLEAN VIDEO DISPLAY */
 .cc-production-card video {
     display: block;
     width: 100%;
-    max-height: 230px;
-    margin-top: 8px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin-top: 12px;
     border-radius: 16px;
-    background: #2e2630;
-    object-fit: contain;
+    background: transparent;
+    object-fit: cover;
+    object-position: center;
 }
-
 .cc-production-card audio {
     display: block;
     width: 100%;
