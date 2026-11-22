@@ -1,0 +1,27 @@
+
+/* =========================================
+   C STUDIO — CODE::BLOCKS INSPIRED DESIGN
+   ========================================= */
+
+.c-hero {
+    --c-accent: #8296c9;
+    --c-soft: #e5e8f8;
+}
+
+/* Code editor details */
+.c-editor-window {
+    border-color: rgba(130, 150, 201, 0.35);
+}
+
+.c-editor-window .py-editor-topbar {
+    background: #e9eaf5;
+}
+
+.c-editor-window .py-file-tab {
+    border-bottom-color: #9aa8d1;
+}
+
+/* C Studio atmosphere */
+.c-hero .py-hero-glow {
+    opacity: 0.75;
+}
