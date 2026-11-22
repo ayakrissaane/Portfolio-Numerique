@@ -5,191 +5,616 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="My journey with C programming, learning and building small projects.">
-    <meta name="theme-color" content="#f8e6e8">
-
     <title>C Studio | Beyond the Code</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fira+Code:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fira+Code:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Main website style -->
     <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Python page style reused as a starting point -->
-    <link rel="stylesheet" href="python.css">
-
-    <!-- Custom C page style -->
     <link rel="stylesheet" href="langage-c.css">
 </head>
 
 <body>
 
 <header class="site-header">
-    <div class="nav-wrap">
-
-        <a class="brand" href="../index.html">
-            <span class="brand-flower">✿</span>
-            <span>Beyond the Code</span>
-            <span class="brand-sparkle">✧</span>
+    <nav class="nav-wrap">
+        <a href="../index.html" class="brand">
+            Beyond <span>the Code</span>
         </a>
 
-        <button class="menu-toggle" type="button"
-            aria-label="Ouvrir le menu" aria-expanded="false">
-            ☰
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#modules">Modules</a>
+            <a href="#c-top" class="python-nav-chip">C Studio</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
-
-        <nav class="nav-links" aria-label="Navigation principale">
-            <a href="../index.html">⌂ <span>Accueil</span></a>
-            <a href="../index.html#modules">▤ <span>Modules</span></a>
-            <a class="active" href="#c-top">⌘ <span>Langage C</span></a>
-            <a href="../index.html#projets">▧ <span>Projets</span></a>
-        </nav>
-
-        <a class="python-nav-chip" href="#c-projects">
-            Explore the studio <span>↘</span>
-        </a>
-
-    </div>
+    </nav>
 </header>
 
 <main id="c-top">
 
     <!-- HERO SECTION -->
-    <section class="py-hero c-hero">
+    <section class="c-hero">
+        <div class="c-hero-glow"></div>
 
-        <div class="py-hero-glow py-glow-one"></div>
-        <div class="py-hero-glow py-glow-two"></div>
-        <div class="py-hero-grid"></div>
+        <div class="c-hero-content">
+            <span class="c-eyebrow">MY DEVELOPMENT JOURNEY</span>
 
-        <div class="py-hero-inner">
+            <h1>
+                Welcome to my
+                <span>C Studio</span>
+            </h1>
 
-            <div class="py-hero-copy">
+            <p class="c-hero-description">
+                Discover my journey into the C programming language,
+                from fundamental concepts to practical mini-projects.
+                Learning step by step, one line at a time.
+            </p>
 
-                <span class="py-eyebrow">
-                    <span class="py-eyebrow-dot"></span>
-                    DEVELOPMENT · C PROGRAMMING JOURNEY
-                </span>
+            <div class="c-hero-actions">
+                <a href="#c-projects" class="c-button">
+                    Explore my projects <span>↗</span>
+                </a>
 
-                <p class="py-overline">
-                    From logic to code, one step at a time.
-                </p>
-
-                <h1>
-                    Welcome to my<br>
-                    <em>C Studio.</em>
-                    <span class="py-title-flower">✿</span>
-                </h1>
-
-                <p class="py-hero-text">
-                    Un espace pour découvrir la programmation en C,
-                    comprendre la logique des programmes et transformer
-                    les connaissances acquises en petits projets pratiques.
-                </p>
-
-                <div class="py-hero-actions">
-                    <a class="py-button py-button-primary"
-                       href="#c-projects">
-                        Découvrir les projets <span>↘</span>
-                    </a>
-
-                    <a class="py-button py-button-ghost"
-                       href="#c-journey">
-                        Mon parcours <span>♡</span>
-                    </a>
-                </div>
-
-                <div class="py-hero-note">
-                    <span>✦</span>
-                    Learning C, building confidence.
-                </div>
-
+                <a href="#c-journey" class="c-text-link">
+                    My learning journey
+                </a>
             </div>
 
-            <!-- CODE BLOCKS INSPIRED EDITOR -->
-            <div class="py-editor-scene c-editor-scene">
-
-                <div class="py-editor-window c-editor-window">
-
-                    <div class="py-editor-topbar">
-                        <div class="py-window-dots">
-                            <i></i><i></i><i></i>
-                        </div>
-
-                        <span class="py-editor-title">
-                            main.c — Code::Blocks
-                        </span>
-
-                        <span class="py-editor-heart">♡</span>
-                    </div>
-
-                    <div class="py-editor-body">
-
-                        <div class="py-editor-sidebar">
-                            <span class="py-side-icon active">▣</span>
-                            <span class="py-side-icon">⌕</span>
-                            <span class="py-side-icon">⑂</span>
-                            <span class="py-side-icon">▧</span>
-                        </div>
-
-                        <div class="py-code-area">
-
-                            <div class="py-file-tab">
-                                <span>Ⓒ</span> main.c <b>×</b>
-                            </div>
-
-                            <div class="py-code-lines" aria-hidden="true">
-                                <div><small>01</small><span class="py-purple">#include</span> <span class="py-pink">&lt;stdio.h&gt;</span></div>
-                                <div><small>02</small></div>
-                                <div><small>03</small><span class="py-purple">int</span> <span class="py-yellow">main</span>() {</div>
-                                <div><small>04</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-purple">int</span> curiosity = <span class="py-blue">1</span>;</div>
-                                <div><small>05</small></div>
-                                <div><small>06</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-blue">printf</span>(<span class="py-pink">"Hello, C! ♡"</span>);</div>
-                                <div><small>07</small></div>
-                                <div><small>08</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-purple">return</span> <span class="py-blue">0</span>;</div>
-                                <div><small>09</small>}</div>
-                            </div>
-
-                            <div class="py-editor-status">
-                                <span>Ⓒ C Language</span>
-                                <span>Ln 9, Col 1 · UTF-8</span>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="py-float-card py-float-top">
-                    <span>✿</span>
-                    <b>LEARN</b>
-                    <small>with curiosity</small>
-                </div>
-
-                <div class="py-float-card py-float-bottom">
-                    <span>⌁</span>
-                    <b>COMPILE</b>
-                    <small>step by step</small>
-                </div>
-
-                <div class="py-orbit py-orbit-one">{"}"}</div>
-                <div class="py-orbit py-orbit-two">&lt;/&gt;</div>
-
+            <div class="c-hero-note">
+                <span class="c-note-dot"></span>
+                Learning in progress · First-year IT student
             </div>
+        </div>
+
+        <div class="c-editor-window">
+            <div class="c-editor-titlebar">
+                <div class="c-window-controls">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span>Code::Blocks — main.c</span>
+                <span class="c-titlebar-icon">⌘</span>
+            </div>
+
+            <div class="c-editor-toolbar">
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Search</span>
+                <span>Build</span>
+                <span>Debug</span>
+            </div>
+
+            <div class="c-editor-tab">
+                <span class="c-tab-icon">C</span>
+                main.c
+                <span class="c-tab-close">×</span>
+            </div>
+
+            <div class="c-code-area">
+                <div class="c-line-numbers">
+                    1<br>2<br>3<br>4<br>5<br>6<br>7<br>8
+                </div>
+
+                <pre><code><span class="c-code-purple">#include</span> <span class="c-code-green">&lt;stdio.h&gt;</span>
+
+<span class="c-code-purple">int</span> <span class="c-code-yellow">main</span>() 
+{
+    <span class="c-code-purple">int</span> number = <span class="c-code-orange">10</span>;
+
+    <span class="c-code-yellow">printf</span>(<span class="c-code-green">"Hello, C Studio!"</span>);
+    <span class="c-code-purple">return</span> <span class="c-code-orange">0</span>;
+}</code></pre>
+            </div>
+
+            <div class="c-editor-status">
+                <span>● C source file</span>
+                <span>Ln 8 · Col 1 &nbsp; UTF-8</span>
+            </div>
+
+            <div class="c-floating-card c-floating-one">
+                <span>✦</span>
+                <div>
+                    <strong>Learning C</strong>
+                    <small>Building my foundations</small>
+                </div>
+            </div>
+
+            <div class="c-floating-card c-floating-two">
+                <span>⌘</span>
+                <div>
+                    <strong>Code. Test. Learn.</strong>
+                    <small>One step at a time</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LEARNING JOURNEY -->
+    <section class="c-section" id="c-journey">
+        <div class="c-section-heading">
+            <span class="c-section-kicker">01 — THE FOUNDATIONS</span>
+            <h2>My C Learning Journey</h2>
+            <p>
+                The concepts I have been discovering and practising
+                throughout my programming course.
+            </p>
+        </div>
+
+        <div class="c-journey-grid">
+
+            <article class="c-journey-card">
+                <span class="c-card-number">01</span>
+                <div class="c-journey-icon">⌘</div>
+                <h3>Programming Basics</h3>
+                <p>
+                    Understanding the structure of a C program,
+                    variables, data types and input/output instructions.
+                </p>
+                <div class="c-tags">
+                    <span>Variables</span>
+                    <span>Data types</span>
+                    <span>scanf()</span>
+                    <span>printf()</span>
+                </div>
+            </article>
+
+            <article class="c-journey-card">
+                <span class="c-card-number">02</span>
+                <div class="c-journey-icon">↻</div>
+                <h3>Logic & Control</h3>
+                <p>
+                    Learning how to make decisions and repeat
+                    instructions using control structures.
+                </p>
+                <div class="c-tags">
+                    <span>if / else</span>
+                    <span>switch</span>
+                    <span>for</span>
+                    <span>while</span>
+                </div>
+            </article>
+
+            <article class="c-journey-card">
+                <span class="c-card-number">03</span>
+                <div class="c-journey-icon">▦</div>
+                <h3>Data & Functions</h3>
+                <p>
+                    Organising information with arrays and strings,
+                    and dividing a program into reusable functions.
+                </p>
+                <div class="c-tags">
+                    <span>Arrays</span>
+                    <span>Strings</span>
+                    <span>Functions</span>
+                </div>
+            </article>
+
+            <article class="c-journey-card">
+                <span class="c-card-number">04</span>
+                <div class="c-journey-icon">✧</div>
+                <h3>Further Concepts</h3>
+                <p>
+                    Continuing to explore the concepts introduced
+                    in class and strengthening my understanding
+                    through practice.
+                </p>
+                <div class="c-tags">
+                    <span>Practice</span>
+                    <span>Problem solving</span>
+                    <span>Progress</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="c-section c-projects-section" id="c-projects">
+        <div class="c-section-heading">
+            <span class="c-section-kicker">02 — PRACTICAL WORK</span>
+            <h2>Mini Projects Lab</h2>
+            <p>
+                Small applications designed to put my C programming
+                knowledge into practice.
+            </p>
+        </div>
+
+        <div class="c-project-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="c-project-card">
+                <div class="c-project-top">
+                    <span class="c-project-label">PROJECT 01</span>
+                    <span class="c-project-status">À réaliser</span>
+                </div>
+
+                <div class="c-project-icon">▤</div>
+
+                <h3>Student Grade Manager</h3>
+
+                <p class="c-project-description">
+                    A simple application to enter student grades,
+                    calculate the average and determine the final result.
+                </p>
+
+                <div class="c-project-tags">
+                    <span>Variables</span>
+                    <span>Conditions</span>
+                    <span>Loops</span>
+                    <span>Arrays</span>
+                </div>
+
+                <div class="c-project-preview">
+                    <div class="c-preview-heading">
+                        <span>●</span> Preview — main.c
+                    </div>
+                    <pre>Student Grade Manager
+
+Enter the number of grades:
+> ...
+
+Average: ...
+Result: ...</pre>
+                    <span class="c-preview-placeholder">
+                        Preview only — execution not yet completed
+                    </span>
+                </div>
+
+                <div class="c-project-details">
+                    <p><span>01</span> Code source à ajouter</p>
+                    <p><span>02</span> Capture d'exécution à ajouter</p>
+                    <p><span>03</span> Explication personnelle à compléter</p>
+                </div>
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="c-project-card">
+                <div class="c-project-top">
+                    <span class="c-project-label">PROJECT 02</span>
+                    <span class="c-project-status">À réaliser</span>
+                </div>
+
+                <div class="c-project-icon">♡</div>
+
+                <h3>Smart Budget Calculator</h3>
+
+                <p class="c-project-description">
+                    A mini budget application that calculates total
+                    expenses and displays the remaining budget.
+                </p>
+
+                <div class="c-project-tags">
+                    <span>Variables</span>
+                    <span>Conditions</span>
+                    <span>Loops</span>
+                    <span>Functions</span>
+                </div>
+
+                <div class="c-project-preview">
+                    <div class="c-preview-heading">
+                        <span>●</span> Preview — main.c
+                    </div>
+                    <pre>Smart Budget Calculator
+
+Enter your budget:
+> ...
+
+Total expenses: ...
+Remaining: ...</pre>
+                    <span class="c-preview-placeholder">
+                        Preview only — execution not yet completed
+                    </span>
+                </div>
+
+                <div class="c-project-details">
+                    <p><span>01</span> Code source à ajouter</p>
+                    <p><span>02</span> Capture d'exécution à ajouter</p>
+                    <p><span>03</span> Explication personnelle à compléter</p>
+                </div>
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article class="c-project-card">
+                <div class="c-project-top">
+                    <span class="c-project-label">PROJECT 03</span>
+                    <span class="c-project-status">À réaliser</span>
+                </div>
+
+                <div class="c-project-icon">Aa</div>
+
+                <h3>Text Toolkit</h3>
+
+                <p class="c-project-description">
+                    A small text analysis tool that counts characters,
+                    identifies spaces and searches for a character.
+                </p>
+
+                <div class="c-project-tags">
+                    <span>Strings</span>
+                    <span>Loops</span>
+                    <span>Conditions</span>
+                    <span>Functions</span>
+                </div>
+
+                <div class="c-project-preview">
+                    <div class="c-preview-heading">
+                        <span>●</span> Preview — main.c
+                    </div>
+                    <pre>Text Toolkit
+
+Enter a text:
+> ...
+
+Number of characters: ...
+Spaces: ...</pre>
+                    <span class="c-preview-placeholder">
+                        Preview only — execution not yet completed
+                    </span>
+                </div>
+
+                <div class="c-project-details">
+                    <p><span>01</span> Code source à ajouter</p>
+                    <p><span>02</span> Capture d'exécution à ajouter</p>
+                    <p><span>03</span> Explication personnelle à compléter</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- PYTHON VS C -->
+    <section class="c-section" id="c-comparison">
+        <div class="c-section-heading">
+            <span class="c-section-kicker">03 — UNDERSTANDING LANGUAGES</span>
+            <h2>Python vs C</h2>
+            <p>
+                Two programming languages, different approaches
+                to solving problems.
+            </p>
+        </div>
+
+        <div class="c-comparison-card">
+            <div class="c-comparison-intro">
+                <div>
+                    <span class="c-language-symbol python-symbol">Py</span>
+                    <strong>Python</strong>
+                </div>
+                <span class="c-vs">VS</span>
+                <div>
+                    <span class="c-language-symbol c-symbol">C</span>
+                    <strong>Language C</strong>
+                </div>
+            </div>
+
+            <div class="c-table-wrapper">
+                <table class="c-comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th>Python</th>
+                            <th>C</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Syntax</td>
+                            <td>Simple and readable syntax.</td>
+                            <td>More detailed syntax, with braces and semicolons.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Typing</td>
+                            <td>Dynamic typing: the type is determined during execution.</td>
+                            <td>Static typing: variables are declared with a type.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Memory management</td>
+                            <td>Mostly automatic memory management.</td>
+                            <td>More direct control over memory management.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Speed</td>
+                            <td>Generally slower in execution.</td>
+                            <td>Generally faster in execution.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Uses</td>
+                            <td>Web development, automation, data science and AI.</td>
+                            <td>System programming, embedded systems and performance-oriented software.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="c-comparison-note">
+                These are general differences. Actual performance and
+                memory behaviour can depend on the program and its environment.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- TOOLS -->
+    <section class="c-section" id="c-tools">
+        <div class="c-section-heading">
+            <span class="c-section-kicker">04 — MY WORKSPACE</span>
+            <h2>Tools & Workflow</h2>
+            <p>
+                The tools that support my learning and help me
+                write, compile and understand C programs.
+            </p>
+        </div>
+
+        <div class="c-tools-grid">
+
+            <article class="c-tool-card">
+                <div class="c-tool-icon">⌘</div>
+                <h3>Code::Blocks</h3>
+                <p>
+                    My development environment for writing,
+                    editing and organising C programs.
+                </p>
+                <span class="c-tool-caption">Code editor / IDE</span>
+            </article>
+
+            <article class="c-tool-card">
+                <div class="c-tool-icon">⚙</div>
+                <h3>GCC</h3>
+                <p>
+                    A compiler used to translate C source code
+                    into an executable program.
+                </p>
+                <span class="c-tool-caption">C Compiler</span>
+            </article>
+
+            <article class="c-tool-card">
+                <div class="c-tool-icon">✦</div>
+                <h3>ChatGPT</h3>
+                <p>
+                    Used as a learning assistant to understand
+                    programming concepts and interpret errors.
+                </p>
+                <span class="c-tool-caption">Learning assistant</span>
+            </article>
 
         </div>
 
-        <div class="py-hero-bottom">
-            <span>SCROLL TO EXPLORE</span>
-            <i></i>
-            <span>01 / 03</span>
+        <div class="c-terminal">
+            <div class="c-terminal-header">
+                <div class="c-terminal-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span>Build Log — C Studio</span>
+                <span>⌄</span>
+            </div>
+
+            <div class="c-terminal-body">
+                <p class="terminal-muted">// My programming workflow</p>
+                <p><span class="terminal-pink">01.</span> Write the source code</p>
+                <p><span class="terminal-pink">02.</span> Compile the program</p>
+                <p><span class="terminal-pink">03.</span> Test the result</p>
+                <p><span class="terminal-pink">04.</span> Understand and correct errors</p>
+                <p class="terminal-cursor">_</p>
+                <small>
+                    Workflow illustration — real compilation results
+                    will be added with the projects.
+                </small>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- AI TRANSPARENCY -->
+    <section class="c-section c-ai-section" id="c-ai">
+        <div class="c-section-heading">
+            <span class="c-section-kicker">05 — RESPONSIBLE LEARNING</span>
+            <h2>AI Transparency</h2>
+            <p>
+                A clear overview of the tools used and my own
+                contribution to this learning process.
+            </p>
         </div>
 
+        <div class="c-ai-card">
+            <div class="c-ai-icon">✧</div>
+
+            <div class="c-ai-content">
+                <h3>Learning with AI, not replacing learning.</h3>
+
+                <div class="c-ai-row">
+                    <h4>Tools used</h4>
+                    <p>
+                        ChatGPT for assistance with page organisation,
+                        explanations and understanding programming concepts.
+                        Code::Blocks for writing and testing programs.
+                        GCC as the C compiler when configured in the environment.
+                    </p>
+                </div>
+
+                <div class="c-ai-row">
+                    <h4>Role of AI</h4>
+                    <p>
+                        AI helps clarify concepts, explain compiler messages
+                        and support the learning process. Its suggestions
+                        must be checked and understood before being used.
+                    </p>
+                </div>
+
+                <div class="c-ai-row">
+                    <h4>My own contribution</h4>
+                    <p>
+                        I study the concepts, write and test my programs,
+                        check the results, correct errors and prepare
+                        explanations that I can understand and present.
+                    </p>
+                </div>
+
+                <div class="c-ai-row">
+                    <h4>Verified sources</h4>
+                    <p>
+                        Official GCC documentation and the C language
+                        reference will be consulted to verify technical
+                        information before the final submission.
+                    </p>
+
+                    <div class="c-source-links">
+                        <a href="https://gcc.gnu.org/onlinedocs/" target="_blank" rel="noopener noreferrer">
+                            GCC Documentation ↗
+                        </a>
+
+                        <a href="https://en.cppreference.com/w/c" target="_blank" rel="noopener noreferrer">
+                            C Language Reference ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>
 
+
+<!-- FOOTER -->
+<footer class="c-footer">
+    <div class="c-footer-inner">
+        <a href="../index.html" class="c-footer-brand">
+            Beyond <span>the Code</span>
+        </a>
+
+        <p>
+            A little progress every day makes a big difference.
+        </p>
+
+        <span class="c-footer-symbol">𖹭 ⊹₊⟡</span>
+    </div>
+
+    <div class="c-footer-bottom">
+        <span>© 2026 — Beyond the Code</span>
+        <a href="#c-top">Back to top ↑</a>
+    </div>
+</footer>
+
 <script src="../js/script.js"></script>
+
 </body>
 </html>
+
