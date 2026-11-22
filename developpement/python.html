@@ -1,128 +1,199 @@
-
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python | Portfolio Aya</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description" content="Portfolio numérique d’Aya Krissaane, étudiante en Technologies de l’Informatique à l’ISET Nabeul.">
+    <meta name="theme-color" content="#f8d9d3">
+    <title>Beyond the Code | Aya Krissaane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
     <div class="nav-wrap">
-        <a class="brand" href="../index.html">Aya<span> Krissaane</span> ♡</a>
-        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-        <nav class="nav-links">
-            <a href="../index.html">Accueil</a>
-            <a href="../index.html#modules">Modules</a>
-            <a href="../index.html#projets">Projets</a>
+        <a class="brand" href="index.html" aria-label="Aya Krissaane, accueil">
+            <span class="brand-flower">✿</span>
+            <span>Aya Krissaane</span>
+            <span class="brand-sparkle">✧</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+        <nav class="nav-links" aria-label="Navigation principale">
+            <a class="active" href="#accueil">⌂ <span>Accueil</span></a>
+            <a href="#apropos">♙ <span>À propos</span></a>
+            <a href="#competences">✧ <span>Compétences</span></a>
+            <a href="#modules">▤ <span>Modules</span></a>
+            <a href="#projets">▧ <span>Projets</span></a>
+            <a href="#ia">♡ <span>IA responsable</span></a>
+            <a href="#contact">✉ <span>Contact</span></a>
         </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Activer le mode nuit" title="Changer de thème">
+            <span class="sun">☼</span><span class="moon">☾</span>
+        </button>
     </div>
 </header>
 
 <main>
+    <!-- HERO : image artistique + vrais textes HTML -->
+    <section class="hero" id="accueil">
+        <div class="hero-image" role="img" aria-label="Jardin japonais au coucher du soleil, cerisiers en fleurs, pagode, pont, lanternes et personnage illustré"></div>
+        <div class="hero-overlay"></div>
 
-<section class="page-hero">
-    <div class="container">
-        <div class="breadcrumb"><a href="../index.html">Accueil</a> / Python</div>
-        <span class="eyebrow">Développement</span>
-        <h1>Programmation en Python</h1>
-        <p>Découvrir les premières notions de Python à travers des exemples simples.</p>
-    </div>
-</section>
+        <div class="hero-content">
+            <div class="hero-eyebrow"><span></span> MY DIGITAL WORLD <b>✿</b><span></span></div>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>01. Présentation</h2>
-        </div>
-        <div class="soft-panel">
-            <p>Python est un langage de programmation reconnu pour sa syntaxe lisible. Il peut être utilisé dans le développement, l’automatisation, l’analyse de données et l’intelligence artificielle.</p>
-        </div>
-    </div>
-</section>
+            <h1>Beyond the<br><em>Code.</em></h1>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>02. Premières notions</h2>
-        </div>
-        <div class="grid">
-            <article class="card">
-                <h3>Variables</h3>
-                <p>Créer des variables pour conserver des valeurs.</p>
-            </article>
-            <article class="card">
-                <h3>Conditions</h3>
-                <p>Utiliser if et else pour contrôler le programme.</p>
-            </article>
-            <article class="card">
-                <h3>Boucles</h3>
-                <p>Répéter des instructions avec for et while.</p>
-            </article>
-        </div>
-    </div>
-</section>
+            <h2 class="hero-name">Aya Krissaane <span>✿</span></h2>
+            <p class="hero-role">IT Student <i>·</i> Creative Thinker <i>·</i> Curious Explorer</p>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>03. Exemple : calculer une moyenne</h2>
+            <p class="hero-description">
+                Un espace où la technologie<br>
+                rencontre la créativité.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button button-primary" href="#modules"><span>⌘</span> Explorer mon portfolio <b>→</b></a>
+                <a class="button button-outline" href="#projets"><span>▦</span> Voir mes projets</a>
+            </div>
+
+            <p class="hero-signature">Made with curiosity &amp; a little imagination <span>♡</span></p>
         </div>
 
-        <pre class="code-sample">note1 = float(input("Première note : "))
-note2 = float(input("Deuxième note : "))
+        <div class="hero-scroll" aria-hidden="true"><span></span> Scroll to explore</div>
+        <div class="petal petal-a" aria-hidden="true">✿</div>
+        <div class="petal petal-b" aria-hidden="true">✿</div>
+        <div class="petal petal-c" aria-hidden="true">✿</div>
+    </section>
 
-moyenne = (note1 + note2) / 2
-
-print("Moyenne :", moyenne)</pre>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>04. Pratique personnelle</h2>
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">01 · À propos</span>
+                <h2>Un parcours en construction</h2>
+                <p>Un espace pour documenter ce que j’apprends et montrer ma progression avec clarté et honnêteté.</p>
+            </div>
+            <div class="soft-panel two-col">
+                <div>
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je suis étudiante en première année de Technologies de l’Informatique à l’ISET Nabeul. Je m’intéresse au développement web, à la programmation, à la cybersécurité et aux nouvelles technologies.</p>
+                </div>
+                <div>
+                    <h3>Mon objectif</h3>
+                    <p>Renforcer mes compétences techniques, apprendre par la pratique et construire progressivement des projets utiles.</p>
+                </div>
+            </div>
         </div>
-        <div class="note">
-            Compléter cette rubrique avec les exercices Python réalisés,
-            les difficultés rencontrées et ce que j’ai appris.
-            Ne présenter comme acquis que ce que je peux expliquer.
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="section-heading">
-            <h2>05. Transparence de l’IA</h2>
+    <!-- COMPÉTENCES -->
+    <section class="section section-tint" id="competences">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">02 · Compétences</span>
+                <h2>Domaines d’apprentissage</h2>
+                <p>Les domaines que je découvre et développe pendant ma formation universitaire.</p>
+            </div>
+            <div class="grid">
+                <article class="card"><div class="card-icon">⌘</div><h3>Développement</h3><p>Algorithmique, langage C, Python et développement web.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">C</span></article>
+                <article class="card"><div class="card-icon">✧</div><h3>Culture numérique</h3><p>Cybersécurité, prompt engineering et création de contenu.</p><span class="tag">Sécurité</span><span class="tag">IA responsable</span></article>
+                <article class="card"><div class="card-icon">⌬</div><h3>Systèmes</h3><p>Systèmes d’exploitation, architecture et logique numérique.</p><span class="tag">Windows</span><span class="tag">Linux</span></article>
+            </div>
         </div>
-        <div class="soft-panel">
-            <p><strong>Outil :</strong> ChatGPT comme aide à la compréhension.</p>
-            <p><strong>Rôle :</strong> expliquer la syntaxe et proposer des exemples de pratique.</p>
-            <p><strong>Ma contribution :</strong> modifier et exécuter les exemples, puis expliquer leur fonctionnement.</p>
-            <p><strong>Vérification :</strong> tester le code dans un environnement Python.</p>
+    </section>
+
+    <!-- MODULES -->
+    <section class="section" id="modules">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">03 · Modules</span>
+                <h2>Mon espace d’apprentissage</h2>
+                <p>Retrouvez les notions essentielles, les fiches de révision et les travaux pratiques.</p>
+            </div>
+
+            <h3 class="group-title">Digital Skills</h3>
+            <div class="grid">
+                <article class="card"><div class="card-icon">⌑</div><h3>Cybersécurité</h3><p>Principes de sécurité et bonnes pratiques.</p><a class="card-link" href="digital-skills/cybersecurite.html">Découvrir →</a></article>
+                <article class="card"><div class="card-icon">✎</div><h3>Prompt Engineering</h3><p>Formuler et évaluer des prompts.</p><a class="card-link" href="digital-skills/prompt-engineering.html">Découvrir →</a></article>
+                <article class="card"><div class="card-icon">✿</div><h3>Création de contenu</h3><p>Concevoir un contenu numérique cohérent.</p><a class="card-link" href="digital-skills/creation-contenu.html">Découvrir →</a></article>
+            </div>
+
+            <h3 class="group-title">Développement</h3>
+            <div class="grid">
+                <article class="card"><div class="card-icon">C</div><h3>Langage C</h3><p>Variables, conditions, boucles et tableaux.</p><a class="card-link" href="developpement/langage-c.html">Découvrir →</a></article>
+                <article class="card"><div class="card-icon">⌘</div><h3>Algorithmique</h3><p>Raisonnement et résolution de problèmes.</p><a class="card-link" href="developpement/algorithmique.html">Découvrir →</a></article>
+                <article class="card"><div class="card-icon">Py</div><h3>Python</h3><p>Premiers concepts et exemples pratiques.</p><a class="card-link" href="developpement/python.html">Découvrir →</a></article>
+            </div>
+
+            <h3 class="group-title">Systèmes &amp; architecture</h3>
+            <div class="grid">
+                <article class="card"><div class="card-icon">▣</div><h3>Systèmes d’exploitation</h3><p>Windows, Linux, CMD et PowerShell.</p><a class="card-link" href="systemes/systemes-exploitation.html">Découvrir →</a></article>
+                <article class="card"><div class="card-icon">⌁</div><h3>Architecture &amp; électronique</h3><p>Composants et logique numérique.</p><a class="card-link" href="systemes/architecture-electronique.html">Découvrir →</a></article>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <a class="back-link" href="../index.html">← Retour à l’accueil</a>
-    </div>
-</section>
+    <!-- PROJETS -->
+    <section class="section section-tint" id="projets">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">04 · Projets</span>
+                <h2>Idées et réalisations</h2>
+                <p>Mes projets et idées, avec leur état d’avancement.</p>
+            </div>
+            <div class="grid">
+                <article class="project-card"><div class="card-icon">♡</div><span class="status">Site en ligne</span><h3>Portfolio Numérique</h3><p>Site personnel construit avec HTML, CSS, JavaScript et GitHub Pages.</p><a class="module-link" href="projects/portfolio-numerique.html">Voir le projet →</a></article>
+                <article class="project-card"><div class="card-icon">⌖</div><span class="status planned">Concept · En cours</span><h3>ISET Interactive Campus Map</h3><p>Idée d’une carte interactive pour aider les nouveaux étudiants à trouver les lieux et les services du campus.</p><a class="module-link" href="projects/iset-campus-map.html">Voir le concept →</a></article>
+            </div>
+        </div>
+    </section>
 
+    <!-- IA RESPONSABLE -->
+    <section class="section" id="ia">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">05 · IA responsable</span>
+                <h2>Transparence et esprit critique</h2>
+                <p>L’intelligence artificielle est un outil d’assistance, pas un remplacement de mon apprentissage.</p>
+            </div>
+            <div class="soft-panel two-col">
+                <div><h3>Utilisation responsable</h3><ul class="list-clean"><li>Comprendre et vérifier chaque code avant de le publier.</li><li>Contrôler les informations avec des sources fiables.</li><li>Ne jamais partager de mots de passe, clés API ou données privées.</li><li>Conserver les prompts importants et préciser le rôle de l’IA.</li></ul></div>
+                <div><h3>Ma contribution</h3><p>Pour chaque production, je précise les outils utilisés, le rôle de l’IA, mes contributions personnelles et les sources de vérification.</p><p>Je ne présente comme acquis que ce que je peux comprendre et expliquer.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-tint" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <span class="eyebrow">06 · Contact</span>
+                <h2>Merci pour votre visite</h2>
+                <p>Ce portfolio évoluera avec mes cours, mes travaux pratiques et mes futurs projets.</p>
+            </div>
+            <div class="soft-panel contact-panel">
+                <p><strong>Aya Krissaane</strong><br>Étudiante en Technologies de l’Informatique<br>ISET Nabeul · Année universitaire 2026–2027</p>
+                <p class="small">Ajouter une adresse e-mail professionnelle uniquement si je souhaite la rendre publique.</p>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
     <div class="container footer-inner">
-        <span>© <span data-year>2026</span> Aya Krissaane</span>
-        <span>Portfolio Numérique ♡</span>
+        <span>© <span data-year>2026</span> Aya Krissaane · Portfolio Numérique</span>
+        <span>Conçu avec curiosité et créativité ♡</span>
     </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
