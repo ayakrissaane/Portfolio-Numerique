@@ -1,200 +1,300 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio numérique d’Aya Krissaane, étudiante en Technologies de l’Informatique à l’ISET Nabeul.">
-    <meta name="theme-color" content="#f8d9d3">
-    <title>Beyond the Code | Aya Krissaane</title>
+    <meta name="description" content="Mon parcours d'apprentissage de Python et trois mini-projets réalisés progressivement.">
+    <meta name="theme-color" content="#f8e6e8">
+    <title>Python Lab | Beyond the Code</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fira+Code:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="python.css">
 </head>
 <body>
 
 <header class="site-header">
     <div class="nav-wrap">
-        <a class="brand" href="index.html" aria-label="Aya Krissaane, accueil">
+        <a class="brand" href="../index.html" aria-label="Beyond the Code, accueil">
             <span class="brand-flower">✿</span>
-            <span>Aya Krissaane</span>
+            <span>Beyond the Code</span>
             <span class="brand-sparkle">✧</span>
         </a>
 
         <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
 
         <nav class="nav-links" aria-label="Navigation principale">
-            <a class="active" href="#accueil">⌂ <span>Accueil</span></a>
-            <a href="#apropos">♙ <span>À propos</span></a>
-            <a href="#competences">✧ <span>Compétences</span></a>
-            <a href="#modules">▤ <span>Modules</span></a>
-            <a href="#projets">▧ <span>Projets</span></a>
-            <a href="#ia">♡ <span>IA responsable</span></a>
-            <a href="#contact">✉ <span>Contact</span></a>
+            <a href="../index.html">⌂ <span>Accueil</span></a>
+            <a href="../index.html#modules">▤ <span>Modules</span></a>
+            <a class="active" href="#python-top">⌘ <span>Python</span></a>
+            <a href="../index.html#projets">▧ <span>Projets</span></a>
         </nav>
 
-        <button class="theme-toggle" type="button" aria-label="Activer le mode nuit" title="Changer de thème">
-            <span class="sun">☼</span><span class="moon">☾</span>
-        </button>
+        <a class="python-nav-chip" href="#mini-projets">Explore the lab <span>↘</span></a>
     </div>
 </header>
 
-<main>
-    <!-- HERO : image artistique + vrais textes HTML -->
-    <section class="hero" id="accueil">
-        <div class="hero-image" role="img" aria-label="Jardin japonais au coucher du soleil, cerisiers en fleurs, pagode, pont, lanternes et personnage illustré"></div>
-        <div class="hero-overlay"></div>
+<main id="python-top">
 
-        <div class="hero-content">
-            <div class="hero-eyebrow"><span></span> MY DIGITAL WORLD <b>✿</b><span></span></div>
+    <!-- HERO -->
+    <section class="py-hero">
+        <div class="py-hero-glow py-glow-one"></div>
+        <div class="py-hero-glow py-glow-two"></div>
+        <div class="py-hero-grid"></div>
 
-            <h1>Beyond the<br><em>Code.</em></h1>
-
-            <h2 class="hero-name">Aya Krissaane <span>✿</span></h2>
-            <p class="hero-role">IT Student <i>·</i> Creative Thinker <i>·</i> Curious Explorer</p>
-
-            <p class="hero-description">
-                Un espace où la technologie<br>
-                rencontre la créativité.
-            </p>
-
-            <div class="hero-actions">
-                <a class="button button-primary" href="#modules"><span>⌘</span> Explorer mon portfolio <b>→</b></a>
-                <a class="button button-outline" href="#projets"><span>▦</span> Voir mes projets</a>
-            </div>
-
-            <p class="hero-signature">Made with curiosity &amp; a little imagination <span>♡</span></p>
-        </div>
-
-        <div class="hero-scroll" aria-hidden="true"><span></span> Scroll to explore</div>
-        <div class="petal petal-a" aria-hidden="true">✿</div>
-        <div class="petal petal-b" aria-hidden="true">✿</div>
-        <div class="petal petal-c" aria-hidden="true">✿</div>
-    </section>
-
-    <!-- À PROPOS -->
-    <section class="section" id="apropos">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">01 · À propos</span>
-                <h2>Un parcours en construction</h2>
-                <p>Un espace pour documenter ce que j’apprends et montrer ma progression avec clarté et honnêteté.</p>
-            </div>
-            <div class="soft-panel two-col">
-                <div>
-                    <h3>Qui suis-je ?</h3>
-                    <p>Je suis étudiante en première année de Technologies de l’Informatique à l’ISET Nabeul. Je m’intéresse au développement web, à la programmation, à la cybersécurité et aux nouvelles technologies.</p>
+        <div class="py-hero-inner">
+            <div class="py-hero-copy">
+                <span class="py-eyebrow"><span class="py-eyebrow-dot"></span> DEVELOPMENT · PYTHON JOURNEY</span>
+                <p class="py-overline">A little curiosity, a lot of code.</p>
+                <h1>Welcome to my<br><em>Python Lab.</em><span class="py-title-flower">✿</span></h1>
+                <p class="py-hero-text">
+                    Un espace pour apprendre à programmer, transformer des idées simples
+                    en petits projets et progresser ligne après ligne.
+                </p>
+                <div class="py-hero-actions">
+                    <a class="py-button py-button-primary" href="#mini-projets">Découvrir les mini-projets <span>↘</span></a>
+                    <a class="py-button py-button-ghost" href="#mon-parcours">Mon parcours <span>♡</span></a>
                 </div>
+                <div class="py-hero-note"><span>✦</span> Learning by doing, one line at a time.</div>
+            </div>
+
+            <div class="py-editor-scene" aria-label="Illustration décorative d'un éditeur de code inspiré de VS Code">
+                <div class="py-editor-window">
+                    <div class="py-editor-topbar">
+                        <div class="py-window-dots"><i></i><i></i><i></i></div>
+                        <span class="py-editor-title">python_lab.py</span>
+                        <span class="py-editor-heart">♡</span>
+                    </div>
+                    <div class="py-editor-body">
+                        <div class="py-editor-sidebar">
+                            <span class="py-side-icon active">▣</span>
+                            <span class="py-side-icon">⌕</span>
+                            <span class="py-side-icon">⑂</span>
+                            <span class="py-side-icon">▧</span>
+                        </div>
+                        <div class="py-code-area">
+                            <div class="py-file-tab"><span>🐍</span> python_lab.py <b>×</b></div>
+                            <div class="py-code-lines" aria-hidden="true">
+                                <div><small>01</small><span class="py-purple">def</span> <span class="py-yellow">start_journey</span>():</div>
+                                <div><small>02</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-green"># every expert was once a beginner</span></div>
+                                <div><small>03</small>&nbsp;&nbsp;&nbsp;&nbsp;curiosity = <span class="py-pink">"ON"</span></div>
+                                <div><small>04</small>&nbsp;&nbsp;&nbsp;&nbsp;<span class="py-purple">return</span> <span class="py-yellow">keep_learning</span>(curiosity)</div>
+                                <div><small>05</small></div>
+                                <div><small>06</small><span class="py-blue">print</span>(<span class="py-pink">"Hello, Python! ♡"</span>)</div>
+                                <div><small>07</small><span class="py-green"># TODO: build something lovely</span></div>
+                            </div>
+                            <div class="py-editor-status"><span>⌘ Python</span><span>Ln 7, Col 1&nbsp; · &nbsp;UTF-8</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-float-card py-float-top"><span>✿</span><b>CREATE</b><small>with curiosity</small></div>
+                <div class="py-float-card py-float-bottom"><span>⌁</span><b>BUILD</b><small>step by step</small></div>
+                <div class="py-orbit py-orbit-one">{"}"}</div>
+                <div class="py-orbit py-orbit-two">&lt;/&gt;</div>
+            </div>
+        </div>
+
+        <div class="py-hero-bottom"><span>SCROLL TO EXPLORE</span><i></i><span>01 / 03</span></div>
+    </section>
+
+    <!-- INTRO / JOURNEY -->
+    <section class="py-section py-journey" id="mon-parcours">
+        <div class="py-container">
+            <div class="py-section-heading">
+                <span class="py-section-kicker">01 · THE LEARNING PATH</span>
+                <h2>My journey with <em>Python</em></h2>
+                <p>Chaque notion devient plus claire lorsqu'elle est mise en pratique. Voici les bases que je vais mobiliser au fil des projets.</p>
+            </div>
+
+            <div class="py-journey-grid">
+                <article class="py-concept-card">
+                    <span class="py-concept-number">01</span>
+                    <div class="py-concept-icon">⌨</div>
+                    <h3>First steps</h3>
+                    <p>Découvrir la syntaxe, les variables, les types de données et l'affichage.</p>
+                    <span class="py-concept-tag">print() · input() · variables</span>
+                </article>
+                <article class="py-concept-card py-concept-featured">
+                    <span class="py-concept-number">02</span>
+                    <div class="py-concept-icon">✧</div>
+                    <h3>Think & decide</h3>
+                    <p>Apprendre à guider le programme avec des conditions et des comparaisons.</p>
+                    <span class="py-concept-tag">if · elif · else</span>
+                </article>
+                <article class="py-concept-card">
+                    <span class="py-concept-number">03</span>
+                    <div class="py-concept-icon">⟳</div>
+                    <h3>Repeat & organize</h3>
+                    <p>Répéter des actions et organiser plusieurs valeurs pour résoudre un problème.</p>
+                    <span class="py-concept-tag">loops · lists · functions</span>
+                </article>
+            </div>
+            <p class="py-journey-footnote"><span>♡</span> This is a learning path, not a list of skills claimed as mastered.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="py-section py-projects" id="mini-projets">
+        <div class="py-container">
+            <div class="py-section-heading py-heading-row">
                 <div>
-                    <h3>Mon objectif</h3>
-                    <p>Renforcer mes compétences techniques, apprendre par la pratique et construire progressivement des projets utiles.</p>
+                    <span class="py-section-kicker">02 · MINI PROJECTS</span>
+                    <h2>Small ideas, <em>real practice.</em></h2>
+                    <p>Trois exercices progressifs pour passer des notions de base à des programmes utiles.</p>
+                </div>
+                <div class="py-project-counter"><strong>03</strong><span>PROJECTS<br>TO BUILD</span></div>
+            </div>
+
+            <div class="py-project-list">
+                <article class="py-project-card">
+                    <div class="py-project-visual py-calculator-visual">
+                        <div class="py-project-index">PROJECT / 01</div>
+                        <div class="py-calculator">
+                            <div class="py-calc-screen"><small>MY FIRST PROGRAM</small><strong>12 <i>+</i> 08</strong><span>Ready to calculate ♡</span></div>
+                            <div class="py-calc-keys"><b>7</b><b>8</b><b>9</b><b class="op">÷</b><b>4</b><b>5</b><b>6</b><b class="op">×</b><b>1</b><b>2</b><b>3</b><b class="op">−</b><b class="zero">0</b><b>.</b><b class="equal">=</b><b class="op">+</b></div>
+                        </div>
+                        <span class="py-visual-sparkle">✦</span>
+                    </div>
+                    <div class="py-project-content">
+                        <div class="py-project-meta"><span>01 / CALCULATOR</span><span class="py-status"><i></i> À réaliser</span></div>
+                        <h3>Mini Calculator</h3>
+                        <p class="py-project-lead">Une première rencontre avec la logique d'un programme.</p>
+                        <p class="py-project-description">Créer une calculatrice en ligne de commande qui demande deux nombres, laisse choisir une opération et affiche le résultat. Le programme devra aussi gérer la division par zéro.</p>
+                        <div class="py-project-skills"><span>input()</span><span>float()</span><span>if / elif</span><span>print()</span></div>
+                        <div class="py-project-checklist">
+                            <span><i>○</i> Code source à ajouter</span>
+                            <span><i>○</i> Explication personnelle à compléter</span>
+                            <span><i>○</i> Capture d'exécution à ajouter</span>
+                            <span><i>○</i> Difficultés et solutions à documenter</span>
+                        </div>
+                        <p class="py-project-honesty">Le projet n'est pas encore réalisé. Cette fiche sera complétée après programmation et test.</p>
+                    </div>
+                </article>
+
+                <article class="py-project-card py-project-reverse">
+                    <div class="py-project-visual py-guess-visual">
+                        <div class="py-project-index">PROJECT / 02</div>
+                        <div class="py-guess-window">
+                            <div class="py-guess-top"><i></i><i></i><i></i><span>guess_the_number.py</span></div>
+                            <div class="py-guess-content">
+                                <span class="py-guess-stars">✦ &nbsp; ✧ &nbsp; ✦</span>
+                                <small>CAN YOU FIND IT?</small>
+                                <strong>?</strong>
+                                <span class="py-guess-hint">I'm thinking of a number...</span>
+                                <div class="py-guess-input">Your guess <b>_ _</b></div>
+                            </div>
+                        </div>
+                        <span class="py-visual-sparkle">✧</span>
+                    </div>
+                    <div class="py-project-content">
+                        <div class="py-project-meta"><span>02 / GAME</span><span class="py-status"><i></i> À réaliser</span></div>
+                        <h3>Number Guessing Game</h3>
+                        <p class="py-project-lead">Un petit jeu pour apprendre à répéter et comparer.</p>
+                        <p class="py-project-description">Le programme choisit un nombre secret. Le joueur propose des réponses jusqu'à trouver le bon nombre, avec un indice pour savoir si sa proposition est trop grande ou trop petite.</p>
+                        <div class="py-project-skills"><span>while</span><span>if / else</span><span>comparisons</span><span>random</span></div>
+                        <div class="py-project-checklist">
+                            <span><i>○</i> Code source à ajouter</span>
+                            <span><i>○</i> Explication personnelle à compléter</span>
+                            <span><i>○</i> Capture d'exécution à ajouter</span>
+                            <span><i>○</i> Difficultés et solutions à documenter</span>
+                        </div>
+                        <p class="py-project-honesty">Le projet n'est pas encore réalisé. Cette fiche sera complétée après programmation et test.</p>
+                    </div>
+                </article>
+
+                <article class="py-project-card">
+                    <div class="py-project-visual py-grades-visual">
+                        <div class="py-project-index">PROJECT / 03</div>
+                        <div class="py-grade-sheet">
+                            <div class="py-grade-heading"><span>✿</span><div><b>Student report</b><small>MY LITTLE GRADEBOOK</small></div></div>
+                            <div class="py-grade-row"><span>Algorithmique</span><b>15.5</b><i>✦</i></div>
+                            <div class="py-grade-row"><span>Mathématiques</span><b>14.0</b><i>✦</i></div>
+                            <div class="py-grade-row"><span>Fondements IT</span><b>16.0</b><i>✦</i></div>
+                            <div class="py-grade-average"><small>AVERAGE</small><strong>— / 20</strong><span>to calculate ♡</span></div>
+                        </div>
+                        <span class="py-visual-sparkle">♡</span>
+                    </div>
+                    <div class="py-project-content">
+                        <div class="py-project-meta"><span>03 / STUDENT TOOL</span><span class="py-status"><i></i> À réaliser</span></div>
+                        <h3>Student Grade Manager</h3>
+                        <p class="py-project-lead">Organiser des notes et calculer un résultat automatiquement.</p>
+                        <p class="py-project-description">Créer un programme qui enregistre plusieurs notes, calcule leur moyenne et affiche un résultat clair. Les règles de saisie et le calcul seront expliqués après réalisation.</p>
+                        <div class="py-project-skills"><span>lists</span><span>loops</span><span>sum()</span><span>len()</span></div>
+                        <div class="py-project-checklist">
+                            <span><i>○</i> Code source à ajouter</span>
+                            <span><i>○</i> Explication personnelle à compléter</span>
+                            <span><i>○</i> Capture d'exécution à ajouter</span>
+                            <span><i>○</i> Difficultés et solutions à documenter</span>
+                        </div>
+                        <p class="py-project-honesty">Le projet n'est pas encore réalisé. Cette fiche sera complétée après programmation et test.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="py-section py-workflow">
+        <div class="py-container">
+            <div class="py-workflow-panel">
+                <div class="py-workflow-copy">
+                    <span class="py-section-kicker">03 · MY WORKFLOW</span>
+                    <h2>Understand first.<br><em>Code with purpose.</em></h2>
+                    <p>Mon objectif n'est pas seulement d'obtenir un programme qui fonctionne, mais de comprendre chaque étape, tester le résultat et savoir expliquer mes choix.</p>
+                    <div class="py-workflow-steps">
+                        <span><b>01</b> Understand the problem</span>
+                        <span><b>02</b> Write and test the code</span>
+                        <span><b>03</b> Fix errors and explain</span>
+                    </div>
+                </div>
+                <div class="py-terminal">
+                    <div class="py-terminal-bar"><span>● ● ●</span><b>TERMINAL</b><span>⌁</span></div>
+                    <div class="py-terminal-body">
+                        <p><i>›</i> python mini_calculator.py</p>
+                        <p class="py-terminal-muted"># execution example will be added</p>
+                        <p class="py-terminal-cursor">_</p>
+                    </div>
+                    <div class="py-terminal-caption">A real screenshot will replace this placeholder after testing.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMPÉTENCES -->
-    <section class="section section-tint" id="competences">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">02 · Compétences</span>
-                <h2>Domaines d’apprentissage</h2>
-                <p>Les domaines que je découvre et développe pendant ma formation universitaire.</p>
+    <!-- AI TRANSPARENCY -->
+    <section class="py-section py-transparency">
+        <div class="py-container">
+            <div class="py-section-heading">
+                <span class="py-section-kicker">04 · RESPONSIBLE AI</span>
+                <h2>Learning with <em>transparency.</em></h2>
+                <p>Une utilisation de l'IA claire, vérifiée et au service de la compréhension.</p>
             </div>
-            <div class="grid">
-                <article class="card"><div class="card-icon">⌘</div><h3>Développement</h3><p>Algorithmique, langage C, Python et développement web.</p><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">C</span></article>
-                <article class="card"><div class="card-icon">✧</div><h3>Culture numérique</h3><p>Cybersécurité, prompt engineering et création de contenu.</p><span class="tag">Sécurité</span><span class="tag">IA responsable</span></article>
-                <article class="card"><div class="card-icon">⌬</div><h3>Systèmes</h3><p>Systèmes d’exploitation, architecture et logique numérique.</p><span class="tag">Windows</span><span class="tag">Linux</span></article>
+            <div class="py-ai-grid">
+                <article><span>✧</span><h3>Tools used</h3><p>VS Code pour écrire et tester les programmes. ChatGPT comme assistant d'explication et de débogage.</p></article>
+                <article><span>♡</span><h3>Role of AI</h3><p>À préciser selon l'aide réellement utilisée pour chaque projet : explication d'une notion, compréhension d'un message d'erreur ou piste de correction.</p></article>
+                <article><span>⌨</span><h3>My own work</h3><p>Le code final, les tests, les corrections et les explications personnelles seront ajoutés au fur et à mesure de mon travail.</p></article>
             </div>
+            <div class="py-sources">
+                <b>Learning resource</b>
+                <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener noreferrer">Python official tutorial ↗</a>
+                <span>Source officielle à consulter pendant l'apprentissage.</span>
+            </div>
+            <p class="py-disclaimer">Cette page est une structure de travail évolutive. Les codes, captures, difficultés rencontrées et résultats seront publiés uniquement après réalisation et vérification.</p>
         </div>
     </section>
 
-    <!-- MODULES -->
-    <section class="section" id="modules">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">03 · Modules</span>
-                <h2>Mon espace d’apprentissage</h2>
-                <p>Retrouvez les notions essentielles, les fiches de révision et les travaux pratiques.</p>
-            </div>
-
-            <h3 class="group-title">Digital Skills</h3>
-            <div class="grid">
-                <article class="card"><div class="card-icon">⌑</div><h3>Cybersécurité</h3><p>Principes de sécurité et bonnes pratiques.</p><a class="card-link" href="digital-skills/cybersecurite.html">Découvrir →</a></article>
-                <article class="card"><div class="card-icon">✎</div><h3>Prompt Engineering</h3><p>Formuler et évaluer des prompts.</p><a class="card-link" href="digital-skills/prompt-engineering.html">Découvrir →</a></article>
-                <article class="card"><div class="card-icon">✿</div><h3>Création de contenu</h3><p>Concevoir un contenu numérique cohérent.</p><a class="card-link" href="digital-skills/creation-contenu.html">Découvrir →</a></article>
-            </div>
-
-            <h3 class="group-title">Développement</h3>
-            <div class="grid">
-                <article class="card"><div class="card-icon">C</div><h3>Langage C</h3><p>Variables, conditions, boucles et tableaux.</p><a class="card-link" href="developpement/langage-c.html">Découvrir →</a></article>
-                <article class="card"><div class="card-icon">⌘</div><h3>Algorithmique</h3><p>Raisonnement et résolution de problèmes.</p><a class="card-link" href="developpement/algorithmique.html">Découvrir →</a></article>
-                <article class="card"><div class="card-icon">Py</div><h3>Python</h3><p>Premiers concepts et exemples pratiques.</p><a class="card-link" href="developpement/python.html">Découvrir →</a></article>
-            </div>
-
-            <h3 class="group-title">Systèmes &amp; architecture</h3>
-            <div class="grid">
-                <article class="card"><div class="card-icon">▣</div><h3>Systèmes d’exploitation</h3><p>Windows, Linux, CMD et PowerShell.</p><a class="card-link" href="systemes/systemes-exploitation.html">Découvrir →</a></article>
-                <article class="card"><div class="card-icon">⌁</div><h3>Architecture &amp; électronique</h3><p>Composants et logique numérique.</p><a class="card-link" href="systemes/architecture-electronique.html">Découvrir →</a></article>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section class="section section-tint" id="projets">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">04 · Projets</span>
-                <h2>Idées et réalisations</h2>
-                <p>Mes projets et idées, avec leur état d’avancement.</p>
-            </div>
-            <div class="grid">
-                <article class="project-card"><div class="card-icon">♡</div><span class="status">Site en ligne</span><h3>Portfolio Numérique</h3><p>Site personnel construit avec HTML, CSS, JavaScript et GitHub Pages.</p><a class="module-link" href="projects/portfolio-numerique.html">Voir le projet →</a></article>
-                <article class="project-card"><div class="card-icon">⌖</div><span class="status planned">Concept · En cours</span><h3>ISET Interactive Campus Map</h3><p>Idée d’une carte interactive pour aider les nouveaux étudiants à trouver les lieux et les services du campus.</p><a class="module-link" href="projects/iset-campus-map.html">Voir le concept →</a></article>
-            </div>
-        </div>
-    </section>
-
-    <!-- IA RESPONSABLE -->
-    <section class="section" id="ia">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">05 · IA responsable</span>
-                <h2>Transparence et esprit critique</h2>
-                <p>L’intelligence artificielle est un outil d’assistance, pas un remplacement de mon apprentissage.</p>
-            </div>
-            <div class="soft-panel two-col">
-                <div><h3>Utilisation responsable</h3><ul class="list-clean"><li>Comprendre et vérifier chaque code avant de le publier.</li><li>Contrôler les informations avec des sources fiables.</li><li>Ne jamais partager de mots de passe, clés API ou données privées.</li><li>Conserver les prompts importants et préciser le rôle de l’IA.</li></ul></div>
-                <div><h3>Ma contribution</h3><p>Pour chaque production, je précise les outils utilisés, le rôle de l’IA, mes contributions personnelles et les sources de vérification.</p><p>Je ne présente comme acquis que ce que je peux comprendre et expliquer.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section section-tint" id="contact">
-        <div class="container">
-            <div class="section-heading">
-                <span class="eyebrow">06 · Contact</span>
-                <h2>Merci pour votre visite</h2>
-                <p>Ce portfolio évoluera avec mes cours, mes travaux pratiques et mes futurs projets.</p>
-            </div>
-            <div class="soft-panel contact-panel">
-                <p><strong>Aya Krissaane</strong><br>Étudiante en Technologies de l’Informatique<br>ISET Nabeul · Année universitaire 2026–2027</p>
-                <p class="small">Ajouter une adresse e-mail professionnelle uniquement si je souhaite la rendre publique.</p>
-            </div>
-        </div>
-    </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container footer-inner">
-        <span>© <span data-year>2026</span> Aya Krissaane · Portfolio Numérique</span>
-        <span>Conçu avec curiosité et créativité ♡</span>
+<footer class="py-footer">
+    <div class="py-container">
+        <a href="../index.html" class="py-footer-brand">Beyond the Code <span>✿</span></a>
+        <p>Curiosity in mind, creativity in code.</p>
+        <a href="#python-top" class="py-back-top">Back to top ↑</a>
     </div>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
-
