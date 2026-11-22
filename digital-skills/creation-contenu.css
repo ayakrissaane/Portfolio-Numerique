@@ -16,6 +16,18 @@
 .cc-hero-art {
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cc-hero-art .cyber-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
 }
 
 .cc-floating {
@@ -416,8 +428,10 @@ body.dark .cc-audio-decoration {
     }
 
     .cc-hero-art .cyber-hero-image {
+        width: 100%;
         height: auto;
-        max-height: 270px;
+        max-height: none;
+        object-fit: contain;
     }
 
 }
